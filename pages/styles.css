@@ -1,0 +1,36 @@
+header {                                           /* styling the header */
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.navbar {                                          /* styling the navigation bar */
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.navbar li:hover, .navbar li a:hover{              /* setting the hover color to a light gray */
+    color: rgb(237, 234, 234);
+}
+
+.navbar a {                                        /* setting the colors of the links to black and removing the underline */
+    color: black;       
+    text-decoration: none;
+}
+
+.navbar li:first-child {                              
+    margin-right: auto;                            /* push other elements to the right */
+}
+
+.navbar li:last-child {
+    margin-right: 0;                               /* remove margin from last element */
+}
+
+body {
+    margin: 0;                                     /* remove default margin */
+    padding: 0;
+}
