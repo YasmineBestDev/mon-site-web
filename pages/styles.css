@@ -1,4 +1,11 @@
-header {                                           /* styling the header */
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {                                          /* styling the header */
     background-color: lightgray;
     padding: 10px;
 }
@@ -30,7 +37,99 @@ header {                                           /* styling the header */
     margin-right: 0;                               /* remove margin from last element */
 }
 
-body {
-    margin: 0;                                     /* remove default margin */
-    padding: 0;
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    margin: 0;
+    padding: 8px 0; /* petit espace intérieur */
+    border-radius: 0; /* ⛔ pas d’arrondis */
+    min-width: 180px; /* largeur minimale pour ne pas être trop serré */
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    padding: 10px 18px; /* espace intérieur plus large */
+    color: #333;
+    display: block;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.caption {
+    position: absolute;
+    top: 65%;
+    right: 100px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+footer {
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer a {
+
+    color: black;
+    text-decoration: none;
+  
+}
+
+footer a:hover {
+
+    color: gray;
+    text-decoration: none;
+
+}
+
+.findex {
+
+    padding-top: 36px;
+
 }
