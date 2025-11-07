@@ -97,6 +97,12 @@ header {                                          /* styling the header */
     letter-spacing: 0.5px;
 }
 
+body {
+    margin: 0;                                     /* remove default margin */
+    padding: 0;
+    
+}
+
 footer {
     background-color: lightgray;
     position: fixed;
