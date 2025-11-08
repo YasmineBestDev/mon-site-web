@@ -1,44 +1,98 @@
 <!DOCTYPE html>                                <!-- indicating the document type -->
 <html lang="en">                               <!-- defining the language -->
+<style>
+  .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forme le carré de quatte images*/
+    gap: 50px;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  .square-img {
+    width: 250px;   
+    height: 150px; 
+    object-fit: cover; 
+    border-top: 25px solid #ddb3cd;   /* Permet de faire un trait en haut */
+    border-bottom: 35px solid #ddb3cd;/* En bas */
+    border-radius: 10px;             /* Permet d'arrondir les coins */
+    display: block;
+  }
+</style>
 
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMERELLA</title>                            <!-- title of the page -->
+    <title>Our website</title>                            <!-- title of the page -->
     <link rel="stylesheet" href="styles.css">             <!-- link to the stylesheet/css -->
+
 </head>
 
 <body>
-    <header>
-        <ul class="navbar">                <!-- navigation bar -->
-            <li><a href="index.html">MENU</a></li>
-            <li><a href="aboutwebsite.html">ABOUT WEBSITE</a></li>
-            <li class="dropdown">
-                <button>GAMES</button>
-                <ul>
-                    <li><a href="GenshinImpact.html">Genshin Impact</a></li>
-                    <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
-                    <li><a href="GuildWars2.html">Guild Wars 2</a></li>
-                    <li><a href="Zelda.html">Zelda</a></li>
-                    <li><a href="Undertale.html">Undertale</a></li>
-                    <li><a href="LifeisStrange.html">Life is Strange</a></li>
-                    <li><a href="CandyCrush.html">Candy Crush</a></li>
-                    <li><a href="ClashRoyale.html">Clash Royale</a></li>
-                </ul>
-            </li>
-            <li><a href="aboutus.html">ABOUT US</a></li>
-        </ul>
-    </header>
+ <header>
+    <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutwebsite.html">ABOUT WEBSITE</a></li>
+        <li class="dropdown">
+            <a href="#">GAMES</a>
+            <ul class="dropdown-menu">
+                <li><a href="Genshin_Impact.html">Genshin Impact</a></li>
+                <li><a href="love_deepspace.html">Love and Deepspace</a></li>
+                <li><a href="gw2.html">Guildwars 2</a></li>
+                <li><a href="zelda.html">Zelda</a></li>
+                <li><a href="undertale.html">Undertale</a></li>
+            </ul>
+        </li>        <li><a href="aboutus.html">ABOUT US</a></li>
+    </ul>
+</header>
+
+<main>
+    <section style="text-align: center;">
+      <h2>OUR PURPOSE</h2>
+      <p>
+       OUR GOAL IS TO INTRODUCE GAMES AND HIDDEN GEMS<br>
+       TO OUR USERS FOR ENTERTAINEMENT PURPOSES.<br>
+       WE SHARE OUR PASSION FOR VIDEO GAMES IN HOPE TO<br>
+       INSPIRE MORE PLAYERS SUCH AS US.<br>
+       DIVE IN TO DISCOVER YOUR NEXT GAMING EXPERIENCE !</p>
+
+    </section>
+
+
+    <section style="text-align: center;">
+      <h2>NEWS</h2>
+      <div class="square" class=".imgaboutwebsite">
+        <a href="https://exemple.com"><img class="square-img" src="https://th.bing.com/th?id=OVFT.NEBVjmnuLq8RtMS6z2JAcC&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.4" alt="Image 1"></a>
+        <a href="https://exemple.com"><img class="square-img" src="https://www.bing.com/th?id=OVFT.KLye0hTbKabP_HhJ0gtn7i&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.4" alt="Image 2"></a>
+        <a href="https://exemple.com"><img class="square-img" src="https://www.bing.com/th?id=OVFT.BZd6mQocUN5PDt2CzX37mi&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.4" alt="Image 3"></a>
+        <a href="https://exemple.com"><img class="square-img" src="https://th.bing.com/th?id=OVFT.0Y0J35hhP0CGv9wBcElQzS&pid=News&w=234&h=132&c=14&rs=2&qlt=90&dpr=1.4" alt="Image 4"></a>
+      </div>
+    </section>
+
+    <section style="text-align: center;">
+      <h2>OUR WEBSITE IN THE FUTUR</h2>
+      <p>
+        In the future we intend to blablabla
+      </p>
+    </section>
+</main>
 
     <footer class="findex"> <!--footer of the page-->
-    <a href="GenshinImpact.html">DISCOVER GAMES</a>
-    <img src="images/separateur.png" alt="separateur" width="100" height="50">
-    <p class="copyright">© 2025 [Company Name]. All Rights reserved.</p>    
-    <p class="questions">
-        Any question or review you wish to write to help us improve our website ?<br>
-        Feel free to leave a review in the about us page.
-    </p>
+
+        <a href="games.html">DISCOVER GAMES</a>
+        <img src="images/separateur.png" alt="separateur" width="100" height="50">
+        <p class="copyright">© 2025 [Company Name]. All Rights reserved.</p>
+        <p class="questions">
+            Any question or review you wish to write to help us improve our website ?<br>
+            Feel free to leave a review in the about us page.
+        </p>
+
+
     </footer>
+
+
+
+
+
 
 </body>
 </html>
