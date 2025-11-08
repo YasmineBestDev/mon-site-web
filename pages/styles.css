@@ -5,10 +5,7 @@ header {                                           /* styling the header */
 
 .navbar {                                          /* styling the navigation bar */
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
     display: flex;
-    gap: 25px;
     font-family: Arial, sans-serif;
     font-size: 18px;
 }
@@ -33,4 +30,156 @@ header {                                           /* styling the header */
 body {
     margin: 0;                                     /* remove default margin */
     padding: 0;
+}
+footer {
+    background-color: lightgray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer a {
+
+    color: black;
+    text-decoration: none;
+  
+}
+
+footer a:hover {
+
+    color: gray;
+    text-decoration: none;
+
+}
+
+.findex {
+
+    padding-top: 36px;
+
+}
+
+.copyright {
+
+    font-size: x-small;
+    
+}
+
+.questions {
+
+    font-size: smaller;
+}
+
+header {                                           /* styling the header */
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.navbar {                                          /* styling the navigation bar */
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    gap: 60px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.navbar li:hover, .navbar li a:hover{              /* setting the hover color to a light gray */
+    color: rgb(237, 234, 234);
+}
+
+.navbar a {                                        /* setting the colors of the links to black and removing the underline */
+    color: black;       
+    text-decoration: none;
+}
+
+.navbar li:first-child {                              
+    margin-right: auto;                            /* push other elements to the right */
+}
+
+.navbar li:last-child {
+    margin-right: 0;                               /* remove margin from last element */
+}
+
+body {
+    margin: 0;                                     /* remove default margin */
+    padding: 0;
+}
+
+.dropdown button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.dropdown button:hover {
+    color: rgb(237, 234, 234);
+}
+
+.dropdown ul{
+    position: absolute;
+    display: none;
+    background-color: lightgray;
+    width:193px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    z-index:1;
+}
+
+.dropdown a {
+    padding:8px 12px;
+    margin:0px;
+    display:block;
+    white-space: nowrap;
+    transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown li:first-child {
+  padding-top: 5px;
+}
+
+.dropdown a:hover {
+  background-color: #3498db;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background-size: cover;
+    background-position: center;
+}
+
+.caption {
+    position: absolute;
+    top: 65%;
+    right: 100px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.5rem;
+    text-align: right;
+    background-color: transparent;
+    letter-spacing: 0.5px;
 }
