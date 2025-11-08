@@ -1,42 +1,12 @@
-header {                                           /* styling the header */
-    background-color: lightgray;
-    padding: 10px;
-}
 
-.navbar {                                          /* styling the navigation bar */
-    list-style-type: none;
-    display: flex;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-}
+/* HEADER ET FOOTER */
 
-.navbar li:hover, .navbar li a:hover{              /* setting the hover color to a light gray */
-    color: rgb(237, 234, 234);
-}
 
-.navbar a {                                        /* setting the colors of the links to black and removing the underline */
-    color: black;       
-    text-decoration: none;
-}
-
-.navbar li:first-child {                              
-    margin-right: auto;                            /* push other elements to the right */
-}
-
-.navbar li:last-child {
-    margin-right: 0;                               /* remove margin from last element */
-}
-
-body {
-    margin: 0;                                     /* remove default margin */
-    padding: 0;
-}
 footer {
-    background-color: lightgray;
+    background-color:rgba(255, 255, 255, 0.7);
     position: fixed;
     bottom: 0;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
     color: black;
@@ -80,8 +50,11 @@ footer a:hover {
 }
 
 header {                                           /* styling the header */
-    background-color: lightgray;
     padding: 10px;
+    position:relative;
+    background-color:rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index:1;
 }
 
 .navbar {                                          /* styling the navigation bar */
@@ -90,12 +63,11 @@ header {                                           /* styling the header */
     padding: 10px;
     display: flex;
     gap: 60px;
-    font-family: Arial, sans-serif;
     font-size: 18px;
 }
 
 .navbar li:hover, .navbar li a:hover{              /* setting the hover color to a light gray */
-    color: rgb(237, 234, 234);
+    color: #a791f7;
 }
 
 .navbar a {                                        /* setting the colors of the links to black and removing the underline */
@@ -103,12 +75,18 @@ header {                                           /* styling the header */
     text-decoration: none;
 }
 
-.navbar li:first-child {                              
-    margin-right: auto;                            /* push other elements to the right */
+.navbar > li:first-child {                              
+    margin-right: auto;
+    margin-left: 30px;                            /* push other elements to the right */
 }
 
-.navbar li:last-child {
-    margin-right: 0;                               /* remove margin from last element */
+.dropdown li a:hover {
+    color:#ffffff;
+}
+
+
+.navbar > li:last-child {
+    margin-right: 30px;                              /* remove margin from last element */
 }
 
 body {
@@ -121,18 +99,17 @@ body {
     cursor: pointer;
     background: none;
     font-size: 18px;
-    font-family: Arial, sans-serif;
 }
 
 .dropdown button:hover {
-    color: rgb(237, 234, 234);
+    color:#a791f7;
 }
 
 .dropdown ul{
     position: absolute;
     display: none;
-    background-color: lightgray;
-    width:193px;
+    background-color:rgba(255, 255, 255, 0.7);
+    width:210px;
     padding:0;
     margin:0;
     list-style:none;
@@ -161,7 +138,7 @@ body {
 }
 
 .dropdown a:hover {
-  background-color: #3498db;
+  background-color: #a791f7;
 }
 
 .banner {
@@ -184,6 +161,7 @@ body {
     letter-spacing: 0.5px;
 }
 
+<<<<<<< HEAD
 /* page about website style*/
 .square {
     display: grid;
@@ -201,3 +179,40 @@ body {
     border-radius: 10px;             /* Permet d'arrondir les coins */
     display: block;
   }
+=======
+/* FIN DU HEADER ET FOOTER */
+
+/* FONT */
+body, header, footer, .navbar, .navbar a, .dropdown button, .caption {
+    font-family: "Stack Sans Headline", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.dropdown a {
+    font-size:15.5px;
+}
+
+.navbar li {
+    padding: 0 0.5em 0.25em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+/*FONT*/
+
+/*GAMES - GENSHIN IMPACT*/
+
+.backgroundimg {
+    height: 100vh;
+    background-image: url('../../../images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
+>>>>>>> ec073f5 (Reprise du header + esthétique et couleurs du header + police + et ajout des pages de jeux et du background)
