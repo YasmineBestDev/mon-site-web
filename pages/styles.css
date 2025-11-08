@@ -183,3 +183,21 @@ body {
     background-color: transparent;
     letter-spacing: 0.5px;
 }
+
+/* page about website style*/
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Forme le carré de quatte images*/
+    gap: 50px;
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  .square-img {
+    width: 250px;   
+    height: 150px; 
+    object-fit: cover; 
+    border-top: 25px solid #ddb3cd;   /* Permet de faire un trait en haut */
+    border-bottom: 35px solid #ddb3cd;/* En bas */
+    border-radius: 10px;             /* Permet d'arrondir les coins */
+    display: block;
+  }
