@@ -4,8 +4,6 @@
 
 footer {
     background-color:rgba(255, 255, 255, 0.7);
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-size: 18px;
     font-weight: bold;
@@ -218,6 +216,77 @@ body, header, footer, .navbar, .navbar a, .dropdown button, .caption {
 
 main > section:first-child h2:first-child {
     margin-top: 0;
+}
+
+/* FORMULAIRE DE QUESTIONS */
+
+main {
+    padding: 20px;
+    padding-bottom: 150px; /* To avoid overlap with fixed footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Adjust based on header/footer heights */
+}
+
+.question-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.question-form h2 {
+    margin-bottom: 20px;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+.question-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.question-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.question-form input,
+.question-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.question-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.question-form button {
+    padding: 10px 20px;
+    background-color: #a791f7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Stack Sans Headline", sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.question-form button:hover {
+    background-color: #8a6bd6;
 }
 
 
