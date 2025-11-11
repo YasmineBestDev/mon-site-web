@@ -183,16 +183,6 @@ body, header, footer, .navbar, .navbar a, .dropdown button, .caption {
 
 /*GAMES - GENSHIN IMPACT*/
 
-.gamebackgroundimg {
-    height: 100vh;
-    background-image: url('../images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-}
-
 .backgroundimg {
     height: 100vh;
     background-image: url('images/background.png');
