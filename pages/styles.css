@@ -189,7 +189,7 @@ the selection will set spacings on the elements in the header*/
 
 /* ========== ABOUT US PAGE ========== */
 
-/* QUESTION FORM */
+
 /* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
 
 main {
@@ -201,10 +201,30 @@ main {
     min-height: calc(100vh - 200px);
 }
 
+.aboutussection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.aboutussection h2{
+
+    justify-items: center;
+
+}
+
+
+
+/* QUESTION FORM */
+
+
 .question-form {
-    background-color: rgba(255, 255, 255, 0.8);
+
+    background: #C1ADC8;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 100%;
@@ -216,11 +236,15 @@ main {
     font-family: "Stack Sans Headline", sans-serif;
     font-weight: 400;
     color: #333;
+    border-radius: 20px;
+    background-color: #E7D5ED;
 }
 
 .question-form form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
 }
 
 .question-form label {
@@ -228,6 +252,17 @@ main {
     font-weight: bold;
     color: #555;
     text-align: left;
+}
+
+.question-form .questionfield textarea{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+
 }
 
 .question-form input,
@@ -238,22 +273,20 @@ main {
     border-radius: 5px;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+    justify-self: center;
+    resize: none;
 }
 
-.question-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
+
+
 
 .question-form button {
     padding: 10px 20px;
-    background-color: #a791f7;
-    color: white;
+    background-color: #E7D5ED;
+    color: #333;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Stack Sans Headline", sans-serif;
-    font-size: 16px;
     transition: background-color 0.3s;
 }
 
