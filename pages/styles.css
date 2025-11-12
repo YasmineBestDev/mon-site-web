@@ -1,96 +1,50 @@
+/* ========== HEADER ========== */
 
-/* HEADER ET FOOTER */
-
-
-footer {
-    background-color:rgba(255, 255, 255, 0.7);
-    width: 100%;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-footer a {
-
-    color: black;
-    text-decoration: none;
-  
-}
-
-footer a:hover {
-
-    color: gray;
-    text-decoration: none;
-
-}
-
-.findex {
-
-    padding-top: 36px;
-
-}
-
-.copyright {
-
-    font-size: x-small;
-    
-}
-
-.questions {
-
-    font-size: smaller;
-}
-
-header {                                           /* styling the header */
+header {
     padding: 10px;
-    position:relative;
-    background-color:rgba(255, 255, 255, 0.7);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     z-index:1;
 }
 
-.navbar {                                          /* styling the navigation bar */
+/* styling the navigation bar */
+
+.navbar {
     list-style-type: none;
     margin: 10px;
     padding: 10px;
     display: flex;
     gap: 60px;
-    font-size: 18px;
 }
 
-.navbar li:hover, .navbar li a:hover{              /* setting the hover color to a light gray */
-    color: #a791f7;
-}
+/* removing the underlines of the links in .navbar and setting the text color to black */
 
-.navbar a {                                        /* setting the colors of the links to black and removing the underline */
+.navbar a {
     color: black;       
     text-decoration: none;
 }
 
+/* styles the links in the class .navbar so they change colors when hovering over them */
+
+.navbar a:hover{
+    color: #a791f7;
+}
+
+/* .navbar > li:first-child selects only the li elements that are the direct children of .navbar and are the first child.
+different from navbar li:first-child that selects any li that is the first child of its parent, anywhere inside .navbar
+the selection will set spacings on the elements in the header*/
+
 .navbar > li:first-child {                              
     margin-right: auto;
-    margin-left: 30px;                            /* push other elements to the right */
+    margin-left: 30px;
 }
 
-.dropdown li a:hover {
-    color:#ffffff;
-}
-
+/* setting a margin on the last element of .navbar */
 
 .navbar > li:last-child {
-    margin-right: 30px;                              /* remove margin from last element */
+    margin-right: 30px;
 }
 
-body {
-    margin: 0;                                     /* remove default margin */
-    padding: 0;
-}
+/* styling the games button*/
 
 .dropdown button {
     border: none;
@@ -103,10 +57,12 @@ body {
     color:#a791f7;
 }
 
-.dropdown ul{
+/* styling the dropdown frame, adding display: none; so the dropdown will only be visible when hovering over games */
+
+.dropdown ul {
     position: absolute;
     display: none;
-    background-color:rgba(255, 255, 255, 0.7);
+    background-color:rgb(255, 255, 255);
     width:210px;
     padding:0;
     margin:0;
@@ -114,30 +70,89 @@ body {
     z-index:1;
 }
 
+.dropdown:hover ul {
+    display: block;
+}
+
+/* styling the elements inside of the dropdown */
+
 .dropdown a {
     padding:8px 12px;
     margin:0px;
     display:block;
     white-space: nowrap;
-    transition: background-color 0.1s ease, color 0.1s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size:15.5px;
 }
 
-.dropdown:hover ul {
-    display: block;
+.dropdown a:hover {
+    color:#ffffff;
+    background-color: #a791f7;
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+/* adding padding to the first element of the dropdown for more clarity */
 
 .dropdown li:first-child {
   padding-top: 5px;
 }
 
-.dropdown a:hover {
-  background-color: #a791f7;
+/* adding a tiny animation that occurs when loading the page */
+
+.navbar li {
+    padding: 0 0.5em 0.25em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
 }
+
+
+
+
+
+
+/* website body styling, removing defalt margin and padding and setting text font : common in ALL pages */
+
+body, .navbar button {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 25px;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+:root {
+    --main-font: 'Stack Sans Headline', sans-serif;
+}
+
+
+
+
+
+
+
+/* website background : common in ABOUT WEBSITE, ABOUT US, and GAME pages */
+
+.backgroundimg {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
+
+
+
+
+
+
+
+
+
+
+/* ========== MENU PAGE ========== */
 
 .banner {
     position: relative;
@@ -159,74 +174,64 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* FIN DU HEADER ET FOOTER */
-
-/* FONT */
-body, header, footer, .navbar, .navbar a, .dropdown button, .caption {
-    font-family: "Stack Sans Headline", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: 1px;
-}
-
-.dropdown a {
-    font-size:15.5px;
-}
-
-.navbar li {
-    padding: 0 0.5em 0.25em;
-    cursor: pointer;
-    position: relative;
-    transition: 0.3s;
-}
 
 
-/*GAMES - GENSHIN IMPACT*/
 
-.backgroundimg {
-    height: 100vh;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-}
 
-/* IKRAM */
+
+
+
+
+
+
+
+
+/* ========== ABOUT WEBSITE PAGE ========== */
+
+/* creates the frames of 4 images */
 
 .square {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Forme le carré de quatte images*/
+    grid-template-columns: 1fr 1fr;
     gap: 50px;
     max-width: 600px;
     margin: 50px auto;
 }
 
+/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
 
 .square-img {
     width: 250px;   
     height: 150px; 
     object-fit: cover; 
-    border-top: 25px solid #ddb3cd;   /* Permet de faire un trait en haut */
-    border-bottom: 35px solid #ddb3cd;/* En bas */
-    border-radius: 10px;             /* Permet d'arrondir les coins */
+    border-top: 25px solid #ddb3cd;
+    border-bottom: 35px solid #ddb3cd;
+    border-radius: 10px;
     display: block;
 }
 
-main > section:first-child h2:first-child {
-    margin-top: 0;
-}
 
-/* FORMULAIRE DE QUESTIONS */
+
+
+
+
+
+
+
+
+
+
+/* ========== QUESTION FORM ========== */
+
+/* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
 
 main {
     padding: 20px;
-    padding-bottom: 150px; /* To avoid overlap with fixed footer */
+    padding-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 200px); /* Adjust based on header/footer heights */
+    min-height: calc(100vh - 200px);
 }
 
 .question-form {
@@ -290,3 +295,34 @@ main {
 }
 
 
+
+
+
+
+
+
+
+
+/* ========== FOOTER ========== */
+
+footer {
+    padding-top: 36px;
+    background-color:rgba(255, 255, 255, 0.7);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:1;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 1);
+}
+
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+footer a:hover {
+    color: #a791f7;
+}
