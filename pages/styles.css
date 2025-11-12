@@ -9,12 +9,35 @@
 }
 
 
+/* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
+body, .navbar button {
+    margin: 0;
+    padding: 0;
+    font-family: "Julius Sans One";
+    font-style: normal;
+    font-weight: 400;
+    font-size:18px;
+    line-height: normal;
+}
+
+/* ========== BACKGROUND ========== */
+
+/* website background image : common in ABOUT WEBSITE, ABOUT US, and GAME pages */
+
+.backgroundimg {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
 
 /* ========== HEADER ========== */
 
 header {
-    padding: 30px;
+    padding: 20px;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index:1;
@@ -75,12 +98,12 @@ the selection will set spacings on the elements in the header*/
     position: absolute;
     display: none;
     background-color:rgb(255, 255, 255);
-    width:300px;
+    width:218px;
     padding:0;
     margin:0;
     list-style:none;
     z-index:1;
-    font-size: 24.5px;
+    font-size: 17px;
 }
 
 .dropdown:hover ul {
@@ -118,51 +141,6 @@ the selection will set spacings on the elements in the header*/
     transition: 0.3s;
 }
 
-
-
-
-
-
-/* website body styling, removing defalt margin and padding and setting text font : common in ALL pages */
-
-body, .navbar button {
-    margin: 0;
-    padding: 0;
-    font-family: "Julius Sans One";
-    font-style: normal;
-    font-weight: 400;
-    font-size:28px;
-    line-height: normal;
-}
-
-
-
-
-
-
-
-
-
-/* website background : common in ABOUT WEBSITE, ABOUT US, and GAME pages */
-
-.backgroundimg {
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-}
-
-
-
-
-
-
-
-
-
-
 /* ========== MENU PAGE ========== */
 
 .banner {
@@ -184,18 +162,6 @@ body, .navbar button {
     background-color: transparent;
     letter-spacing: 0.5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ========== ABOUT WEBSITE PAGE ========== */
 
@@ -221,19 +187,9 @@ body, .navbar button {
     display: block;
 }
 
+/* ========== ABOUT US PAGE ========== */
 
-
-
-
-
-
-
-
-
-
-
-/* ========== QUESTION FORM ========== */
-
+/* QUESTION FORM */
 /* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
 
 main {
@@ -304,15 +260,6 @@ main {
 .question-form button:hover {
     background-color: #8a6bd6;
 }
-
-
-
-
-
-
-
-
-
 
 /* ========== FOOTER ========== */
 
