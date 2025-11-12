@@ -1,4 +1,4 @@
-/* ========== FONT IMPORT ========== */
+/* ========== FONT ========== */
 
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
@@ -75,12 +75,12 @@ the selection will set spacings on the elements in the header*/
     position: absolute;
     display: none;
     background-color:rgb(255, 255, 255);
-    width:290px;
+    width:300px;
     padding:0;
     margin:0;
     list-style:none;
     z-index:1;
-    font-size: 23px;
+    font-size: 24.5px;
 }
 
 .dropdown:hover ul {
@@ -106,7 +106,7 @@ the selection will set spacings on the elements in the header*/
 /* adding padding to the first element of the dropdown for more clarity */
 
 .dropdown li:first-child {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 /* adding a tiny animation that occurs when loading the page */
@@ -131,6 +131,7 @@ body, .navbar button {
     font-family: "Julius Sans One";
     font-style: normal;
     font-weight: 400;
+    font-size:28px;
     line-height: normal;
 }
 
@@ -145,7 +146,7 @@ body, .navbar button {
 /* website background : common in ABOUT WEBSITE, ABOUT US, and GAME pages */
 
 .backgroundimg {
-    background-image: url('images/nevotquiboit.png');
+    background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
