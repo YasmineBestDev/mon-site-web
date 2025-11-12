@@ -1,3 +1,16 @@
+/* ========== FONT IMPORT ========== */
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+.julius-sans-one-regular {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
 /* ========== HEADER ========== */
 
 header {
@@ -115,16 +128,13 @@ the selection will set spacings on the elements in the header*/
 body, .navbar button {
     margin: 0;
     padding: 0;
-    font-family: var(--main-font);
-    font-weight: 300;
-    font-size: 25px;
+    font-family: "Julius Sans One";
     font-style: normal;
-    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: normal;
 }
 
-:root {
-    --main-font: 'Stack Sans Headline', sans-serif;
-}
+
 
 
 
