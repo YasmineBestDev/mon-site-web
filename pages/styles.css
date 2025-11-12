@@ -14,8 +14,9 @@
 /* ========== HEADER ========== */
 
 header {
-    padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     z-index:1;
 }
 
@@ -23,10 +24,8 @@ header {
 
 .navbar {
     list-style-type: none;
-    margin: 10px;
-    padding: 10px;
     display: flex;
-    gap: 60px;
+    gap: 65px;
 }
 
 /* removing the underlines of the links in .navbar and setting the text color to black */
@@ -54,7 +53,7 @@ the selection will set spacings on the elements in the header*/
 /* setting a margin on the last element of .navbar */
 
 .navbar > li:last-child {
-    margin-right: 30px;
+    margin-right: 60px;
 }
 
 /* styling the games button*/
@@ -76,11 +75,12 @@ the selection will set spacings on the elements in the header*/
     position: absolute;
     display: none;
     background-color:rgb(255, 255, 255);
-    width:210px;
+    width:290px;
     padding:0;
     margin:0;
     list-style:none;
     z-index:1;
+    font-size: 23px;
 }
 
 .dropdown:hover ul {
@@ -95,7 +95,6 @@ the selection will set spacings on the elements in the header*/
     display:block;
     white-space: nowrap;
     transition: background-color 0.2s ease, color 0.2s ease;
-    font-size:15.5px;
 }
 
 .dropdown a:hover {
@@ -103,10 +102,11 @@ the selection will set spacings on the elements in the header*/
     background-color: #a791f7;
 }
 
+
 /* adding padding to the first element of the dropdown for more clarity */
 
 .dropdown li:first-child {
-  padding-top: 5px;
+  padding-top: 15px;
 }
 
 /* adding a tiny animation that occurs when loading the page */
@@ -323,7 +323,8 @@ footer {
     flex-direction: column;
     align-items: center;
     z-index:1;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 1);
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
 }
 
 
