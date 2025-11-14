@@ -164,12 +164,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 .index{
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
+    
 }
 
 /* ========== ABOUT WEBSITE PAGE ========== */
