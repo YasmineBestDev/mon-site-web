@@ -163,10 +163,6 @@ the selection will set spacings on the elements in the header*/
     letter-spacing: 0.5px;
 }
 
-.index{
-    
-}
-
 /* ========== ABOUT WEBSITE PAGE ========== */
 
 /* creates the frames of 4 images */
@@ -324,9 +320,23 @@ the selection will set spacings on the elements in the header*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);  
+    filter: brightness(0.9) contrast(1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.games h1{
+    opacity: 0;
+}
+
+.games p{
+    font-size: 40px;
+    max-width: 600px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
 
 /* ========== FOOTER ========== */
 
