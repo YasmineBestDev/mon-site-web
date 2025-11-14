@@ -34,6 +34,21 @@ body, .navbar button {
     filter: brightness(0.9) contrast(1);
 }
 
+.layer {
+    position: fixed;
+    width: 120%;
+    height: 120%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    will-change: transform;
+    z-index: 0;
+}
+
+.layer1 { background-image: url('images/bgitems.png'); }
+.layer2 { background-image: url('images/bgitems.png'); }
+.layer3 { background-image: url('images/bgitems.png'); }
+
+
 /* ========== HEADER ========== */
 
 header {
@@ -200,6 +215,8 @@ main {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 200px);
+    position: relative;
+    z-index: 1;
 }
 
 .aboutussection{
