@@ -162,6 +162,7 @@ the selection will set spacings on the elements in the header*/
     background-color: transparent;
     letter-spacing: 0.5px;
 }
+ 
 
 /* ========== ABOUT WEBSITE PAGE ========== */
 
@@ -199,10 +200,7 @@ the selection will set spacings on the elements in the header*/
 /* ========== ABOUT US PAGE ========== */
 
 
-
-
-
-
+/* main */
 .aboutussection{
 
     display: flex;
@@ -227,10 +225,67 @@ the selection will set spacings on the elements in the header*/
 
 .aboutussection p{
 
-    max-width: 700px;
-
+    max-width: 60%;
 
 }
+/* presentation */
+
+.whoarewe {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.whoarewe h2{
+
+    opacity: 0;
+
+}
+
+.whoarewe h3{
+
+    opacity: 0;
+
+}
+
+.whoarewe img{
+
+    max-width: 20%;
+    max-height: 20%;
+    min-width: 20%;
+    min-height: 20%;
+
+}
+
+.whoarewe section:nth-child(odd){
+
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+    padding-bottom: 5%;
+
+}
+
+.whoarewe section:nth-child(even){
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 40%;
+    padding-bottom: 5%;
+}
+
+.thanku{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+
+}
+
+
 
 
 
