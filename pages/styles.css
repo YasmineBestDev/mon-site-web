@@ -409,9 +409,34 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 
 footer a:hover {
     color: #a791f7;
+}
+
+footer p{
+
+    padding-top: 1%;
+}
+
+footer img{
+
+    max-height: fit-content;
+    max-width: fit-content;
+
+}
+
+.questions {
+    
+    padding-bottom: 2%;
+}
+
+.faboutus {
+
+    padding-bottom: 5%;
+
 }
