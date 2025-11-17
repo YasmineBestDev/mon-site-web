@@ -384,22 +384,28 @@ the selection will set spacings on the elements in the header*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-    display: flex;
     flex-direction: column;
     align-items: center;
+    display: flex;
 }
 
 .games h1{
     opacity: 0;
 }
 
-.games p{
+.games span {
     font-size: 40px;
-    max-width: 600px;
-    text-align: center;
     background-color: white;
-    padding: 20px;
+    padding: 10px 15px;     
+    margin: 0 auto 15px;    
+    line-height: 1.5;
+    width: fit-content;
+    display: block;     
+    text-align: center;
+}
+
+.games h2{
+    font-size: 40px;
 }
 
 /* ========== FOOTER ========== */
