@@ -1,5 +1,4 @@
 /* ========== FONT ========== */
-
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
 
 .julius-sans-one-regular {
@@ -8,8 +7,11 @@
   font-style: normal;
 }
 
+/* ========== DESKTOP ========== */
 
-/* styling website body, removing default margin and padding and setting text font : common in ALL pages */
+@media (min-width : 1024px) {
+
+    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
 body, .navbar button {
     margin: 0;
@@ -41,6 +43,18 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     opacity: 0.7;
     z-index:1;
+}
+
+header h1{
+
+    display : none ;
+
+}
+
+.menu_icon{
+
+    display: none;
+
 }
 
 /* styling the navigation bar */
@@ -286,9 +300,6 @@ the selection will set spacings on the elements in the header*/
 }
 
 
-
-
-
 /* QUESTION FORM */
 
 
@@ -431,7 +442,7 @@ footer img{
 }
 
 .questions {
-    
+
     padding-bottom: 2%;
 }
 
@@ -439,4 +450,308 @@ footer img{
 
     padding-bottom: 5%;
 
+}
+    
+}
+
+
+/* ========== MOBILE ========== */
+@media (max-width : 450px) {
+
+    header {
+
+        padding: 3%;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.7;
+        z-index:1;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    header h1 {
+
+        display: contents;
+        color: black;
+
+    }
+
+    header img{
+
+        display: contents;
+        max-width: 10%;
+        max-height: 10%;
+
+    }
+
+    header .navbar {
+
+        display: none;
+
+    }
+
+    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
+
+    body, .navbar button {
+        margin: 0;
+        padding: 0;
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        line-height: normal;
+    }
+
+
+    /* ========== ABOUT US PAGE ========== */
+
+
+    /* main */
+    .aboutussection{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+
+
+    }
+
+    .aboutussection h1{
+
+        justify-self: center;
+        font-size: 30px;
+
+    }
+
+    .aboutussection p{
+
+        max-width: 60%;
+
+    }
+    /* presentation */
+
+    .whoarewe {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .whoarewe h2{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe h3{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe img{
+
+        max-width: 20%;
+        max-height: 20%;
+        min-width: 20%;
+        min-height: 20%;
+
+    }
+
+    .whoarewe section:nth-child(odd){
+
+        display: flex;
+        align-items: center;
+        margin-left: 45%;
+        padding-bottom: 5%;
+
+    }
+
+    .whoarewe section:nth-child(even){
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-right: 40%;
+        padding-bottom: 5%;
+    }
+
+    .thanku{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+
+    }
+
+
+    /* QUESTION FORM */
+
+
+    .question-form {
+
+        background: #C1ADC8;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+    }
+
+    .question-form h2 {
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: #333;
+        border-radius: 10px;
+        background-color: #E7D5ED;
+    }
+
+    .question-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .question-form label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #555;
+        text-align: left;
+    }
+
+    .question-form .questionfield textarea{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 400px;
+        height: 300px;
+
+    }
+
+    .question-form input,
+    .question-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        justify-self: center;
+        resize: none;
+    }
+
+
+    .question-form button {
+        padding: 10px 20px;
+        background-color: #E7D5ED;
+        color: #333;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .question-form button:hover {
+        background-color: #8a6bd6;
+    }
+
+    /* ========== GAMES ========== */
+
+    .games{
+
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .games h1{
+        opacity: 0;
+    }
+
+    .games p{
+        font-size: 40px;
+        max-width: 600px;
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+    }
+
+    /* ========== FOOTER ========== */
+
+    footer {
+        padding-top: 36px;
+        background-color:rgba(255, 255, 255, 0.7);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index:1;
+        position: relative;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+
+
+    footer a {
+        color: black;
+        text-decoration: none;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+
+    footer a:hover {
+        color: #a791f7;
+    }
+
+    footer p{
+
+        padding-top: 1%;
+    }
+
+    footer img{
+
+        max-height: fit-content;
+        max-width: fit-content;
+
+    }
+
+    .questions {
+
+        padding-bottom: 2%;
+    }
+
+    .faboutus {
+
+        padding-bottom: 5%;
+
+    }
+
+    
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width : 1024px) {
+
+
+    
 }
