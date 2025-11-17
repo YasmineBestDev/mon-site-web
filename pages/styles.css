@@ -210,19 +210,31 @@ the selection will set spacings on the elements in the header*/
     margin: 50px auto;
 }
 
+
+
 /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
 
 .square-img {
-    width: 250px;   
-    height: 150px; 
+    width: 100%;  
+    height: auto; 
     object-fit: cover; 
-    border-top: 25px solid #ddb3cd;
-    border-bottom: 35px solid #ddb3cd;
-    border-radius: 10px;
+    border-top: 2em solid #ddb3cd;
+    border-bottom: 1.75em solid #ddb3cd;
+    border-radius: 0.75em;
     display: block;
 }
 
+.square h3{
+    display: none;
+}
+
+.aboutussection p{
+    font-size: 24px;
+}
+
 .aboutwebsite{
+    text-align: center;
+    align-content: center;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
@@ -231,6 +243,56 @@ the selection will set spacings on the elements in the header*/
     filter: brightness(0.9) contrast(1);
 }
 
+.aboutwebsite p{
+    display: block;
+    line-height: 2;
+    max-width: 800px;
+    margin-bottom: auto;
+
+}
+
+.aboutwebsite section{
+    margin-top: 50px;
+}
+
+
+.romance video{
+    margin-top: 20px;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.romance img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.fight video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fight img{
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fight p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+  
 /* ========== ABOUT US PAGE ========== */
 
 
@@ -246,8 +308,6 @@ the selection will set spacings on the elements in the header*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: brightness(0.9) contrast(1);
-
-
 }
 
 .aboutussection h1{
