@@ -491,9 +491,9 @@ the selection will set spacings on the elements in the header*/
 }
 
 .games p {
-    max-width: 1500px;
+    max-width: 1100px;
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
 }
 
