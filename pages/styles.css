@@ -53,7 +53,7 @@ header h1{
 
 }
 
-.menu_icon{
+#menu_icon{
 
     display: none;
 
@@ -562,6 +562,8 @@ footer img{
         z-index:1;
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        padding-right: 20%;
     }
 
     header h1 {
@@ -571,17 +573,85 @@ footer img{
 
     }
 
-    header img{
+    header button{
 
         display: contents;
-        max-width: 10%;
-        max-height: 10%;
 
     }
+
+    header button img{
+
+        max-width: 50%;
+        max-height: 50%;
+
+    }
+
+
 
     header .navbar {
 
         display: none;
+
+    }
+
+    :modal {
+
+        background: #dddbde;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    :modal a{
+
+        text-decoration: none;
+        display: inline;
+        align-content: center;
+        border : 1px solid 873174 ;
+
+    }
+
+    :modal a img {
+
+        max-width: 20%;
+        max-height: 20%;
+
+    }
+
+    :modal button{
+
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+    }
+
+    :modal button img{
+
+        max-width: 20%;
+        max-height: 20%;
+
+    }
+
+    :modal button {
+
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        color: 873174;
+        display: inline;
+        
+
+
+    }
+
+    dialog { 
+
+        border : none;
+    
+
+  
 
     }
 
@@ -696,14 +766,14 @@ footer img{
         padding: 30px;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 500px;
+        max-width: 70%;
         width: 100%;
         text-align: center;
         justify-self: center;
     }
 
     .question-form h2 {
-        margin-bottom: 20px;
+        margin-bottom: 2%;
         font-weight: 400;
         color: #333;
         border-radius: 10px;
@@ -718,7 +788,7 @@ footer img{
     }
 
     .question-form label {
-        margin-bottom: 5px;
+        margin-bottom: 5%;
         font-weight: bold;
         color: #555;
         text-align: left;
@@ -730,8 +800,8 @@ footer img{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 400px;
-        height: 300px;
+        width: 70%;
+        height: 60%;
 
     }
 
