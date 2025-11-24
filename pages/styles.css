@@ -244,10 +244,10 @@ the selection will set spacings on the elements in the header*/
     max-width: fit-content;
 }
 
-.aboutwebsite p{
-    margin-left: 8.5rem;
-    font-size: 24px;
+.centretexte {
+  max-width: 60rem;
 }
+
 
 .aboutwebsite{
     text-align: center;
@@ -264,13 +264,13 @@ the selection will set spacings on the elements in the header*/
     margin-left: center;
     display: block;
     line-height: 2;
-    max-width: 800px;
+    max-width: 80rem;
     margin-bottom: auto;
 
 }
 
 .aboutwebsite section{
-    margin-top: 50px;
+    margin-top: 15rem;
 }
 
 
