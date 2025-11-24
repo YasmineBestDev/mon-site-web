@@ -206,7 +206,6 @@ the selection will set spacings on the elements in the header*/
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    max-width: 600px;
     margin: 50px auto;
     margin-left: 50px;
 }
