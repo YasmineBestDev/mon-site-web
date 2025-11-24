@@ -216,7 +216,7 @@ the selection will set spacings on the elements in the header*/
 
 .square-img {
     width: 100%;  
-    height: auto; 
+    height: auto*2; 
     object-fit: cover; 
     border-top: 2em solid #ddb3cd;
     border-bottom: 1.75em solid #ddb3cd;
