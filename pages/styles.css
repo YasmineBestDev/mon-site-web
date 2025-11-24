@@ -215,14 +215,14 @@ the selection will set spacings on the elements in the header*/
 /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
 
 .square-img {
-    width: 100%;  
-    height: 100%; 
+    width: 20rem;  
+    height: 10rem; 
     object-fit: cover; 
     border-top: 2em solid #ddb3cd;
-    border-bottom: 1.75em solid #ddb3cd;
-    border-radius: 0.75em;
-    margin-bottom: ;
-    
+    border-bottom: 1.75rem solid #ddb3cd;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
     display: block;
 }
 
