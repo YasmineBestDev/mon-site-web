@@ -244,12 +244,12 @@ the selection will set spacings on the elements in the header*/
     max-width: fit-content;
 }
 
-.aboutussection p{
+.aboutwebsite p{
+    margin-left: 10rem;
     font-size: 24px;
 }
 
 .aboutwebsite{
-    max-width: 65rem;
     text-align: center;
     align-items: center;
     background-image: url('images/background.png');
