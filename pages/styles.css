@@ -244,9 +244,6 @@ the selection will set spacings on the elements in the header*/
     max-width: fit-content;
 }
 
-.centretexte {
-  max-width: 60rem;
-}
 
 
 .aboutwebsite{
@@ -270,7 +267,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 .aboutwebsite section{
-    margin-top: 15rem;
+    margin-top: 2.5rem;
 }
 
 
