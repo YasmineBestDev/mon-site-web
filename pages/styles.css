@@ -517,6 +517,20 @@ the selection will set spacings on the elements in the header*/
     line-height: 1.6;
 }
 
+.ladsFeatures section {
+    padding: 50px;
+    margin-top: 10px;
+    padding: 0 2rem 1rem 2rem;
+    border: none;
+    background-color:#e1d0e7;
+    border-radius: 5%;
+
+}
+
+.ladsFeatures h3 {
+    opacity: 0;
+}
+
 /* ========== FOOTER ========== */
 
 footer {
