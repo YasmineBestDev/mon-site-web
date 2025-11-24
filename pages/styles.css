@@ -228,6 +228,14 @@ the selection will set spacings on the elements in the header*/
     display: block;
 }
 
+.news {
+
+  display : flex ;
+  flex-direction : column ;
+  align-items : center ;
+
+}
+
 .square h3{
     display: none;
 }
