@@ -570,7 +570,7 @@ footer img{
 }
 
 
-/* ========== MOBILE ========== */
+    /* ========== MOBILE ========== */
 @media (max-width : 450px) {
 
     header {
@@ -605,9 +605,6 @@ footer img{
 
     }
 
-
-
-
     header .navbar {
 
         display: none;
@@ -619,23 +616,31 @@ footer img{
         background: #dddbde;
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
+        position: fixed;
 
     }
 
     :modal a{
 
         text-decoration: none;
-        display: inline;
-        align-content: center;
         border : 1px solid 873174 ;
 
     }
 
-    :modal a img {
+    :modal li {
 
-        max-width: 20%;
-        max-height: 20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+    :modal li img {
+
+        max-width: 15%;
+        max-height: 15%;
 
     }
 
@@ -670,8 +675,13 @@ footer img{
     dialog { 
 
         border : none;
+        position: fixed;
+        top: 0;
+        left: 0;
 
     }
+
+    
 
     #games_dropdown{
 
@@ -679,11 +689,18 @@ footer img{
 
     }
 
-    #games-dropdown :target{
+    #games_dropdown:target{
 
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        background-color: #C1ADC8;
+
+    }
+
+    #mobile_menu ul {
+
+        list-style-type: none;
 
     }
 
@@ -738,6 +755,7 @@ footer img{
     right: 10%;
     text-align: right;
 }
+
 
 
 
