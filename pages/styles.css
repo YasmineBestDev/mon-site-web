@@ -308,6 +308,7 @@ the selection will set spacings on the elements in the header*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: brightness(0.9) contrast(1);
+    padding-top: 3% ;
 }
 
 .aboutussection h1{
@@ -554,23 +555,20 @@ footer img{
 @media (max-width : 450px) {
 
     header {
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+    z-index:1;
+    display: flex;
+    flex-direction: column;
 
-        padding: 3%;
-        position: relative;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        opacity: 0.7;
-        z-index:1;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        padding-right: 20%;
     }
 
     header h1 {
 
         display: contents;
         color: black;
-
     }
 
     header button{
@@ -585,6 +583,7 @@ footer img{
         max-height: 50%;
 
     }
+
 
 
 
@@ -655,6 +654,19 @@ footer img{
 
     }
 
+    #games_dropdown{
+
+        display: none;
+
+    }
+
+    #games-dropdown :target{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
     body, .navbar button {
@@ -666,6 +678,50 @@ footer img{
         font-size:18px;
         line-height: normal;
     }
+
+    /* ========== MENU PAGE ========== */
+
+.banner {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1.5s ease;
+    overflow: hidden;
+}
+
+.banner:hover {
+    transform: scale(1.02);
+}
+
+/* Texte commun à toutes les captions */
+.caption {
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 0.5%;
+    text-align: right;
+    background-color: transparent;
+    position: absolute;
+}
+ 
+
+/* Position bottom-left */
+.bottom-left {
+    bottom: 15%;
+    left: 10%;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 15%;
+    right: 10%;
+    text-align: right;
+}
+
+
+
+
 
 
     /* ========== ABOUT US PAGE ========== */
@@ -683,6 +739,8 @@ footer img{
         background-repeat: no-repeat;
         background-attachment: fixed;
         filter: brightness(0.9) contrast(1);
+        padding-top: 10%;
+        padding-bottom: 20%;
 
 
     }
@@ -696,7 +754,7 @@ footer img{
 
     .aboutussection p{
 
-        max-width: 60%;
+        max-width: 80%;
 
     }
     /* presentation */
@@ -722,10 +780,10 @@ footer img{
 
     .whoarewe img{
 
-        max-width: 20%;
-        max-height: 20%;
-        min-width: 20%;
-        min-height: 20%;
+        max-width: 40%;
+        max-height: 40%;
+        min-width: 40%;
+        min-height: 40%;
 
     }
 
@@ -733,8 +791,8 @@ footer img{
 
         display: flex;
         align-items: center;
-        margin-left: 45%;
-        padding-bottom: 5%;
+        padding-right: 15%;
+        padding-bottom: 10%;
 
     }
 
@@ -743,8 +801,8 @@ footer img{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        margin-right: 40%;
-        padding-bottom: 5%;
+        padding-left: 30%;
+        padding-bottom: 10%;
     }
 
     .thanku{
@@ -752,7 +810,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 5%;
+        padding-bottom: 10%;
 
     }
 
@@ -770,6 +828,7 @@ footer img{
         width: 100%;
         text-align: center;
         justify-self: center;
+     
     }
 
     .question-form h2 {
