@@ -249,6 +249,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 .aboutwebsite{
+    max-width: 65rem;
     text-align: center;
     align-items: center;
     background-image: url('images/background.png');
