@@ -222,6 +222,7 @@ the selection will set spacings on the elements in the header*/
     border-bottom: 1.75em solid #ddb3cd;
     border-radius: 0.75em;
     display: block;
+    margin-left: 50px ;
 }
 
 .square h3{
