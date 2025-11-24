@@ -221,6 +221,8 @@ the selection will set spacings on the elements in the header*/
     border-top: 2em solid #ddb3cd;
     border-bottom: 1.75em solid #ddb3cd;
     border-radius: 0.75em;
+    margin-bottom: ;
+    
     display: block;
 }
 
