@@ -561,7 +561,9 @@ footer img{
     opacity: 0.7;
     z-index:1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20%;
 
     }
 
@@ -598,6 +600,7 @@ footer img{
         background: #dddbde;
         display: flex;
         flex-direction: column;
+        
 
     }
 
@@ -648,9 +651,6 @@ footer img{
     dialog { 
 
         border : none;
-    
-
-  
 
     }
 
@@ -665,6 +665,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
