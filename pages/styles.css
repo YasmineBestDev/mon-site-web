@@ -262,6 +262,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 .aboutwebsite p{
+    margin-left: 50px;
     display: block;
     line-height: 2;
     max-width: 800px;
