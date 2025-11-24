@@ -268,14 +268,12 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: 20px;
 }
 
-.romance p{
-    margin-left: 50px;
-}
 
   
 .romance img{
     margin-top: 35px;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
+    margin-left: 50px;
 }
 
 .fight video{
