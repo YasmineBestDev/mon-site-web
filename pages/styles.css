@@ -242,8 +242,10 @@ the selection will set spacings on the elements in the header*/
 }
 
 .aboutwebsite{
+    display : flex;
+    flex-direction: column;
     text-align: center;
-    align-content: center;
+    align-items: center;
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
