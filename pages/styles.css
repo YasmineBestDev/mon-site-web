@@ -209,7 +209,7 @@ the selection will set spacings on the elements in the header*/
     max-width: 600px;
     margin: 50px auto;
 }
-
+margin-left: 50px;
 
 
 /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
@@ -266,6 +266,7 @@ the selection will set spacings on the elements in the header*/
     border-bottom-left-radius: 15px;
     object-fit: cover;
     margin-bottom: 20px;
+    margin-right: 50px;
 }
 
 
@@ -273,7 +274,7 @@ the selection will set spacings on the elements in the header*/
 .romance img{
     margin-top: 35px;
     margin-bottom: 75px;
-    margin-right: 50px;
+    
 }
 
 .fight video{
