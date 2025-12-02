@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAMERELLA - UNDERTALE</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">                            
-    <link rel="stylesheet" href="../styles.css">   
+    <link id="themeG" rel="stylesheet" href="../light_mod.css">   
     
 </head>
 <!-- website body -->
@@ -26,22 +26,22 @@
         
         <nav>
 
-            <button id="menu_icon" type="button"><img src="images/menu_icon.png" alt=""></button>
+            <button id="menu_icon" type="button"><img src="../images/menu_icon.png" alt=""></button>
 
                 <dialog id="mobile_menu">
 
                     <ul>
 
-                        <li><img src="images/menu_icon.png" alt=""><a href="index.html">HOME</a></li>
-                        <li><img src="images/menu_icon.png" alt=""><a href="aboutwebsite.html">ABOUT WEBSITE</a>
-                        <li><img src="images/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
+                        <li><img src="../images/menu_icon.png" alt=""><a href="../index.html">HOME</a></li>
+                        <li><img src="../images/menu_icon.png" alt=""><a href="../aboutwebsite.html">ABOUT WEBSITE</a>
+                        <li><img src="../images/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
                                 <ul id="games_dropdown">
-                                    <li><a href="games/LoveandDeepspace.html">Love and Deepspace</a></li>
-                                    <li><a href="games/GuildWars2.html">Guild Wars 2</a></li>
-                                    <li><a href="games/Undertale.html">Undertale</a></li>
-                                    <li><a href="games/ClashRoyale.html">Clash Royale</a></li>
+                                    <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
+                                    <li><a href="GuildWars2.html">Guild Wars 2</a></li>
+                                    <li><a href="Undertale.html">Undertale</a></li>
+                                    <li><a href="ClashRoyale.html">Clash Royale</a></li>
                                 </ul> 
-                        <li><img src="images/menu_icon.png" alt=""><a href="aboutus.html">ABOUT US</a></li>
+                        <li><img src="../images/menu_icon.png" alt=""><a href="../aboutus.html">ABOUT US</a></li>
 
                     </ul>
 
@@ -49,21 +49,26 @@
                 
             <ul class="navbar">
 
-                <li><a href="index.html">MENU</a></li>
-                <li><a href="aboutwebsite.html">ABOUT WEBSITE</a></li>
+                <li><button onclick="toggleThemeG()">Switch</button></li>
+                <li><a href="../index.html">MENU</a></li>
+                <li><a href="../aboutwebsite.html">ABOUT WEBSITE</a></li>
                 <li class="dropdown">
                     <button>GAMES</button>
                     <ul>
-                        <li><a href="games/LoveandDeepspace.html">Love and Deepspace</a></li>
-                        <li><a href="games/GuildWars2.html">Guild Wars 2</a></li>
-                        <li><a href="games/Undertale.html">Undertale</a></li>
-                        <li><a href="games/ClashRoyale.html">Clash Royale</a></li>
+                        <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
+                        <li><a href="GuildWars2.html">Guild Wars 2</a></li>
+                        <li><a href="Undertale.html">Undertale</a></li>
+                        <li><a href="ClashRoyale.html">Clash Royale</a></li>
                     </ul>
                 </li>
-                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="../aboutus.html">ABOUT US</a></li>
+                
             </ul>
 
         </nav>
+
+        <button onclick="topFunction()" id="topButton" title="Go to top"><img src="../images/Arrow _top.png" alt="#"></button>
+
     </header>
 
     <!-- website main content, including background -->
@@ -110,6 +115,6 @@
             Feel free to leave a review in the about us page.
         </p>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

@@ -23,6 +23,22 @@ body, .navbar button {
     line-height: normal;
 }
 
+/* styling go to the top of page button */
+
+#topButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  background: none;
+}
+
+#topButton:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
 /* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
 
 main {
@@ -756,10 +772,118 @@ footer img{
     text-align: right;
 }
 
+/* ========== ABOUT WEBSITE PAGE ========== */
+
+/* creates the frames of 4 images */
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px auto;
+    margin-left: 50px;
+}
+
+
+/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
+
+.square-img {
+    width: 30rem;  
+    height: 20rem; 
+    object-fit: cover; 
+    align-items: center ;
+    border-top: 2rem solid #ddb3cd;
+    border-bottom: 1.75rem solid #ddb3cd;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.news {
+
+  display : flex ;
+  flex-direction : column ;
+  align-items : center ;
+
+}
+
+.square h3{
+    display: none;
+}
+
+.stars {
+    max-height: fit-content;
+    max-width: fit-content;
+}
 
 
 
+.aboutwebsite{
+    text-align: center;
+    align-items: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
 
+.aboutwebsite p{
+    margin-left: center;
+    display: block;
+    line-height: 2;
+    max-width: 80rem;
+    margin-bottom: auto;
+
+}
+
+.aboutwebsite section{
+    margin-top: 2.5rem;
+}
+
+
+.romance video{
+    margin-top: 20px;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 65px;
+}
+
+
+  
+.romance img{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+}
+
+.fight video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fight img{
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fight p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
 
     /* ========== ABOUT US PAGE ========== */
@@ -829,7 +953,6 @@ footer img{
 
         display: flex;
         align-items: center;
-        padding-right: 15%;
         padding-bottom: 10%;
 
     }
@@ -839,7 +962,7 @@ footer img{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        padding-left: 30%;
+        padding-left: 15%;
         padding-bottom: 10%;
     }
 

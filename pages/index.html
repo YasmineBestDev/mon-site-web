@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GAMERELLA - HOME</title> 
     <link rel="icon" type="image/x-icon" href="images/favicon.png">                           
-    <link rel="stylesheet" href="styles.css">   
+    <link  id="theme" rel="stylesheet" href="light_mod.css">   
 
 </head>
 
@@ -42,6 +42,7 @@
                 
             <ul class="navbar">
 
+                <li><button onclick="toggleTheme()">Switch</button></li>
                 <li><a href="index.html">MENU</a></li>
                 <li><a href="aboutwebsite.html">ABOUT WEBSITE</a></li>
                 <li class="dropdown">
@@ -55,11 +56,14 @@
                 </li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
             </ul>
-
         </nav>
+
+        <button onclick="topFunction()" id="topButton" title="Go to top"><img src="images/Arrow _top.png" alt="#"></button>
+
     </header>
 
     <main class="index">
+
         <a href="games/LoveandDeepspace.html">
             <section class="banner">
                 <img src="images/lads1.webp" class="banner">
@@ -87,6 +91,7 @@
                 <p class="caption bottom-left">Every second matters. Every card counts</p>
             </section>
         </a>
+
     </main>
 
     <footer>

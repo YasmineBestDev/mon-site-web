@@ -1,0 +1,1126 @@
+/* ========== FONT ========== */
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+.julius-sans-one-regular {
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ========== DESKTOP ========== */
+
+@media (min-width : 1024px) {
+
+    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
+
+body, .navbar button {
+    margin: 0;
+    padding: 0;
+    font-family: "Julius Sans One";
+    font-style: normal;
+    font-weight: 400;
+    font-size:18px;
+    line-height: normal;
+}
+
+/* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
+
+main {
+    width: 100%;
+    padding: 0px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column; /* important */
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);
+    overflow: hidden;
+}
+
+/* ========== HEADER ========== */
+
+header {
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+    z-index:1;
+}
+
+header h1{
+
+    display : none ;
+
+}
+
+#menu_icon{
+
+    display: none;
+
+}
+
+/* styling the navigation bar */
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 65px;
+}
+
+/* removing the underlines of the links in .navbar and setting the text color to black */
+
+.navbar a {
+    color: rgb(255, 255, 255);       
+    text-decoration: none;
+}
+
+/* styles the links in the class .navbar so they change colors when hovering over them */
+
+.navbar a:hover{
+    color: #a791f7;
+}
+
+/* .navbar > li:first-child selects only the li elements that are the direct children of .navbar and are the first child.
+different from navbar li:first-child that selects any li that is the first child of its parent, anywhere inside .navbar
+the selection will set spacings on the elements in the header*/
+
+.navbar > li:first-child {                              
+    margin-right: auto;
+    margin-left: 30px;
+}
+
+/* setting a margin on the last element of .navbar */
+
+.navbar > li:last-child {
+    margin-right: 60px;
+}
+
+/* styling the games button*/
+
+.dropdown button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-size: 18px;
+}
+
+.dropdown button:hover {
+    color:#a791f7;
+}
+
+/* styling the dropdown frame, adding display: none; so the dropdown will only be visible when hovering over games */
+
+.dropdown ul {
+    position: absolute;
+    display: none;
+    background-color:rgb(0, 0, 0);
+    width:218px;
+    padding:0;
+    margin:0;
+    list-style:none;
+    z-index:1;
+    font-size: 17px;
+}
+
+.dropdown:hover ul {
+    display: block;
+}
+
+/* styling the elements inside of the dropdown */
+
+.dropdown a {
+    padding:8px 12px;
+    margin:0px;
+    display:block;
+    white-space: nowrap;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown a:hover {
+    color:#ffffff;
+    background-color: #a791f7;
+}
+
+
+/* adding padding to the first element of the dropdown for more clarity */
+
+.dropdown li:first-child {
+  padding-top: 20px;
+}
+
+/* adding a tiny animation that occurs when loading the page */
+
+.navbar li {
+    padding: 0 0.5em 0.25em;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* ========== MENU PAGE ========== */
+
+.banner {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1.5s ease;
+    overflow: hidden;
+}
+
+.banner:hover {
+    transform: scale(1.02);
+}
+
+/* Texte commun à toutes les captions */
+.caption {
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 0.5%;
+    text-align: right;
+    background-color: transparent;
+    position: absolute;
+}
+ 
+
+/* Position bottom-left */
+.bottom-left {
+    bottom: 15%;
+    left: 10%;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 15%;
+    right: 10%;
+    text-align: right;
+}
+
+
+/* ========== ABOUT WEBSITE PAGE ========== */
+
+/* creates the frames of 4 images */
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px auto;
+    margin-left: 50px;
+}
+
+
+/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
+
+.square-img {
+    width: 30rem;  
+    height: 20rem; 
+    object-fit: cover; 
+    align-items: center ;
+    border-top: 2rem solid #ddb3cd;
+    border-bottom: 1.75rem solid #ddb3cd;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.news {
+
+  display : flex ;
+  flex-direction : column ;
+  align-items : center ;
+
+}
+
+.square h3{
+    display: none;
+}
+
+.stars {
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+
+
+.aboutwebsite{
+    text-align: center;
+    align-items: center;
+    background-image: url('images/dark_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
+
+.aboutwebsite p{
+    margin-left: center;
+    display: block;
+    line-height: 2;
+    max-width: 80rem;
+    margin-bottom: auto;
+
+}
+
+.aboutwebsite section{
+    margin-top: 2.5rem;
+}
+
+
+.romance video{
+    margin-top: 20px;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 65px;
+}
+
+
+  
+.romance img{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+}
+
+.fight video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fight img{
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fight p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+  
+/* ========== ABOUT US PAGE ========== */
+
+
+/* main */
+.aboutussection{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+    padding-top: 3% ;
+}
+
+.aboutussection h1{
+
+    justify-self: center;
+    font-size: 30px;
+
+}
+
+.aboutussection p{
+
+    max-width: 60%;
+
+}
+/* presentation */
+
+.whoarewe {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+}
+.whoarewe h2{
+
+    opacity: 0;
+
+}
+
+.whoarewe h3{
+
+    opacity: 0;
+
+}
+
+.whoarewe img{
+
+    max-width: 20%;
+    max-height: 20%;
+    min-width: 20%;
+    min-height: 20%;
+
+}
+
+.whoarewe section:nth-child(odd){
+
+    display: flex;
+    align-items: center;
+    margin-left: 45%;
+    padding-bottom: 5%;
+
+}
+
+.whoarewe section:nth-child(even){
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-right: 40%;
+    padding-bottom: 5%;
+}
+
+.thanku{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5%;
+
+}
+
+
+/* QUESTION FORM */
+
+
+.question-form {
+
+    background: #C1ADC8;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    justify-self: center;
+}
+
+.question-form h2 {
+    margin-bottom: 20px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 10px;
+    background-color: #E7D5ED;
+}
+
+.question-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.question-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    text-align: left;
+}
+
+.question-form .questionfield textarea{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 300px;
+
+}
+
+.question-form input,
+.question-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    justify-self: center;
+    resize: none;
+}
+
+
+.question-form button {
+    padding: 10px 20px;
+    background-color: #E7D5ED;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question-form button:hover {
+    background-color: #8a6bd6;
+}
+
+/* ========== GAMES ========== */
+
+.games{
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.games h1{
+    opacity: 0;
+}
+
+.games span {
+    font-size: 40px;
+    background-color: white;
+    padding: 10px 15px;     
+    margin: 0 auto 15px;    
+    line-height: 1.5;
+    width: fit-content;
+    display: block;
+    text-align: center;
+}
+
+.games h2{
+    margin-top: 50px;
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.games p {
+    max-width: 1100px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+    padding-top: 36px;
+    background-color:rgba(255, 255, 255, 0.7);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index:1;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+footer a {
+    color: black;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+footer a:hover {
+    color: #a791f7;
+}
+
+footer p{
+
+    padding-top: 1%;
+}
+
+footer img{
+
+    max-height: fit-content;
+    max-width: fit-content;
+
+}
+
+.questions {
+
+    padding-bottom: 2%;
+}
+
+.faboutus {
+
+    padding-bottom: 5%;
+
+}
+    
+}
+
+
+    /* ========== MOBILE ========== */
+@media (max-width : 450px) {
+
+    header {
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0.7;
+    z-index:1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20%;
+
+    }
+
+    header h1 {
+
+        display: contents;
+        color: black;
+    }
+
+    header button{
+
+        display: contents;
+
+    }
+
+    header button img{
+
+        max-width: 50%;
+        max-height: 50%;
+
+    }
+
+    header .navbar {
+
+        display: none;
+
+    }
+
+    :modal {
+
+        background: #dddbde;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+
+    }
+
+    :modal a{
+
+        text-decoration: none;
+        border : 1px solid 873174 ;
+
+    }
+
+    :modal li {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+    :modal li img {
+
+        max-width: 15%;
+        max-height: 15%;
+
+    }
+
+    :modal button{
+
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+    }
+
+    :modal button img{
+
+        max-width: 20%;
+        max-height: 20%;
+
+    }
+
+    :modal button {
+
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        color: 873174;
+        display: inline;
+        
+
+
+    }
+
+    dialog { 
+
+        border : none;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    
+
+    #games_dropdown{
+
+        display: none;
+
+    }
+
+    #games_dropdown:target{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: #C1ADC8;
+
+    }
+
+    #mobile_menu ul {
+
+        list-style-type: none;
+
+    }
+
+    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
+
+    body, .navbar button {
+        margin: 0;
+        padding: 0;
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        line-height: normal;
+    }
+
+    /* ========== MENU PAGE ========== */
+
+.banner {
+    position: relative;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1.5s ease;
+    overflow: hidden;
+}
+
+.banner:hover {
+    transform: scale(1.02);
+}
+
+/* Texte commun à toutes les captions */
+.caption {
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 0.5%;
+    text-align: right;
+    background-color: transparent;
+    position: absolute;
+}
+ 
+
+/* Position bottom-left */
+.bottom-left {
+    bottom: 15%;
+    left: 10%;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 15%;
+    right: 10%;
+    text-align: right;
+}
+
+/* ========== ABOUT WEBSITE PAGE ========== */
+
+/* creates the frames of 4 images */
+
+.square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 50px auto;
+    margin-left: 50px;
+}
+
+
+/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
+
+.square-img {
+    width: 30rem;  
+    height: 20rem; 
+    object-fit: cover; 
+    align-items: center ;
+    border-top: 2rem solid #ddb3cd;
+    border-bottom: 1.75rem solid #ddb3cd;
+    border-radius: 0.75rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: block;
+}
+
+.news {
+
+  display : flex ;
+  flex-direction : column ;
+  align-items : center ;
+
+}
+
+.square h3{
+    display: none;
+}
+
+.stars {
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+
+
+.aboutwebsite{
+    text-align: center;
+    align-items: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.9) contrast(1);
+}
+
+.aboutwebsite p{
+    margin-left: center;
+    display: block;
+    line-height: 2;
+    max-width: 80rem;
+    margin-bottom: auto;
+
+}
+
+.aboutwebsite section{
+    margin-top: 2.5rem;
+}
+
+
+.romance video{
+    margin-top: 20px;
+    float: left;
+    margin-left: 0%;
+    margin-right: 10px;
+    width: 300px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-right: 65px;
+}
+
+
+  
+.romance img{
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+}
+
+.fight video{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.fight img{
+    display: block;
+    margin-left: 45%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.fight p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+    /* ========== ABOUT US PAGE ========== */
+
+
+    /* main */
+    .aboutussection{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        padding-top: 10%;
+        padding-bottom: 20%;
+
+
+    }
+
+    .aboutussection h1{
+
+        justify-self: center;
+        font-size: 30px;
+
+    }
+
+    .aboutussection p{
+
+        max-width: 80%;
+
+    }
+    /* presentation */
+
+    .whoarewe {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .whoarewe h2{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe h3{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe img{
+
+        max-width: 40%;
+        max-height: 40%;
+        min-width: 40%;
+        min-height: 40%;
+
+    }
+
+    .whoarewe section:nth-child(odd){
+
+        display: flex;
+        align-items: center;
+        padding-bottom: 10%;
+
+    }
+
+    .whoarewe section:nth-child(even){
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 15%;
+        padding-bottom: 10%;
+    }
+
+    .thanku{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+
+    }
+
+
+    /* QUESTION FORM */
+
+
+    .question-form {
+
+        background: #C1ADC8;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 70%;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+     
+    }
+
+    .question-form h2 {
+        margin-bottom: 2%;
+        font-weight: 400;
+        color: #333;
+        border-radius: 10px;
+        background-color: #E7D5ED;
+    }
+
+    .question-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .question-form label {
+        margin-bottom: 5%;
+        font-weight: bold;
+        color: #555;
+        text-align: left;
+    }
+
+    .question-form .questionfield textarea{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        height: 60%;
+
+    }
+
+    .question-form input,
+    .question-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        justify-self: center;
+        resize: none;
+    }
+
+
+    .question-form button {
+        padding: 10px 20px;
+        background-color: #E7D5ED;
+        color: #333;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .question-form button:hover {
+        background-color: #8a6bd6;
+    }
+
+    /* ========== GAMES ========== */
+
+    .games{
+
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .games h1{
+        opacity: 0;
+    }
+
+    .games p{
+        font-size: 40px;
+        max-width: 600px;
+        text-align: center;
+        background-color: white;
+        padding: 20px;
+    }
+
+    /* ========== FOOTER ========== */
+
+    footer {
+        padding-top: 36px;
+        background-color:rgba(255, 255, 255, 0.7);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index:1;
+        position: relative;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+
+
+    footer a {
+        color: black;
+        text-decoration: none;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+
+    footer a:hover {
+        color: #a791f7;
+    }
+
+    footer p{
+
+        padding-top: 1%;
+    }
+
+    footer img{
+
+        max-height: fit-content;
+        max-width: fit-content;
+
+    }
+
+    .questions {
+
+        padding-bottom: 2%;
+    }
+
+    .faboutus {
+
+        padding-bottom: 5%;
+
+    }
+
+    
+}
+
+/* ========== TABLET ========== */
+
+@media (max-width : 1024px) {
+
+
+    
+}
