@@ -331,6 +331,17 @@ the selection will set spacings on the elements in the header*/
     margin-top: 2.5rem;
 }
 
+/*Permet de changer l'image selon le mode*/
+
+.romance img[src*="love.png"] {
+    content: url('images/coeur_dark.png');
+}
+
+.fight img[src*="bataille.png"] {
+    content: url('images/bataille_dark.png');
+    /* ou gardez votre image actuelle */
+}
+
 
 .romance video{
     width: 15rem ;
