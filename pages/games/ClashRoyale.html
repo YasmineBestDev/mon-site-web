@@ -37,12 +37,15 @@
                         <li><img src="../images/menu_icon.png" alt=""><a href="../index.html">HOME</a></li>
                         <li><img src="../images/menu_icon.png" alt=""><a href="../aboutwebsite.html">ABOUT WEBSITE</a>
                         <li><img src="../images/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
-                                <ul id="games_dropdown">
-                                    <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
-                                    <li><a href="GuildWars2.html">Guild Wars 2</a></li>
-                                    <li><a href="Undertale.html">Undertale</a></li>
-                                    <li><a href="ClashRoyale.html">Clash Royale</a></li>
-                                </ul> 
+                        <li>    
+                            <ul id="games_dropdown">
+                                    <li><a href="games/LoveandDeepspace.html">Love and Deepspace</a></li>
+                                    <li><a href="games/GuildWars2.html">Guild Wars 2</a></li>
+                                    <li><a href="games/Undertale.html">Undertale</a></li>
+                                    <li><a href="games/ClashRoyale.html">Clash Royale</a></li>
+                            </ul>
+                             
+                        </li> 
                         <li><img src="../images/menu_icon.png" alt=""><a href="../aboutus.html">ABOUT US</a></li>
 
                     </ul>
@@ -51,7 +54,6 @@
                 
             <ul class="navbar">
 
-                <li><button onclick="toggleThemeG()">Switch</button></li>
                 <li><a href="../index.html">MENU</a></li>
                 <li><a href="../aboutwebsite.html">ABOUT WEBSITE</a></li>
                 <li class="dropdown">
@@ -64,6 +66,9 @@
                     </ul>
                 </li>
                 <li><a href="../aboutus.html">ABOUT US</a></li>
+                <li id="light_button"><button onclick="toggleThemeG()">Go Dark</button></li>
+                <li id="dark_button"><button  onclick="toggleThemeG()">Go Light</button></li>
+
             </ul>
 
         </nav>

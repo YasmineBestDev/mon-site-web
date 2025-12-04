@@ -80,6 +80,7 @@ header h1{
 .navbar {
     list-style-type: none;
     display: flex;
+    align-items: center;
     gap: 65px;
 }
 
@@ -105,15 +106,34 @@ the selection will set spacings on the elements in the header*/
     margin-left: 30px;
 }
 
-/* setting a margin on the last element of .navbar */
+.navbar #light_button button{
 
-.navbar > li:last-child {
-    margin-right: 60px;
+    border : none ;
+    padding: 2%;
+    min-height: 20% ;
+    min-width: 20% ;
+    background-color: #a791f7 ;
+    border-radius: 35%;
+
+
+}
+
+.navbar #light_button button:hover{
+
+    background-color: #d7cdff ;
+
+}
+
+.navbar #dark_button{
+
+    display: none;
+
 }
 
 /* styling the games button*/
 
 .dropdown button {
+
     border: none;
     cursor: pointer;
     background: none;
