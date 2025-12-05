@@ -545,6 +545,7 @@ the selection will set spacings on the elements in the header*/
 /* ========== GAMES ========== */
 
 .games{
+
     background-image: url('images/background.png');
     background-size: cover;
     background-position: center;
@@ -560,6 +561,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 .games span {
+
     font-size: 40px;
     background-color: white;
     padding: 10px 15px;     
@@ -578,11 +580,87 @@ the selection will set spacings on the elements in the header*/
 }
 
 .games p {
-    max-width: 1100px;
+    max-width: 50vw;
     text-align: center;
     font-size: 17px;
     line-height: 1.6;
 }
+
+.ladsFeatures{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carousel{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10%;
+
+}
+
+.carousel h3{
+
+    display: none;
+
+}
+
+.carousel ul {
+
+    background-color: #C1ADC8;
+    border-radius: 50px;
+    padding: 5%;
+    list-style: none;
+}
+
+.card{
+
+    display: none;
+
+}
+
+.card.active{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card h4{
+
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.card img{
+
+    border-radius: 40px;
+
+}
+
+.cbtn{
+
+    border: none;
+    font-size: 250%;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.cbtn:hover{
+
+    color: #a791f7;
+
+}
+
+
+
 
 /* ========== FOOTER ========== */
 
@@ -1107,28 +1185,119 @@ footer img{
 
     .games{
 
-        background-image: url('images/background.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        filter: brightness(0.9) contrast(1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+}
 
-    .games h1{
-        opacity: 0;
-    }
+.games h1{
+    opacity: 0;
+}
 
-    .games p{
-        font-size: 40px;
-        max-width: 600px;
-        text-align: center;
-        background-color: white;
-        padding: 20px;
-    }
+.games span {
+
+    font-size: 40px;
+    background-color: white;
+    padding: 10px 15px;     
+    margin: 0 auto 15px;    
+    line-height: 1.5;
+    width: fit-content;
+    display: block;
+    text-align: center;
+}
+
+.games h2{
+    margin-top: 50px;
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.games p {
+    max-width: 50vw;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.ladsFeatures{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carousel{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10%;
+
+}
+
+.carousel h3{
+
+    display: none;
+
+}
+
+.carousel ul {
+
+    background-color: #C1ADC8;
+    border-radius: 50px;
+    padding: 5%;
+    list-style: none;
+}
+
+.card{
+
+    display: none;
+
+}
+
+.card.active{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card h4{
+
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.card img{
+
+    border-radius: 40px;
+
+}
+
+.cbtn{
+
+    border: none;
+    font-size: 250%;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.cbtn:hover{
+
+    color: #a791f7;
+
+}
 
     /* ========== FOOTER ========== */
 

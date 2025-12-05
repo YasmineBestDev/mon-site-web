@@ -64,3 +64,51 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//script for the carouselsvv in games pages
+
+const buttons = document.querySelectorAll(".cbtn"); //gather all buttons with the cbtn class in a list
+const cards =  document.querySelectorAll(".card"); //gather all elements with the card class in a list
+
+buttons.forEach((button) =>{
+
+  //(e) selects the id of the clicked button 
+  button.addEventListener("click", (e) => {
+
+    const cardActive = document.querySelector(".active") ;
+    let nextCard ;
+    let newIndex ;
+
+    if (e.target.id === "next") {
+
+      nextCard = 1 ;
+      
+    } else {
+      
+      nextCard = -1 ;
+
+    }
+
+    newIndex = nextCard + [...cards].indexOf(cardActive);
+
+    if (newIndex < 0) {
+
+      newIndex = [...cards].length - 1; //to go back to last element if we reached the first one
+      
+    }
+
+    if (newIndex > ([...cards].length - 1)) {
+
+      newIndex = 0 ; //to go to the first element if we reached the last one 
+      
+    }
+
+    cardActive.classList.remove("active");
+    cards[newIndex].classList.add("active");
+
+
+    console.log(newIndex) ;
+
+  });
+});
+
