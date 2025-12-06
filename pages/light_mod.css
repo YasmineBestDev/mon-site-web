@@ -863,19 +863,19 @@ footer img{
 
     /* ========== MENU PAGE ========== */
 
-.banner {
-    position: relative;
-    width: 100vw;
-    aspect-ratio: 16 / 9;
-    background-size: cover;
-    background-position: center;
-    transition: transform 1.5s ease;
-    overflow: hidden;
-}
+    .banner {
+        position: relative;
+        width: 100vw;
+        aspect-ratio: 16 / 9;
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.5s ease;
+        overflow: hidden;
+    }
 
-.banner:hover {
-    transform: scale(1.02);
-}
+    .banner:hover {
+        transform: scale(1.02);
+    }
 
 /* Texte commun à toutes les captions */
 .caption {
@@ -903,117 +903,130 @@ footer img{
 
 /* ========== ABOUT WEBSITE PAGE ========== */
 
-/* creates the frames of 4 images */
+    /* creates the frames of 4 images */
 
-.square {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: 50px auto;
-    margin-left: 50px;
-}
-
-
-/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
-
-.square-img {
-    width: 30rem;  
-    height: 20rem; 
-    object-fit: cover; 
-    align-items: center ;
-    border-top: 2rem solid #ddb3cd;
-    border-bottom: 1.75rem solid #ddb3cd;
-    border-radius: 0.75rem;
-    margin-bottom: 2.5rem;
-    margin-top: 1.5rem;
-    margin-top: 1.5rem;
-    display: block;
-}
-
-.news {
-
-  display : flex ;
-  flex-direction : column ;
-  align-items : center ;
-
-}
-
-.square h3{
-    display: none;
-}
-
-.stars {
-    max-height: fit-content;
-    max-width: fit-content;
-}
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 5%;
+        margin: 0 auto 3rem;
+        max-width: 90%;
+    }
 
 
+    /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
 
-.aboutwebsite{
-    text-align: center;
-    align-items: center;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-}
+    .square-img {
+            width: 25rem;
+            height: 15rem;
+            object-fit: cover;
+            align-items: center;
+            border-top: 2rem solid #ddb3cd;
+            border-bottom: 1.75rem solid #ddb3cd;
+            border-radius: 0.75rem;
+            display: block;
+            margin-bottom: 2rem;
+            max-width: 100%;
+        }
+        
+        .news {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
 
-.aboutwebsite p{
-    margin-left: center;
-    display: block;
-    line-height: 2;
-    max-width: 80rem;
-    margin-bottom: auto;
+    .square h3{
+        display: none;
+    }
 
-}
-
-.aboutwebsite section{
-    margin-top: 2.5rem;
-}
+    .stars {
+        max-height: fit-content;
+        max-width: fit-content;
+    }
 
 
-.romance video{
-    margin-top: 20px;
-    float: left;
-    margin-left: 0%;
-    margin-right: 10px;
-    width: 300px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    margin-right: 65px;
-}
 
+    .aboutwebsite{
+        text-align: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        max-width: 100vw;
+    }
+
+    .aboutwebsite h2{
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
+
+    }
+
+    .aboutwebsite p{
+        margin-left: center;
+        display: block;
+        line-height: 2;
+        max-width: 80rem;
+        margin-bottom: auto;
+
+    }   
+
+    .aboutwebsite section{
+        padding-top: 2.5em;
+    }   
+
+
+    .romance video {
+        width: 25rem;
+        height: 33.25rem;
+        display: block;
+        margin: 2rem auto;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        max-width: 90%;
+    }
+
+    .romance p {
+        display: block;
+        margin: 2rem auto;
+        line-height: 2;
+        max-width: 75rem;
+
+    }
 
   
-.romance img{
-    margin-top: 75px;
-    margin-bottom: 75px;
-    
-}
+    .romance img {
+        margin: 2rem auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 100%;
 
-.fight video{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
+    }
 
-.fight img{
-    display: block;
-    margin-left: 45%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-.fight p{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+    .fight video {
+        width: 25rem;
+        height: 12.5rem;
+        margin: 5% auto;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        max-width: 90%;
+    }
 
+    .fight img {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        margin: 1.25rem auto;
+    }
+
+    .fight p {
+        padding: 1.25rem auto;
+    }
 
     /* ========== ABOUT US PAGE ========== */
 
