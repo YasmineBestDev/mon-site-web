@@ -755,7 +755,7 @@ footer img{
 
     }
 
-    .modal {
+    dialog:modal {
 
         background: #dddbde;
         display: flex;
@@ -765,14 +765,14 @@ footer img{
 
     }
 
-    .modal a{
+    dialog:modal a{
 
         text-decoration: none;
         border : 1px solid #873174 ;
 
     }
 
-    .modal li {
+    dialog:modal li {
 
         display: flex;
         flex-direction: row;
@@ -781,14 +781,14 @@ footer img{
 
     }
 
-    .modal li img {
+    dialog:modal li img {
 
         max-width: 15%;
         max-height: 15%;
 
     }
 
-    .modal button{
+    dialog:modal button{
 
         display: flex;
         align-items: center;
@@ -796,14 +796,14 @@ footer img{
         background: none;
     }
 
-    .modal button img{
+    dialog:modal button img{
 
         max-width: 20%;
         max-height: 20%;
 
     }
 
-    .modal button {
+    dialog:modal button {
 
         font-family: "Julius Sans One";
         font-style: normal;
