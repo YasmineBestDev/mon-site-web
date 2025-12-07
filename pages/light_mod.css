@@ -213,7 +213,7 @@ the selection will set spacings on the elements in the header*/
 .caption {
     color: white;
     font-size: 1.5vw;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.05rem;
     text-align: right;
     background-color: transparent;
     position: absolute;
@@ -305,7 +305,6 @@ the selection will set spacings on the elements in the header*/
 }
 
 .aboutwebsite p{
-    margin-left: center;
     display: block;
     line-height: 2;
     max-width: 80rem;
@@ -756,7 +755,7 @@ footer img{
 
     }
 
-    :modal {
+    .modal {
 
         background: #dddbde;
         display: flex;
@@ -766,14 +765,14 @@ footer img{
 
     }
 
-    :modal a{
+    .modal a{
 
         text-decoration: none;
-        border : 1px solid 873174 ;
+        border : 1px solid #873174 ;
 
     }
 
-    :modal li {
+    .modal li {
 
         display: flex;
         flex-direction: row;
@@ -782,14 +781,14 @@ footer img{
 
     }
 
-    :modal li img {
+    .modal li img {
 
         max-width: 15%;
         max-height: 15%;
 
     }
 
-    :modal button{
+    .modal button{
 
         display: flex;
         align-items: center;
@@ -797,20 +796,20 @@ footer img{
         background: none;
     }
 
-    :modal button img{
+    .modal button img{
 
         max-width: 20%;
         max-height: 20%;
 
     }
 
-    :modal button {
+    .modal button {
 
         font-family: "Julius Sans One";
         font-style: normal;
         font-weight: 400;
         font-size:18px;
-        color: 873174;
+        color: #873174;
         display: inline;
         
 
@@ -881,7 +880,7 @@ footer img{
 .caption {
     color: white;
     font-size: 1.5vw;
-    letter-spacing: 0.5%;
+    letter-spacing: 0.05rem;
     text-align: right;
     background-color: transparent;
     position: absolute;
@@ -967,7 +966,6 @@ footer img{
     }
 
     .aboutwebsite p{
-        margin-left: center;
         display: block;
         line-height: 2;
         max-width: 80rem;
@@ -1025,7 +1023,7 @@ footer img{
     }
 
     .fight p {
-        padding: 1.25rem auto;
+        padding: 1.25rem;
     }
 
     /* ========== ABOUT US PAGE ========== */
