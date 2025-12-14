@@ -112,3 +112,20 @@ buttons.forEach((button) =>{
   });
 });
 
+
+// Script for the popup in the game pages
+function togglePopup() {
+  const popup = document.getElementById("popupDialog");
+  if (popup.open) {
+    popup.close();
+  } else {
+    popup.showModal();
+  }
+}
+
+// Close the popup when clicking outside of it
+document.getElementById("popupDialog").addEventListener('click', function(event) {
+  if (event.target === this) {
+     this.close();
+  }
+});

@@ -693,6 +693,89 @@ p span:last-child {
 
 }
 
+.popup{
+    border: none;
+    padding: 0;
+    background-image: url('images/zaynechr.webp');
+    background-size: 120%;
+    background-position: -50% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 600px;
+    border-radius: 5%;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+        to left, 
+        rgba(255,255,255,0) 20%, /* image visible à droite */
+        rgba(255,255,255,1) 70%, /* début du fondu complet */
+        rgba(255,255,255,1) 100% /* complètement opaque à gauche */
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.popup p, .popup blockquote, .popup h3 {
+    position: absolute;
+    text-align: left;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #000;
+    font-size: 1rem;
+}
+
+.zaynepreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: -160%;
+    position: relative;
+}
+
+.zaynepreview:hover img{
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
+.zaynepreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #fff,
+    0 0 15px #00ffff,
+    0 0 30px #0e96e5;
+}
+
+
+.zaynepreview img{
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 52% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.zaynepreview p{
+    margin: 0;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    z-index: 1;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+}
+
 
 
 
