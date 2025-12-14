@@ -317,7 +317,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 
-.romance video{
+.romance iframe{
     width: 15rem ;
     height: 27.75rem;
     margin-top: 2rem;
@@ -331,6 +331,7 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: 20px;
     margin-right: 65px;
     max-width: 100%;
+    border:none;
 }
 
 .romance p{
@@ -357,16 +358,17 @@ the selection will set spacings on the elements in the header*/
     
 }
 
-.fight video{
+.fight .img-1{
     width: 50rem;
     height: 25rem; 
     margin: 1.25rem auto;
     border-bottom-right-radius: 1.5rem;
     border-top-left-radius: 1.5rem;
     max-width: 100%;
+    border: none;
 }
 
-.fight img{
+.fight .img-2{
     width: 1.5rem;
     height: 1.5rem;
     display: block;
@@ -1096,14 +1098,15 @@ footer img{
     }   
 
 
-    .romance video {
-        width: 25rem;
+    .romance iframe {
+        width: 30rem;
         height: 33.25rem;
         display: block;
         margin: 2rem auto;
         border-top-right-radius: 5%;
         border-bottom-left-radius: 5%;
         max-width: 90%;
+        border:none;
     }
 
     .romance p {
@@ -1124,16 +1127,17 @@ footer img{
     }
 
 
-    .fight video {
+    .fight .img-1{
         width: 25rem;
         height: 12.5rem;
         margin: 5% auto;
         border-bottom-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
         max-width: 90%;
+        border: none;
     }
 
-    .fight img {
+    .fight .img-2 {
         width: 1.5rem;
         height: 1.5rem;
         display: block;
@@ -1707,13 +1711,13 @@ the selection will set spacings on the elements in the header*/
 
     /* Position bottom-left */
     .bottom-left {
-        bottom: 5%;
-        left: 0%;
+        bottom: 10%;
+        left: 5%;
         text-align: left;
     }
 
     .bottom-right {
-        bottom: 5%;
+        bottom: 10%;
         right: 5%;
         text-align: right;
     }
