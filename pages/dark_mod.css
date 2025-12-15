@@ -750,7 +750,7 @@ footer img{
 @media (max-width : 450px) {
 
     header {
-    padding: 20px;
+    padding: 2vw;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     opacity: 0.7;
@@ -758,25 +758,32 @@ footer img{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-left: 20vw;
+    padding-right: 10vw;
     background-color: #000000;
-    gap: 5vw;
-    color: white;
+    color: white !important;
+    align-self: center;
+    gap: 2vw;
+    max-width: 100vw;
 
     }
 
     header h1 {
 
         display: contents;
+        color: white;
+        align-self: center;
+        opacity: 100%;
     }
 
     header button{
 
         display: contents;
+        padding-right: 20vw;
+        opacity: 100%;
 
     }
 
-     header button img[src*="menu_icon.png"]{
+    header button img[src*="menu_icon.png"]{
 
         content: url('images/dark_menu_icon.png');
 
@@ -821,7 +828,7 @@ footer img{
     .theme_btns #dark_button button{
 
         border : none ;
-        font-size: 200%;
+        font-size: 180%;
         color: #873174;
     }
 
@@ -846,6 +853,7 @@ footer img{
         position: fixed;
         gap: 20%;
         color: white;
+        opacity: 100%;
 
     }
 
@@ -919,6 +927,8 @@ footer img{
         background-color: #000000;
         top: 0;
         left: 0;
+        color: #873174;
+        opacity: 100%;
 
     }
 
@@ -935,18 +945,18 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: start;
-        background-color: #C1ADC8;
+        background-color: #000000;
 
     }
 
     #mobile_menu ul {
 
-        list-style-type: none;
+        list-style-type: disc;
 
     }
 
     #topButton {
-        display: none; /* Hidden by default */
+       display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
         bottom: 20px; /* Place the button at the bottom of the page */
         right: 30px; /* Place the button 30px from the right */
@@ -972,7 +982,8 @@ footer img{
         font-weight: 400;
         font-size:18px;
         line-height: normal;
-        color: white;
+        color: white !important;
+        background-color: #000000;
     }
 
     /* ========== MENU PAGE ========== */
@@ -1019,115 +1030,137 @@ footer img{
 
 /* creates the frames of 4 images */
 
-.square {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    margin: 50px auto;
-    margin-left: 50px;
-}
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 5%;
+        margin: 0 auto 3rem;
+        max-width: 90%;
+    }
 
 
-/* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
+    /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
 
-.square-img {
-    width: 30rem;  
-    height: 20rem; 
-    object-fit: cover; 
-    align-items: center ;
-    border-top: 2rem solid #ddb3cd;
-    border-bottom: 1.75rem solid #ddb3cd;
-    border-radius: 0.75rem;
-    margin-bottom: 2.5rem;
-    margin-top: 1.5rem;
-    margin-top: 1.5rem;
-    display: block;
-}
+    .square-img {
+            width: 25rem;
+            height: 15rem;
+            object-fit: cover;
+            align-items: center;
+            border-top: 2rem solid #873174;
+            border-bottom: 1.75rem solid #873174;
+            border-radius: 0.75rem;
+            display: block;
+            margin-bottom: 2rem;
+            max-width: 100%;
+        }
+        
+        .news {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
 
-.news {
+    .square h3{
+        display: none;
+    }
 
-  display : flex ;
-  flex-direction : column ;
-  align-items : center ;
-
-}
-
-.square h3{
-    display: none;
-}
-
-.stars {
-    max-height: fit-content;
-    max-width: fit-content;
-}
-
+    .stars {
+        max-height: fit-content;
+        max-width: fit-content;
+    }
 
 
-.aboutwebsite{
-    text-align: center;
-    align-items: center;
-    background-image: url('images/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    filter: brightness(0.9) contrast(1);
-}
 
-.aboutwebsite p{
-    margin-left: center;
-    display: block;
-    line-height: 2;
-    max-width: 80rem;
-    margin-bottom: auto;
+    .aboutwebsite{
+        text-align: center;
+        background-image: url('images/dark_bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        max-width: 100vw;
+    }
 
-}
+    .aboutwebsite h2{
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
 
-.aboutwebsite section{
-    margin-top: 2.5rem;
-}
+    }
 
+    .aboutwebsite p{
+        display: block;
+        line-height: 2;
+        max-width: 80rem;
+        margin-bottom: auto;
 
-.romance video{
-    margin-top: 20px;
-    float: left;
-    margin-left: 0%;
-    margin-right: 10px;
-    width: 300px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    object-fit: cover;
-    margin-bottom: 20px;
-    margin-right: 65px;
-}
+    }   
+
+    .aboutwebsite section{
+        padding-top: 2.5em;
+    }   
 
 
+    .romance iframe {
+        width: 30rem;
+        height: 33.25rem;
+        display: block;
+        margin: 2rem auto;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        max-width: 90%;
+        border:none;
+    }
+
+    .romance p {
+        display: block;
+        margin: 2rem auto;
+        line-height: 2;
+        max-width: 75rem;
+
+    }
+
+    .romance img[src*="love.png"] {
+        content: url('images/coeur_dark.png');
+    }
+
+    .fight img[src*="bataille.png"] {
+        content: url('images/bataille_dark.png');
+        /* ou gardez votre image actuelle */
+    }
   
-.romance img{
-    margin-top: 75px;
-    margin-bottom: 75px;
-    
-}
+    .romance img {
+        margin: 2rem auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 100%;
 
-.fight video{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 15px;
-}
+    }
 
-.fight img{
-    display: block;
-    margin-left: 45%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
-.fight p{
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+    .fight .img-1{
+        width: 25rem;
+        height: 12.5rem;
+        margin: 5% auto;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        max-width: 90%;
+        border: none;
+    }
 
+    .fight .img-2 {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        margin: 1.25rem auto;
+    }
+
+    .fight p {
+        padding: 1.25rem;
+    }
 
     /* ========== ABOUT US PAGE ========== */
 
@@ -1326,7 +1359,7 @@ footer img{
 
     footer {
         padding-top: 36px;
-        background-color:rgba(255, 255, 255, 0.7);
+        background-color:rgb(0, 0, 0);
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -1335,24 +1368,30 @@ footer img{
         position: relative;
         box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
         width: 100%;
+        opacity: 0.7;
     }
 
 
     footer a {
-        color: black;
+
+        color: rgb(255, 255, 255);
         text-decoration: none;
         padding-top: 1%;
         padding-bottom: 1%;
+        opacity: 1;
+        max-width: 80vw;
     }
 
 
     footer a:hover {
-        color: #a791f7;
+        color: #873174;
     }
 
     footer p{
 
         padding-top: 1%;
+        opacity: 1;
+        max-width: 80vw;
     }
 
     footer img{
@@ -1365,11 +1404,13 @@ footer img{
     .questions {
 
         padding-bottom: 2%;
+        opacity: 1;
     }
 
     .faboutus {
 
         padding-bottom: 5%;
+        opacity: 1;
 
     }
 
@@ -1378,7 +1419,7 @@ footer img{
 
 /* ========== TABLET ========== */
 
-@media (max-width : 1024px) {
+@media (min-width : 451px) and  (max-width : 1024px) {
     body, .navbar button {
         margin: 0;
         padding: 0;
