@@ -15,35 +15,65 @@ menu.addEventListener("click", (event) => {
 });
 
 
- function toggleTheme() {
+ // GESTION DU THÈME AVEC PERSISTANCE (Généré par Claude)
 
-  // Select the <link> element
+// Fonction pour charger le thème au chargement de la page
+function loadTheme() {
+  // Récupérer le thème sauvegardé (par défaut 'light_mod.css')
+  const savedTheme = localStorage.getItem('theme') || 'light_mod.css';
+  
+  // Appliquer le thème selon la page
+  let themeLink = document.getElementById('theme'); // Pour pages principales
+  let themeLinkG = document.getElementById('themeG'); // Pour pages de jeux
+  
+  if (themeLink) {
+    themeLink.setAttribute('href', savedTheme);
+  }
+  
+  if (themeLinkG) {
+    // Ajouter '../' pour les pages dans le dossier games
+    themeLinkG.setAttribute('href', '../' + savedTheme);
+  }
+}
+
+// Fonction pour basculer le thème (pages principales)
+function toggleTheme() {
   let theme = document.getElementById('theme');
-  // Toggle between light.css and dark.css
-
+  let newTheme;
+  
   if (theme.getAttribute('href') == 'light_mod.css') {
-  theme.setAttribute('href', 'dark_mod.css');
-
+    newTheme = 'dark_mod.css';
   } else {
-  theme.setAttribute('href', 'light_mod.css');
+    newTheme = 'light_mod.css';
   }
-
+  
+  // Appliquer le nouveau thème
+  theme.setAttribute('href', newTheme);
+  
+  // Sauvegarder dans localStorage
+  localStorage.setItem('theme', newTheme);
 }
-//for games pages, since the path to the css file isn't the same
+
+// Fonction pour basculer le thème (pages de jeux)
 function toggleThemeG() {
-
-  // Select the <link> element
   let theme = document.getElementById('themeG');
-  // Toggle between light.css and dark.css
-
+  let newTheme;
+  
   if (theme.getAttribute('href') == '../light_mod.css') {
-  theme.setAttribute('href', '../dark_mod.css');
-
+    newTheme = 'dark_mod.css';
+    theme.setAttribute('href', '../dark_mod.css');
   } else {
-  theme.setAttribute('href', '../light_mod.css');
+    newTheme = 'light_mod.css';
+    theme.setAttribute('href', '../light_mod.css');
   }
-
+  
+  // Sauvegarder dans localStorage (sans le '../')
+  localStorage.setItem('theme', newTheme);
 }
+
+// Charger le thème au chargement de la page
+window.addEventListener('DOMContentLoaded', loadTheme);
+
 
 // Get the button:
 let mybutton = document.getElementById("topButton");
@@ -106,8 +136,6 @@ buttons.forEach((button) =>{
     cardActive.classList.remove("active");
     cards[newIndex].classList.add("active");
 
-
-    console.log(newIndex) ;
 
   });
 });

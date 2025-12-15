@@ -18,13 +18,16 @@
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  z-index: 1; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   background: none;
+  font-size: 300%;
+  color: #873174;
+  opacity: 1;
 }
 
 #topButton:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  color: #49193f ; 
 }
 
 body, .navbar button {
@@ -74,6 +77,12 @@ header h1{
 
 }
 
+.theme_btns{
+
+    display: none;
+     
+}
+
 /* styling the navigation bar */
 
 .navbar {
@@ -115,19 +124,14 @@ the selection will set spacings on the elements in the header*/
 .navbar #dark_button button{
 
     border : none ;
-    padding-left: 2%;
-    min-height: 20% ;
-    min-width: 20% ;
-    background-color: #873174 ;
-    border-radius: 35%;
-    color: white ;
-
-
+    font-size: 200%;
+    color: #873174;
+    background-color: #000000 ;
 }
 
 .navbar #dark_button button:hover{
 
-    background-color: #a15f93;
+    color: #a15f93;
 
 }
 
@@ -697,7 +701,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index:1;
+    z-index:0;
     position: relative;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     color: white;
@@ -754,14 +758,16 @@ footer img{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-right: 20%;
+    padding-left: 20vw;
+    background-color: #000000;
+    gap: 5vw;
+    color: white;
 
     }
 
     header h1 {
 
         display: contents;
-        color: black;
     }
 
     header button{
@@ -770,10 +776,22 @@ footer img{
 
     }
 
+     header button img[src*="menu_icon.png"]{
+
+        content: url('images/dark_menu_icon.png');
+
+    }
+
+    header button img[src*="../menu_icon.png"]{
+
+        content: url('../images/dark_menu_icon.png');
+
+    }
+
     header button img{
 
-        max-width: 50%;
-        max-height: 50%;
+        min-width: 10vw;
+        max-width: 10vw;
 
     }
 
@@ -783,13 +801,51 @@ footer img{
 
     }
 
+    nav{
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5%;
+
+    }
+
+    .theme_btns{
+
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+         
+    }
+
+    .theme_btns #dark_button button{
+
+        border : none ;
+        font-size: 200%;
+        color: #873174;
+    }
+
+    .theme_btns #dark_button button:hover{
+
+        color: #a15f93; ;
+
+    }
+
+    .theme_btns #light_button{
+
+        display: none;
+
+    }
+
     :modal {
 
-        background: #dddbde;
+        background: #000000;
         display: flex;
         flex-direction: column;
         align-items: center;
         position: fixed;
+        gap: 20%;
+        color: white;
 
     }
 
@@ -816,6 +872,18 @@ footer img{
 
     }
 
+    :modal li img[src*="menu_icon.png"]{
+
+        content: url('images/dark_menu_icon.png');
+
+    }
+
+    :modal li img[src*="../menu_icon.png"]{
+
+        content: url('../images/dark_menu_icon.png');
+
+    }
+
     :modal button{
 
         display: flex;
@@ -837,7 +905,7 @@ footer img{
         font-style: normal;
         font-weight: 400;
         font-size:18px;
-        color: 873174;
+        color: white;
         display: inline;
         
 
@@ -848,6 +916,7 @@ footer img{
 
         border : none;
         position: fixed;
+        background-color: #000000;
         top: 0;
         left: 0;
 
@@ -876,6 +945,23 @@ footer img{
 
     }
 
+    #topButton {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 1; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        background: none;
+        font-size: 300%;
+        color: #873174;
+        opacity: 1;
+    }
+
+#topButton:hover {
+  color: #49193f ; 
+}
+
     /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
     body, .navbar button {
@@ -886,6 +972,7 @@ footer img{
         font-weight: 400;
         font-size:18px;
         line-height: normal;
+        color: white;
     }
 
     /* ========== MENU PAGE ========== */
@@ -1244,7 +1331,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index:1;
+        z-index:0;
         position: relative;
         box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
         width: 100%;
