@@ -695,7 +695,7 @@ p span:last-child {
 
 }
 
-.zaynepopup{
+.zaynePopup{
     border: none;
     padding: 0;
     background-image: url('images/zaynechr.webp');
@@ -709,7 +709,7 @@ p span:last-child {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.zaynepopup::after {
+.zaynePopup::after {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -723,7 +723,7 @@ p span:last-child {
     z-index: 1;
 }
 
-.zaynepopup .zaynedescription{ 
+.zaynePopup .description{ 
     z-index: 2;
     position: absolute;
     font-size: 1rem;
@@ -734,7 +734,7 @@ p span:last-child {
     text-shadow: 0 0 10px #4f7d8452;
 }
 
-.zaynecontent h3{
+.zaynePopup h3{
     font-size:3rem;
     z-index: 2;
     position: absolute;
@@ -750,7 +750,7 @@ p span:last-child {
 
 }
 
-.zaynepopup .zayneprofession{
+.zaynePopup .profession{
     font-size: 1rem;
     font-weight: 700;
     color: #13405a;
@@ -760,7 +760,7 @@ p span:last-child {
     margin-top: 23%;
 }
 
-.zaynequote p{
+.quote p{
     position: absolute;
     z-index: 2;
     color: #000;

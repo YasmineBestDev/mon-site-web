@@ -112,10 +112,12 @@ buttons.forEach((button) =>{
   });
 });
 
+// CHARACTERS
+// ZAYNE
 
-// Script for the popup in the game pages
-function togglePopup() {
-  const popup = document.getElementById("popupDialog");
+// Displays popup in Zayns's bio section
+function zayneTogglePopup() {
+  const popup = document.getElementById("zaynePopupDialog");
   if (popup.open) {
     popup.close();
   } else {
@@ -123,9 +125,11 @@ function togglePopup() {
   }
 }
 
-// Close the popup when clicking outside of it
-document.getElementById("popupDialog").addEventListener('click', function(event) {
+// Closes Zayne's popup when clicking outside of it
+document.getElementById("zaynePopupDialog").addEventListener('click', function(event) {
   if (event.target === this) {
      this.close();
   }
 });
+
+
