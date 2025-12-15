@@ -143,7 +143,7 @@ buttons.forEach((button) =>{
 // CHARACTERS
 // ZAYNE
 
-// Displays popup in Zayns's bio section
+// Displays popup in Zayne's bio section
 function zayneTogglePopup() {
   const popup = document.getElementById("zaynePopupDialog");
   if (popup.open) {
@@ -160,4 +160,78 @@ document.getElementById("zaynePopupDialog").addEventListener('click', function(e
   }
 });
 
+// XAVIER
 
+// Displays popup in Xavier's bio section
+function xavierTogglePopup() {
+  const popup = document.getElementById("xavierPopupDialog");
+  if (popup.open) {
+    popup.close();
+  } else {
+    popup.showModal();
+  }
+}
+
+// Closes Xavier's popup when clicking outside of it
+document.getElementById("xavierPopupDialog").addEventListener('click', function(event) {
+  if (event.target === this) {
+     this.close();
+  }
+});
+
+//RAFAYEL
+
+// Displays popup in Rafayel's bio section
+function rafayelTogglePopup() {
+  const popup = document.getElementById("rafayelPopupDialog");
+  if (popup.open) {
+    popup.close();
+  } else {
+    popup.showModal();
+  }
+}
+
+// Closes Rafayel's popup when clicking outside of it
+document.getElementById("rafayelPopupDialog").addEventListener('click', function(event) {
+  if (event.target === this) {
+     this.close();
+  }
+});
+
+// SYLUS
+
+// Displays popup in Sylus's bio section
+function sylusTogglePopup() {
+  const popup = document.getElementById("sylusPopupDialog");
+  if (popup.open) {
+    popup.close();
+  } else {
+    popup.showModal();
+  }
+}
+
+// Closes Sylus's popup when clicking outside of it
+document.getElementById("sylusPopupDialog").addEventListener('click', function(event) {
+  if (event.target === this) {
+     this.close();
+  }
+});
+
+// CALEB
+
+// Displays popup in Caleb's bio section
+function calebTogglePopup() {
+  const popup = document.getElementById("calebPopupDialog");
+  if (popup.open) {
+    popup.close();
+  } else {
+    popup.showModal();
+  }
+}
+
+// Closes Caleb's popup when clicking outside of it
+document.getElementById("calebPopupDialog").addEventListener('click', function(event) {
+  if (event.target === this) {
+     this.close();
+  }
+});
