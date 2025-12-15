@@ -433,11 +433,10 @@ the selection will set spacings on the elements in the header*/
 
 .whoarewe img{
 
-    max-width: 20%;
-    max-height: 20%;
-    min-width: 20%;
-    min-height: 20%;
-
+    max-width: 27.5%;
+    max-height: 27.5%;
+    min-width: 27.5%;
+    min-height: 27.5%;
 }
 
 .whoarewe section:nth-child(odd){
@@ -454,7 +453,7 @@ the selection will set spacings on the elements in the header*/
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    margin-right: 40%;
+    margin-right: 45%;
     padding-bottom: 5%;
 }
 
