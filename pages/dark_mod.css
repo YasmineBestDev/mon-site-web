@@ -244,6 +244,12 @@ the selection will set spacings on the elements in the header*/
     overflow: hidden;
 }
 
+.banner h2{
+    
+    display: none;
+    
+}
+
 .banner:hover {
     transform: scale(1.02);
 }
@@ -1003,6 +1009,13 @@ footer img{
 
 .banner:hover {
     transform: scale(1.02);
+}
+
+
+.banner h2{
+    
+    display: none;
+    
 }
 
 /* Texte commun à toutes les captions */

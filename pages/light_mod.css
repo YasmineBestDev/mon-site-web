@@ -211,6 +211,11 @@ the selection will set spacings on the elements in the header*/
     overflow: hidden;
 }
 
+.banner h2{
+
+    display: none;
+}
+
 .banner:hover {
     transform: scale(1.02);
 }
@@ -1657,6 +1662,12 @@ footer img{
         transform: scale(1.02);
     }
 
+    .banner h2{
+
+    display: none;
+    
+}
+
 /* Texte commun à toutes les captions */
 .caption {
     color: white;
@@ -3087,16 +3098,6 @@ body,
 
     /* ========== MENU PAGE ========== */
 
-    /* creates the frames of 4 images */
-
-    .square {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        padding: 5%;
-        margin: 0 auto 3rem;
-        max-width: 90%;
-    }
 
     .banner {
         position: relative;
@@ -3112,6 +3113,11 @@ body,
         transform: scale(1.02);
     }
 
+    .banner h2{
+
+        display: none;
+    
+    }
     /* Texte commun à toutes les captions */
     .caption {
         color: white;
