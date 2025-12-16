@@ -636,6 +636,8 @@ p span:last-child {
 
 }
 
+
+
 .carousel ul {
 
     background-color: #C1ADC8;
@@ -686,6 +688,8 @@ p span:last-child {
 
 .card img{
 
+    width: 52rem;
+    height: 27.75rem;
     border-radius: 40px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 

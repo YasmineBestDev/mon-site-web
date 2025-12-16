@@ -365,20 +365,20 @@ the selection will set spacings on the elements in the header*/
 
 
 
-.romance video{
+.romance iframe{
     width: 15rem ;
     height: 27.75rem;
     margin-top: 2rem;
     float: left;
     margin-left: 10rem;
     margin-right: 30rem;
-    width: 300px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
     object-fit: cover;
-    margin-bottom: 20px;
-    margin-right: 65px;
+    margin-bottom: 5%;
+    margin-right: 10%;
     max-width: 100%;
+    border:none;
 }
 
 .romance p{
@@ -414,7 +414,17 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
 }
 
-.fight img{
+.fight .img-1{
+    width: 50rem;
+    height: 25rem; 
+    margin: 1.25rem auto;
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    max-width: 100%;
+    border: none;
+}
+
+.fight .img-2{
     width: 1.5rem;
     height: 1.5rem;
     display: block;
