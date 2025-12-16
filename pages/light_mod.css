@@ -595,8 +595,8 @@ p span:last-child {
 }
 
 .games h2{
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 40px;
     text-align: center;
     background: linear-gradient(90deg, #8059ec, #823490);
@@ -2805,9 +2805,10 @@ footer img{
 
 /* ART SECTION */
 
-.artQuote {
+.art-quote {
     margin-bottom: 5rem;
-    font-size: 1.7rem;
+    text-align: center;
+    font-size: 1.5rem;
     color: #814db1;
 
 }
@@ -2824,28 +2825,777 @@ footer img{
 
 /* GALLERY */
 
-.galleryContainer {
-    display: flex;
-    flex-direction: column;
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
     justify-content: center;
+    gap: 0 4em;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery-container p {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.seeMore {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    justify-items: center;
     gap: 4rem;
 }
 
-.column1, .column2 {
+.hidden {
+    display: none;
+}
+
+#seeMoreBtn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #8a6bd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#seeMoreBtn:hover {
+    background-color: #a791f7;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+/* ========== FOOTER ========== */
+
+footer {
+
+    background-color:rgba(255, 255, 255, 0.7);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
     align-items: center;
+    z-index: 0;
+    position: relative;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+
 }
 
-.column1 img, .column2 img {
 
-    max-width: 80vw;
-    max-height: 45vw;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+footer a {
+    color: black;
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
+
+footer a:hover {
+    color: #a791f7;
+}
+
+footer p{
+
+    padding-top: 1%;
+}
+
+footer img{
+
+    max-height: fit-content;
+    max-width: fit-content;
+
+}
+
+.questions {
+
+    padding-bottom: 2%;
+}
+
+.faboutus {
+
+    padding-bottom: 5%;
+
+}
+    
+}
+
+
+
+    /* ========== MOBILE ========== */
+@media (max-width : 450px) {
+
+    header {
+
+        padding: 5vw;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.7;
+        z-index:1;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap : 2vw;
+        max-width: 100vw;
+        padding-right: 10vw;
+
+    }
+
+    header h1 {
+
+        display: contents;
+        color: black;
+        align-self: center;
+    }
+
+    header button{
+
+        display: contents;
+
+    }
+
+    header button img{
+
+        min-width: 10vw;
+        max-width: 10vw;
+
+    }
+
+    header .navbar {
+
+        display: none;
+
+    }
+
+    nav{
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 5%;
+
+    }
+
+    .theme_btns{
+
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+         
+    }
+
+    .theme_btns #light_button button{
+
+        border : none ;
+        font-size: larger;
+        color: #8a6bd6;
+    }
+
+    .theme_btns #light_button button:hover{
+
+        color: #a791f7 ;
+
+    }
+
+    .theme_btns #dark_button{
+
+        display: none;
+
+    }
+
+    dialog:modal {
+
+        background: #dddbde;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+
+    }
+
+    dialog:modal a{
+
+        text-decoration: none;
+        border : 1px solid #873174 ;
+
+    }
+
+    dialog:modal li {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+    }
+
+    dialog:modal li img {
+
+        max-width: 15%;
+        max-height: 15%;
+
+    }
+
+    dialog:modal button{
+
+        display: flex;
+        align-items: center;
+        border: none;
+        background: none;
+    }
+
+    dialog:modal button img{
+
+        max-width: 20%;
+        max-height: 20%;
+
+    }
+
+    dialog:modal button {
+
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        color: #873174;
+        display: inline;
+        
+
+
+    }
+
+    dialog { 
+
+        border : none;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
+
+    
+
+    #games_dropdown{
+
+        display: none;
+
+    }
+
+    #games_dropdown:target{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        background-color: #C1ADC8;
+
+    }
+
+    #mobile_menu ul {
+
+        list-style-type: none;
+
+    }
+
+    #topButton {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 1; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        background: none;
+        font-size: 300%;
+        color: #8059ec;
+        opacity: 1;
+    }
+
+#topButton:hover {
+  color: #a791f7; /* Add a dark-grey background on hover */
+}
+
+    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
+
+    body, .navbar button {
+        margin: 0;
+        padding: 0;
+        font-family: "Julius Sans One";
+        font-style: normal;
+        font-weight: 400;
+        font-size:18px;
+        line-height: normal;
+    }
+
+    /* ========== MENU PAGE ========== */
+
+    .banner {
+        position: relative;
+        width: 100vw;
+        aspect-ratio: 16 / 9;
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.5s ease;
+        overflow: hidden;
+    }
+
+    .banner:hover {
+        transform: scale(1.02);
+    }
+
+/* Texte commun à toutes les captions */
+.caption {
+    color: white;
+    font-size: 1.5vw;
+    letter-spacing: 0.05rem;
+    text-align: right;
+    background-color: transparent;
+    position: absolute;
+}
+ 
+
+/* Position bottom-left */
+.bottom-left {
+    bottom: 15%;
+    left: 10%;
+    text-align: left;
+}
+
+.bottom-right {
+    bottom: 15%;
+    right: 10%;
+    text-align: right;
+}
+
+/* ========== ABOUT WEBSITE PAGE ========== */
+
+    /* creates the frames of 4 images */
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 5%;
+        margin: 0 auto 3rem;
+        max-width: 90%;
+    }
+
+
+    /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
+
+    .square-img {
+            width: 25rem;
+            height: 15rem;
+            object-fit: cover;
+            align-items: center;
+            border-top: 2rem solid #ddb3cd;
+            border-bottom: 1.75rem solid #ddb3cd;
+            border-radius: 0.75rem;
+            display: block;
+            margin-bottom: 2rem;
+            max-width: 100%;
+        }
+        
+        .news {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+
+    .square h3{
+        display: none;
+    }
+
+    .stars {
+        max-height: fit-content;
+        max-width: fit-content;
+    }
+
+
+
+    .aboutwebsite{
+        text-align: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        max-width: 100vw;
+    }
+
+    .aboutwebsite h2{
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
+
+    }
+
+    .aboutwebsite p{
+        display: block;
+        line-height: 2;
+        max-width: 80rem;
+        margin-bottom: auto;
+
+    }   
+
+    .aboutwebsite section{
+        padding-top: 2.5em;
+    }   
+
+
+    .romance iframe {
+        width: 30rem;
+        height: 33.25rem;
+        display: block;
+        margin: 2rem auto;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        max-width: 90%;
+        border:none;
+    }
+
+    .romance p {
+        display: block;
+        margin: 2rem auto;
+        line-height: 2;
+        max-width: 75rem;
+
+    }
+
+  
+    .romance img {
+        margin: 2rem auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 100%;
+
+    }
+
+
+    .fight .img-1{
+        width: 25rem;
+        height: 12.5rem;
+        margin: 5% auto;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        max-width: 90%;
+        border: none;
+    }
+
+    .fight .img-2 {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        margin: 1.25rem auto;
+    }
+
+    .fight p {
+        padding: 1.25rem;
+    }
+
+    /* ========== ABOUT US PAGE ========== */
+
+
+    /* main */
+    .aboutussection{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        padding-top: 10%;
+        padding-bottom: 20%;
+
+
+    }
+
+    .aboutussection h1{
+
+        justify-self: center;
+        font-size: 30px;
+
+    }
+
+    .aboutussection p{
+
+        max-width: 80%;
+
+    }
+    /* presentation */
+
+    .whoarewe {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .whoarewe h2{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe h3{
+
+        opacity: 0;
+
+    }
+
+    .whoarewe img{
+
+        max-width: 40%;
+        max-height: 40%;
+        min-width: 40%;
+        min-height: 40%;
+
+    }
+
+    .whoarewe section:nth-child(odd){
+
+        display: flex;
+        align-items: center;
+        padding-bottom: 10%;
+
+    }
+
+    .whoarewe section:nth-child(even){
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 15%;
+        padding-bottom: 10%;
+    }
+
+    .thanku{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10%;
+
+    }
+
+
+    /* QUESTION FORM */
+
+
+    .question-form {
+
+        background: #C1ADC8;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        max-width: 70%;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+     
+    }
+
+    .question-form h2 {
+        margin-bottom: 2%;
+        font-weight: 400;
+        color: #333;
+        border-radius: 10px;
+        background-color: #E7D5ED;
+    }
+
+    .question-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+    }
+
+    .question-form label {
+        margin-bottom: 5%;
+        font-weight: bold;
+        color: #555;
+        text-align: left;
+    }
+
+    .question-form .questionfield textarea{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 70%;
+        height: 60%;
+
+    }
+
+    .question-form input,
+    .question-form textarea {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        justify-self: center;
+        resize: none;
+    }
+
+
+    .question-form button {
+        padding: 10px 20px;
+        background-color: #E7D5ED;
+        color: #333;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .question-form button:hover {
+        background-color: #8a6bd6;
+    }
+
+    /* ========== GAMES ========== */
+
+    .games{
+
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+}
+
+.games h1{
+    opacity: 0;
+}
+
+.games span {
+
+    font-size: 40px;
+    background-color: white;
+    padding: 10px 15px;     
+    margin: 0 auto 15px;    
+    line-height: 1.5;
+    width: fit-content;
+    display: block;
+    text-align: center;
+}
+
+.games h2{
+    margin-top: 50px;
+    margin-bottom: 55px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.games p {
+    max-width: 50vw;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.ladsFeatures{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.carousel{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding-right: 10%;
+
+}
+
+.carousel h3{
+
+    display: none;
+
+}
+
+.carousel ul {
+
+    background-color: #C1ADC8;
+    border-radius: 50px;
+    padding: 5%;
+    list-style: none;
+}
+
+.card{
+
+    display: none;
+
+}
+
+.card.active{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card h4{
+
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.card img{
+
+    border-radius: 40px;
+
+}
+
+.cbtn{
+
+    border: none;
+    font-size: 250%;
+    background-color: #ffffff00;
+    cursor: pointer;
+}
+
+.cbtn:hover{
+
+    color: #a791f7;
+
+}
 
     /* ========== FOOTER ========== */
 
