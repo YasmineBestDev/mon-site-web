@@ -1179,7 +1179,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('images/background.png');
+        background-image: url('images/dark_bg.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1266,7 +1266,7 @@ footer img{
 
     .question-form {
 
-        background: #C1ADC8;
+        background: #823490;
         padding: 30px;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1282,7 +1282,7 @@ footer img{
         font-weight: 400;
         color: #333;
         border-radius: 10px;
-        background-color: #E7D5ED;
+        background-color: #CE87BB;
     }
 
     .question-form form {
@@ -1295,7 +1295,7 @@ footer img{
     .question-form label {
         margin-bottom: 5%;
         font-weight: bold;
-        color: #555;
+        color: #fff;
         text-align: left;
     }
 
@@ -1325,7 +1325,7 @@ footer img{
 
     .question-form button {
         padding: 10px 20px;
-        background-color: #E7D5ED;
+        background-color: #CE87BB;
         color: #333;
         border: none;
         border-radius: 20px;
@@ -1334,7 +1334,7 @@ footer img{
     }
 
     .question-form button:hover {
-        background-color: #8a6bd6;
+        background-color: #ffb7ec;
     }
 
     /* ========== GAMES ========== */
