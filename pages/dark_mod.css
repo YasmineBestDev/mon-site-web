@@ -121,7 +121,7 @@ the selection will set spacings on the elements in the header*/
 }
 
 
-.navbar #dark_button button{
+.navbar .dark_button button{
 
     border : none ;
     font-size: 200%;
@@ -129,13 +129,13 @@ the selection will set spacings on the elements in the header*/
     background-color: #000000 ;
 }
 
-.navbar #dark_button button:hover{
+.navbar .dark_button button:hover{
 
     color: #a15f93;
 
 }
 
-.navbar #light_button{
+.navbar .light_button{
 
     display: none;
 
@@ -438,6 +438,7 @@ the selection will set spacings on the elements in the header*/
 .aboutussection p{
 
     max-width: 60%;
+    text-align: center;
 
 }
 /* presentation */
@@ -825,20 +826,20 @@ footer img{
          
     }
 
-    .theme_btns #dark_button button{
+    .theme_btns .dark_button button{
 
         border : none ;
         font-size: 180%;
         color: #873174;
     }
 
-    .theme_btns #dark_button button:hover{
+    .theme_btns .dark_button button:hover{
 
         color: #a15f93; ;
 
     }
 
-    .theme_btns #light_button{
+    .theme_btns .light_button{
 
         display: none;
 
@@ -1005,7 +1006,7 @@ footer img{
 /* Texte commun à toutes les captions */
 .caption {
     color: white;
-    font-size: 1.5vw;
+    font-size: 3vw;
     letter-spacing: 0.5%;
     text-align: right;
     background-color: transparent;
@@ -1193,6 +1194,7 @@ footer img{
     .aboutussection p{
 
         max-width: 80%;
+        text-align: center;
 
     }
     /* presentation */
