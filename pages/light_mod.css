@@ -1348,6 +1348,15 @@ p span:last-child {
 
 }
 
+/* TRAILER SECTION */
+.trailer iframe {
+    width: 80vw;
+    height: 45vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
 /* GALLERY */
 
 .galleryContainer {
@@ -2052,7 +2061,7 @@ footer img{
         align-items: center;
         position: relative;
         width: 80vw;
-        padding-right: 15vw;
+        padding-right: 18vw;
 
     }
     
@@ -2094,13 +2103,13 @@ footer img{
 
         font-weight: 700;
         color:#823490;
-        font-size: 2rem;
+        font-size: 1rem;
         background-color: rgba(255, 255, 255, 0.6);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         padding: 10px 15px;     
         margin: 0rem auto 2.5rem;    
         line-height: 1.5;
-        max-width: min-content;
+        max-width: 20rem;
 
     }
 
@@ -2147,6 +2156,17 @@ footer img{
     );
     pointer-events: none;
     z-index: 1;
+}
+
+.characters{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
 }
 
 .close-btn {
@@ -2778,27 +2798,38 @@ footer img{
 
 }
 
+/*TRAILER SECTION*/
+
+.trailer iframe {
+    width: 80vw;
+    height: 45vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
 /* GALLERY */
 
 .galleryContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 640px);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 4rem;
 }
 
-.column1 img, .column2 img {
-    width: 640px;
-    height: 360px;
-    object-fit: cover;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    box-shadow: 0 0 10px #00000070;
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
 }
 
-.column1 p, .column2 p {
-    color: #402a55;
-    text-shadow: 0 0 5px #5c396da2;
+.column1 img, .column2 img {
+
+    max-width: 80vw;
+    max-height: 45vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 
