@@ -7,12 +7,44 @@
 
 <head>
     
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="iTEy8oEzYwxfvADEq4ThpjeB-ZDiMrm2GHMwV0nH6RU">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GAMERELLA - LOVE AND DEEPSPACE</title>
-    <link rel="icon" type="image/x-icon" href="../images/favicon.png">                            
-    <link id="themeG" rel="stylesheet" href="../light_mod.css">   
-    
+    <meta name="description" content="Make new discoveries in our small collection, where we introduce you to several games we love!">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:url" content="https://gamerella.alwaysdata.net">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gamerella">
+    <meta property="og:description" content="Make new discoveries in our small collection, where we introduce you to several games we love!">
+    <meta property="og:image" content="placeholder.webp">
+    <meta property="og:image:width" content="1050">
+    <meta property="og:image:height" content="450">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="gamerella.alwaysdata.net">
+    <meta property="twitter:url" content="gamerella.alwaysdata.net">
+    <meta name="twitter:title" content="Gamerella">
+    <meta name="twitter:description" content="Make new discoveries in our small collection, where we introduce you to several games we love!">
+    <meta name="twitter:image" content="placeholder.webp">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "LocalBusiness",
+        "name": "Gamerella computer science project",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "413 avenue Gaston Berger",
+            "addressLocality": "Aix-en-Provence",
+            "postalCode": "13100",
+            "addressCountry": "FR"
+        }
+    }
+    </script>
+    <title>GAMERELLA - HOME</title> 
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">                           
+    <link  id="theme" rel="stylesheet" href="light_mod.css">   
+
 </head>
 
 <!-- website body -->
@@ -228,127 +260,51 @@
             <h2>✦ CHARACTERS ✦</h2>
 
             <!-- ABOUT ZAYNE -->
+            <ul class="character_previews">
 
-            <dialog class="zaynePopup" id="zaynePopupDialog">
-
-                    <button class="close-btn" onclick="zayneTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"I've lived in a never-ending winter long enough. If you come closer, then..."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <h3>ZAYNE</h3>
-                    <p class="profession">CARDIAC SURGEON</p>
-                    <p class="profession">CARDIAC SURGEON</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <p class="description">
-                        Zayne can typically be found working at Akso Hospital.
-                        He is known for his cold and strict demeanor as well as his dedication to his work.
-                        He is a highly-awarded Cardiac Surgeon, best known for his research in Congenital Heart Abnormalities in neonates.
-                        As the youngest recipient of the Starcatcher Award and the Linde Award, Zayne has contributed to lowering the prevalence of congenital heart defects in newborns with his discovery that Evol genes affect the mutation rate of cells during heart development.
-                    </p>
-
-            </dialog>
-            <button class="zaynepreview" onclick="zayneTogglePopup()">
-                <img src="../images/zaynechr.webp" alt="zayne preview">
-                <p>ZAYNE</p>
-            </button>
+                <li class="character">
+                    <img src="../images/zaynechr.webp" alt="zayne preview">
+                    <p>ZAYNE</p>
+                </li>
 
             <!-- ABOUT XAVIER -->
 
-            <dialog class="xavierPopup" id="xavierPopupDialog">
-                    <button class="close-btn" onclick="xavierTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"My light only shines over you."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <h3>XAVIER</h3>
-                    <p class="profession">DEEPSPACE HUNTER</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <p class="description">
-                        Recently, many citizens have been talking about a mysterious hunter who rescued them from Wanderers. With his combat prowess, he took down very dangerous Wanderers and disappeared in the blink of an eye, as if pursuing something greater.
-                        We reached out to the witnesses. From their accounts, it seems their mysterious savior is Xavier, a Deepspace Hunter.
-                        Xavier is able to fight monsters called Wanderers with the Player. His Evol type is Light, his primary weapon is a sword, and he often performs light-related sword combo attacks with the Player.
-                    </p>
-
-            </dialog>
-            <button class="xavierpreview" onclick="xavierTogglePopup()">
-                <img src="../images/xavierchr.webp" alt="xavier preview">
-                <p>XAVIER</p>
-            </button>
+                <li  id="xavier">
+                    <img src="../images/xavierchr.webp" alt="xavier preview">
+                    <p>XAVIER</p>
+                </li>
 
             <!-- ABOUT RAFAYEL -->
 
-            <dialog class="rafayelPopup" id="rafayelPopupDialog">
-                    <button class="close-btn" onclick="rafayelTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Do you really think an inferno beneath the waves can't be turbulent ?"</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <h3>RAFAYEL</h3>
-                    <p class="profession">ARTIST</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <p class="description">
-                        As an artist, Rafayel appreciates fine art and beauty.
-                        His art style is like an inferno— passionate and fiery, always leaving a profound impression on people.
-                        Most of his paintings are centered on Lemuria, an ancient civilization conceived in the oceans.
-                        Rafayel is Lemurian, one of the last members of the ancient race, and under specific circumstances has been shown to have scales and a tail.
-                        He lives and paints in Mo Art Studio situated on an island in Whitesand Bay, and hates cats. 
-                    </p>
 
-            </dialog>
-            <button class="rafayelpreview" onclick="rafayelTogglePopup()">
-                <img src="../images/rafayelchr.webp" alt="rafayel preview">
-                <p>RAFAYEL</p>
-            </button>
+                <li class="character">
+
+                    <img src="../images/rafayelchr.webp" alt="rafayel preview">
+                    <p>RAFAYEL</p>
+                
+                </li>
 
             <!-- ABOUT SYLUS -->
 
-            <dialog class="sylusPopup" id="sylusPopupDialog">
-                    <button class="close-btn" onclick="sylusTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Don't you see? This is what your heart truly desires."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <h3>SYLUS</h3>
-                    <p class="profession">ONYCHINUS'S LEADER</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <p class="description">
-                        The leader of Onychinus is said to have built his empire on illegal Evol weapons and Protocore deals.
-                        He's the most influential, dominant figure in the N109 Zone.
-                        Sylus is confident and direct. He rarely perceives anyone as a real threat because he is usually the most powerful person in the room. Even in dangerous situations, he remains calm and self-assured.
-                        Sylus hates being bored and appears to be a bit of a thrill seeker; preferring to use fast motorcycles, jump out of planes, and use explosives to deal with problems on multiple occasions.
-                    </p>
+            
+                <li class="character">
 
-            </dialog>
-            <button class="syluspreview" onclick="sylusTogglePopup()">
-                <img src="../images/syluschr.webp" alt="sylus preview">
-                <p>SYLUS</p>
-            </button>
+                    <img src="../images/syluschr.webp" alt="sylus preview">
+                    <p>SYLUS</p>
 
-            <!-- ABOUT CALEB -->
+                </li>
 
-            <dialog class="calebPopup" id="calebPopupDialog">
-                    <button class="close-btn" onclick="calebTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Gravity starts and ends with you."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <h3>CALEB</h3>
-                    <p class="profession">Farspace Fleet's Colonel</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line">
-                    <p class="description">
-                        Player's childhood friend. He works as a fighter pilot for the Deepspace Aviation Administration.
-                        Ever since he went to Aerospace Academy in Skyhaven, he and player don't often see each other.
-                        While he loves teasing the player, he's actually quite a reliable person who the player trusts.
-                        It is revealed he now works for the Farspace Fleet, serving as its Colonel.
-                        He has more secrets than ever before, which causes a rift between him and the player, but he is still determined to do whatever it takes to protect her.
-                    </p>
+            <!-- ABOUT CALEB -->    
 
-            </dialog>
-            <button class="calebpreview" onclick="calebTogglePopup()">
-                <img src="../images/calebchr.webp" alt="caleb preview">
-                <p>CALEB</p>
-            </button>
+                <li class="character">
+
+                    <img src="../images/calebchr.webp" alt="caleb preview">
+                    <p>CALEB</p>
+
+                </li>
+
+            </ul>
+
         </section>
 
         <section class="trailer">
@@ -393,10 +349,15 @@
             </div>
             <button id="seeMoreBtn">See More</button>
             </section>
-            <section>
+            <section class="social-media">
+
                 <h2>✦ SOCIAL MEDIA ✦</h2>
                 <p>To stay updated with the latest news about Love and Deepspace, follow their official social media accounts :</p>
-                <nav class="social-media">
+
+                <section class="social-media-links">
+
+                    <h3>LOGOS</h3>
+
                     <a href="https://www.instagram.com/loveanddeepspace/" target="_blank">
                         <img src="../images/instagram.svg" alt="Love and Deepspace Instagram" width="56" height="56"/>
                     </a>
@@ -412,7 +373,9 @@
                     <a href="https://loveanddeepspace.infoldgames.com/en-EN/home#0" target="_blank">
                         <img src="../images/love-and-deepspace.avif" alt="Love and Deepspace official website" width="56" height="56"/>
                     </a>
-                </nav>
+
+                </section>
+
             </section>
     </main>
 

@@ -720,7 +720,728 @@ the selection will set spacings on the elements in the header*/
     color: #c451ab;
 
 }
+* COMMON TO ALL CHARACTERS */
 
+.zaynePopup::after, .xavierPopup::after, .rafayelPopup::after, .sylusPopup::after, .calebPopup::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+        to left, 
+        rgba(255,255,255,0) 20%,
+        rgba(255,255,255,1) 75%,
+        rgba(255,255,255,1) 100%
+    );
+    pointer-events: none;
+    z-index: 1;
+}
+
+.close-btn {
+    caret-color: transparent;
+    position: absolute;
+    top: 5%;
+    left: 92%;
+    border: none;
+    border-radius: 20%;
+    width: 5%;
+    height: 7%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.zaynepreview p, .xavierpreview p, .rafayelpreview p, .syluspreview p, .calebpreview p{
+    margin: 0;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    z-index: 1;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+}
+
+.zaynepreview:hover img, .xavierpreview:hover img, .rafayelpreview:hover img, .syluspreview:hover img, .calebpreview:hover img{
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
+/* CLASSES THAT ARE SPECIFIC TO ZAYNE */
+
+.zaynePopup .divider-top{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 11.7%;
+    filter: brightness(0) saturate(100%)
+        invert(32%) sepia(22%)
+        saturate(420%) hue-rotate(170deg);
+}
+
+.zaynePopup .divider-bottom{
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    width: 150px;
+    margin-left: 22.4%;
+    bottom: 47.5%;
+    filter: brightness(0) saturate(100%)
+        invert(32%) sepia(22%)
+        saturate(420%) hue-rotate(170deg);
+}
+
+.zaynePopup{
+    border: none;
+    padding: 0;
+    background-image: url('images/zaynechr.webp');
+    background-size: 120%;
+    background-position: -50% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.zaynePopup .quote p{
+    position: absolute;
+    caret-color: transparent;
+    z-index: 2;
+    color: #000;
+    max-width: 28rem;
+    font-size: 1.3rem;
+    margin-top: 3%;
+    margin-left: 4%;
+    background: linear-gradient(90deg, #b1f5fa, #355775);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.zaynepreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: -0.55%;
+    position: relative;
+}
+
+.zaynePopup h3 {
+    font-size:3rem;
+    caret-color: transparent;
+    z-index: 2;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 16.5%;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #0e96e5,
+    0 0 50px #13405a;
+
+}
+
+.zaynepreview img {
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 52% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.zaynePopup .profession{
+    font-size: 1rem;
+    caret-color: transparent;
+    font-weight: 700;
+    color: #13405a;
+    position: absolute;
+    z-index: 2;
+    margin-left: 21.5%;
+    margin-top: 23%;
+}
+
+.zaynePopup .description{ 
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    max-width: 29rem;
+    margin-top: 30.5%;
+    margin-left: 6%;
+    color: #13405a;
+    text-shadow: 0 0 10px #4f7d8452;
+}
+
+.zaynepreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #fff,
+    0 0 15px #00ffff,
+    0 0 30px #0e96e5;
+}
+
+/* CLASSES THAT ARE SPECIFIC TO XAVIER */
+
+.xavierPopup .divider-top{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 11.7%;
+    filter: brightness(10) saturate(100%)
+        invert(70%) sepia(60%)
+        saturate(300%) hue-rotate(20deg);
+}
+
+.xavierPopup .divider-bottom{
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    width: 150px;
+    margin-left: 22.4%;
+    bottom: 47.5%;
+    filter: brightness(10) saturate(100%)
+        invert(70%) sepia(60%)
+        saturate(300%) hue-rotate(20deg);
+}
+
+.xavierpreview img{
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 65% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.xavierPopup{
+    border: none;
+    padding: 0;
+    background-image: url('images/xavierchr.webp');
+    background-size: 120%;
+    background-position: -50% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.xavierpreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 0%;
+    position: relative;
+}
+
+.xavierPopup .quote p{
+    position: absolute;
+    caret-color: transparent;
+    z-index: 2;
+    color: #000;
+    max-width: 28rem;
+    font-size: 1.9rem;
+    margin-top: 3%;
+    margin-left: 4%;
+    background: linear-gradient(90deg, #e6e47a, #79771a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.xavierPopup h3 {
+    font-size:3rem;
+    caret-color: transparent;
+    z-index: 2;
+    position: absolute;
+    margin-left: 21%;
+    margin-top: 16.5%;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #cccb77,
+    0 0 50px #79771a;
+
+}
+
+.xavierPopup .profession{
+    font-size: 1rem;
+    caret-color: transparent;
+    font-weight: 700;
+    color: #79771a;
+    position: absolute;
+    z-index: 2;
+    margin-left: 21.5%;
+    margin-top: 23%;
+}
+
+.xavierPopup .description{ 
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    max-width: 29rem;
+    margin-top: 31%;
+    margin-left: 6%;
+    color: #8b8a2c;
+    text-shadow: 0 0 10px #70702194;
+}
+
+.xavierpreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #fff,
+    0 0 15px #faf9b1,
+    0 0 30px #ccca43;
+}
+
+/* CLASSES THAT ARE SPECIFIC TO RAFAYEL */
+
+.rafayelPopup .divider-top{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 11.7%;
+    filter: brightness(1.1)
+        invert(45%)
+        sepia(80%)
+        saturate(300%)
+        hue-rotate(300deg);
+}
+
+.rafayelPopup .divider-bottom{
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    width: 150px;
+    margin-left: 22.4%;
+    bottom: 47.5%;
+    filter: brightness(1.1)
+        invert(65%)
+        sepia(35%)
+        saturate(160%)
+        hue-rotate(200deg);
+}
+
+.rafayelpreview img{
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 47% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.rafayelPopup{
+    border: none;
+    padding: 0;
+    background-image: url('images/rafayelchr.webp');
+    background-size: 120%;
+    background-position: -80% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rafayelpreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 0%;
+    position: relative;
+}
+
+.rafayelPopup .quote p{
+    position: absolute;
+    caret-color: transparent;
+    z-index: 2;
+    color: #000;
+    max-width: 30rem;
+    font-size: 1.4rem;
+    margin-top: 5%;
+    margin-left: 2%;
+    background: linear-gradient(90deg, #e96990, #225a8f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.rafayelPopup h3 {
+    font-size:3rem;
+    caret-color: transparent;
+    z-index: 2;
+    position: absolute;
+    margin-left: 19.5%;
+    margin-top: 16.5%;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #f19faa,
+    0 0 50px #8d333f;
+
+}
+
+.rafayelPopup .profession{
+    font-size: 1rem;
+    caret-color: transparent;
+    font-weight: 700;
+    color: #a0687f;
+    position: absolute;
+    z-index: 2;
+    margin-left: 27.2%;
+    margin-top: 23%;
+}
+
+.rafayelPopup .description{ 
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    max-width: 29rem;
+    margin-top: 31.5%;
+    margin-left: 6%;
+    color: #4b678b;
+    text-shadow: 0 0 10px #39429291;
+}
+
+.rafayelpreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #8d333f,
+    0 0 15px #e0526a,
+    0 0 30px #e0526a;
+}
+
+/* CLASSES THAT ARE SPECIFIC TO SYLUS */
+
+.sylusPopup .divider-top{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 11.7%;
+    filter: brightness(1.1)
+        invert(20%)
+        sepia(100%)
+        saturate(500%)
+        hue-rotate(300deg);
+}
+
+.sylusPopup .divider-bottom{
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    width: 150px;
+    margin-left: 22.4%;
+    bottom: 47.5%;
+    filter: brightness(1.1)
+        invert(20%)
+        sepia(100%)
+        saturate(500%)
+        hue-rotate(300deg);
+}
+
+.syluspreview img{
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 52% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.sylusPopup{
+    border: none;
+    padding: 0;
+    background-image: url('images/syluschr.webp');
+    background-size: 120%;
+    background-position: -80% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.syluspreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 0%;
+    position: relative;
+}
+
+.sylusPopup .quote p{
+    position: absolute;
+    caret-color: transparent;
+    z-index: 2;
+    color: #000;
+    max-width: 30rem;
+    font-size: 1.4rem;
+    margin-top: 5%;
+    margin-left: 2%;
+    background: linear-gradient(90deg, #ff6c6c, #7c1111);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sylusPopup h3 {
+    font-size:3rem;
+    caret-color: transparent;
+    z-index: 2;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 16.5%;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    text-shadow:
+    0 0 10px #ffffff,
+    0 0 20px #bb707a,
+    0 0 50px #d30c27;
+
+}
+
+.sylusPopup .profession{
+    font-size: 1rem;
+    caret-color: transparent;
+    font-weight: 700;
+    color: #a0687f;
+    position: absolute;
+    z-index: 2;
+    margin-left: 20.5%;
+    margin-top: 23%;
+}
+
+.sylusPopup .description{ 
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    max-width: 31rem;
+    margin-top: 31%;
+    margin-left: 6%;
+    color: #830a0a;
+    text-shadow: 0 0 10px #75020291;
+}
+
+.syluspreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #ffffff,
+    0 0 15px #e0526a,
+    0 0 30px #e0526a;
+}
+
+/* CLASSES THAT ARE SPECIFIC TO CALEB */
+
+.calebPopup .divider-top{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    margin-left: 25%;
+    margin-top: 11.7%;
+}
+
+.calebPopup .divider-bottom{
+    position: absolute;
+    transform: rotate(180deg);
+    z-index: 2;
+    width: 150px;
+    margin-left: 22.4%;
+    bottom: 47.5%;
+}
+
+.calebpreview img{
+    width: 250px;   
+    height: 600px;  
+    object-fit: cover; 
+    object-position: 59% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+
+}
+
+.calebPopup{
+    border: none;
+    padding: 0;
+    background-image: url('images/calebchr.webp');
+    background-size: 120%;
+    background-position: -80% 40%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 650px;
+    border-radius: 5%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.calebpreview{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 0%;
+    position: relative;
+}
+
+.calebPopup .quote p{
+    position: absolute;
+    caret-color: transparent;
+    z-index: 2;
+    color: #000;
+    max-width: 30rem;
+    font-size: 1.9rem;
+    margin-top: 3.5%;
+    margin-left: 2%;
+    background: linear-gradient(90deg, #ece5e5, #3b3b3b);
+
+}
+
+.calebPopup h3 {
+    font-size:3rem;
+    caret-color: transparent;
+    z-index: 2;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 16.5%;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+    text-shadow:
+    0 0 10px #fff,
+    0 0 20px #d1caca,
+    0 0 50px #3b3b3b;
+
+}
+
+.calebPopup .profession{
+    font-size: 1rem;
+    caret-color: transparent;
+    font-weight: 700;
+    color: #3b3b3b;
+    position: absolute;
+    z-index: 2;
+    margin-left: 20.5%;
+    margin-top: 23%;
+}
+
+.calebPopup .description{ 
+    z-index: 2;
+    position: absolute;
+    font-size: 1rem;
+    max-width: 29rem;
+    margin-top: 31%;
+    margin-left: 6%;
+    color: #3b3b3b;
+    text-shadow: 0 0 10px #3b3b3b;
+}
+
+.calebpreview:hover p{
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow:
+    0 0 10px #ffffff,
+    0 0 15px #d1caca,
+    0 0 30px #3b3b3b;
+}
+
+/* ART SECTION */
+
+.artQuote {
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+    color: #814db1;
+
+}
+
+/* TRAILER SECTION */
+.trailer iframe {
+    width: 80vw;
+    height: 45vw;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5rem;
+}
+
+
+/* GALLERY */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    justify-content: center;
+    gap: 0 4em;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery-container p {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.seeMore {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    justify-items: center;
+    gap: 4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#seeMoreBtn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #823490;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#seeMoreBtn:hover {
+    background-color: #df5af7;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media-links{
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-links a {
+    margin: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.social-media-links h3 {
+ 
+    display: none;
+}
 /* ========== FOOTER ========== */
 
 footer {
@@ -2189,26 +2910,79 @@ footer img{
 
 /* GALLERY */
 
-.galleryContainer {
+.gallery-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.column1, .column2 {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
     align-items: center;
+    margin-bottom: 4rem;
+    gap: 0 4em;
 }
 
-.column1 img, .column2 img {
-
+.gallery-container img {
     max-width: 80vw;
     max-height: 45vw;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.gallery-container p {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.seeMore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#seeMoreBtn {
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #823490;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#seeMoreBtn:hover {
+    background-color: #df5af7;
+}
+
+/* SOCIAL MEDIA */
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.social-media-links{
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.social-media-links a {
+    max-width: 20vw;
+}
+
+.social-media-links h3 {
+ 
+    display: none;
 }
 
     /* ========== FOOTER ========== */
