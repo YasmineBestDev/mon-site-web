@@ -2153,34 +2153,28 @@ body,
         font-family: "Julius Sans One";
         font-style: normal;
         font-weight: 200;
-        font-size: 12px;
         line-height: normal;
+        font-size: 15px;
     }
 
     /* styling go to the top of page button */
 
     #topButton {
         display: none;
-        /* Hidden by default */
         position: fixed;
-        /* Fixed/sticky position */
-        bottom: 10px;
-        /* Place the button at the bottom of the page */
-        right: 10px;
-        /* Place the button 30px from the right */
+        bottom: 10%;
+        right: 2%;
+        font-size: 200%;
         z-index: 99;
-        /* Make sure it does not overlap */
         border: none;
-        /* Remove borders */
         background: none;
+        color: #8059ec;
+        opacity: 1;
     }
 
     #topButton:hover {
-        background-color: #555;
-        /* Add a dark-grey background on hover */
+        color: #a791f7;
     }
-
-    /* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
 
     main {
         width: 100%;
@@ -2188,11 +2182,11 @@ body,
         padding-bottom: 0%;
         display: flex;
         flex-direction: column;
-        /* important */
         justify-content: center;
         align-items: center;
         min-height: calc(100vh - 200px);
         overflow: hidden;
+        
     }
 
     /* ========== HEADER ========== */
@@ -2208,11 +2202,17 @@ body,
 
     header h1 {
 
-        display: none;
+        display: none ;
 
     }
 
-    #menu_icon {
+    .theme_btns{
+
+        display: none;
+         
+    }
+
+    #menu_icon{
 
         display: none;
 
@@ -2224,52 +2224,51 @@ body,
         list-style-type: none;
         display: flex;
         align-items: center;
-        gap: 2.5%;
+        gap: 3%;
     }
 
     /* removing the underlines of the links in .navbar and setting the text color to black */
 
     .navbar a {
-        color: black;
+        color: black;       
         text-decoration: none;
     }
 
     /* styles the links in the class .navbar so they change colors when hovering over them */
 
-    .navbar a:hover {
+    .navbar a:hover{
         color: #a791f7;
     }
 
-    /* .navbar > li:first-child selects only the li elements that are the direct children of .navbar and are the first child.
-different from navbar li:first-child that selects any li that is the first child of its parent, anywhere inside .navbar
-the selection will set spacings on the elements in the header*/
-
-    .navbar>li:first-child {
+    .navbar > li:first-child {                              
         margin-right: auto;
         margin-left: 2%;
     }
 
-    .navbar #light_button button {
+    .navbar #light_button button{
 
-        border: none;
-        padding: 2%;
+        border : none ;
+        padding: 4%;
         min-height: 15%;
         min-width: 15%;
-        background-color: #a791f7;
         border-radius: 15%;
-
-
-    }
-
-    .navbar #light_button button:hover {
-
-        background-color: #d7cdff;
+        background-color: #64558a;
+        color: #ffffff;
+        font-size: 200%;
 
     }
 
-    .navbar #dark_button {
+    .navbar #light_button button:hover{
+
+        background-color: #d7cdff ;
+        font-size: 200%;
+
+    }
+
+    .navbar #dark_button{
 
         display: none;
+        font-size: 200%;
 
     }
 
@@ -2280,11 +2279,10 @@ the selection will set spacings on the elements in the header*/
         border: none;
         cursor: pointer;
         background: none;
-        font-size: 12px;
     }
 
     .dropdown button:hover {
-        color: #a791f7;
+        color:#a791f7;
     }
 
     /* styling the dropdown frame, adding display: none; so the dropdown will only be visible when hovering over games */
@@ -2292,13 +2290,12 @@ the selection will set spacings on the elements in the header*/
     .dropdown ul {
         position: absolute;
         display: none;
-        background-color: rgb(255, 255, 255);
-        width: 218px;
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        z-index: 1;
-        font-size: 12px;
+        background-color:rgb(255, 255, 255);
+        width: max-content;
+        padding:0;
+        margin:0;
+        list-style:none;
+        z-index:1;
     }
 
     .dropdown:hover ul {
@@ -2308,15 +2305,15 @@ the selection will set spacings on the elements in the header*/
     /* styling the elements inside of the dropdown */
 
     .dropdown a {
-        padding: 2% 2%;
-        margin: 0px;
-        display: block;
+        padding:2% 2%;
+        margin:0px;
+        display:block;
         white-space: nowrap;
         transition: background-color 0.2s ease, color 0.2s ease;
     }
 
     .dropdown a:hover {
-        color: #ffffff;
+        color:#ffffff;
         background-color: #a791f7;
     }
 
@@ -2324,7 +2321,7 @@ the selection will set spacings on the elements in the header*/
     /* adding padding to the first element of the dropdown for more clarity */
 
     .dropdown li:first-child {
-        padding-top: 5%;
+      padding-top: 5%;
     }
 
     /* adding a tiny animation that occurs when loading the page */
@@ -2337,6 +2334,17 @@ the selection will set spacings on the elements in the header*/
     }
 
     /* ========== MENU PAGE ========== */
+
+    /* creates the frames of 4 images */
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 5%;
+        margin: 0 auto 3rem;
+        max-width: 90%;
+    }
 
     .banner {
         position: relative;
@@ -2361,7 +2369,7 @@ the selection will set spacings on the elements in the header*/
         background-color: transparent;
         position: absolute;
     }
-
+     
 
     /* Position bottom-left */
     .bottom-left {
@@ -2376,5 +2384,164 @@ the selection will set spacings on the elements in the header*/
         text-align: right;
     }
 
-    
+
+    /* ========== ABOUT WEBSITE PAGE ========== */
+
+    /* creates the frames of 4 images */
+
+    .square-img {
+            width: 32.25rem;
+            height: 19.25rem;
+            object-fit: cover;
+            align-items: center;
+            border-top: 2rem solid #ddb3cd;
+            border-bottom: 1.75rem solid #ddb3cd;
+            border-radius: 0.75rem;
+            display: block;
+            margin-bottom: 2rem;
+            max-width: 100%;
+        }
+        
+        .news {
+        
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+        }
+
+    .square h3{
+        display: none;
+    }
+
+    .stars {
+        max-height: fit-content;
+        max-width: fit-content;
+    }
+
+
+
+    .aboutwebsite{
+        text-align: center;
+        background-image: url('images/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        filter: brightness(0.9) contrast(1);
+        max-width: 100vw;
+    }
+
+    .aboutwebsite h2{
+        margin-top: 5rem;
+        margin-bottom: 3.125rem;
+
+    }
+
+    .aboutwebsite p{
+        display: block;
+        line-height: 2;
+        max-width: 50rem;
+        padding: 5%;
+        margin-bottom: auto;
+
+    }   
+
+    .aboutwebsite section{
+        padding-top: 2.5em;
+    }   
+
+
+    .romance iframe {
+        width: 27rem;
+        height: 44rem;
+        display: block;
+        margin: 2rem auto;
+        border-top-right-radius: 5%;
+        border-bottom-left-radius: 5%;
+        max-width: 90%;
+        border:none;
+    }
+
+    .romance p {
+        display: block;
+        margin: 2rem auto;
+        line-height: 2;
+        max-width: 75rem;
+
+    }
+
+  
+    .romance img {
+        margin: 2rem auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        max-width: 100%;
+
+    }
+
+
+    .fight .img-1{
+        width: 32.25rem;
+        height: 20rem;
+        margin: 5% auto;
+        border-bottom-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+        max-width: 90%;
+        border: none;
+    }
+
+    .fight .img-2 {
+        width: 1.5rem;
+        height: 1.5rem;
+        display: block;
+        margin: 1.25rem auto;
+    }
+
+    .fight p {
+        padding: 1.25rem;
+    }
+
+
+
+    /* ========== FOOTER ========== */
+
+    footer {
+
+        background-color: rgba(255, 255, 255, 0.7);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 0;
+        position: relative;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+
+    footer a {
+        color: black;
+        text-decoration: none;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+
+    footer a:hover {
+        color: #a791f7;
+    }
+
+    footer p {
+
+        padding-top: 1%;
+    }
+
+    footer img {
+
+        max-height: fit-content;
+        max-width: fit-content;
+
+    }
+
 }
