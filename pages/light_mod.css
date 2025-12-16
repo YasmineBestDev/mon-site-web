@@ -1293,8 +1293,7 @@ p span:last-child {
     margin-top: 3.5%;
     margin-left: 2%;
     background: linear-gradient(90deg, #ece5e5, #3b3b3b);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+
 }
 
 .calebPopup h3 {
