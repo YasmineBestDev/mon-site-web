@@ -42,7 +42,7 @@
     }
     </script>
     <title>GAMERELLA - HOME</title> 
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">                           
+    <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">                           
     <link  id="themeG" rel="stylesheet" href="../light_mod.css">   
 
 </head>
@@ -66,25 +66,25 @@
         
         <nav>
             
-            <button id="menu_icon" type="button"><img src="../images/menu_icon.png" alt=""></button>
+            <button id="menu_icon" type="button"><img src="../images/icons/menu_icon.png" alt=""></button>
 
                 <dialog id="mobile_menu">
 
                     <ul>
 
-                        <li><img src="../images/menu_icon.png" alt=""><a href="../index.html">HOME</a></li>
-                        <li><img src="../images/menu_icon.png" alt=""><a href="../aboutwebsite.html">ABOUT WEBSITE</a>
-                        <li><img src="../images/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
+                        <li><img src="../images/icons/menu_icon.png" alt=""><a href="../index.html">HOME</a></li>
+                        <li><img src="../images/icons/menu_icon.png" alt=""><a href="../aboutwebsite.html">ABOUT WEBSITE</a>
+                        <li><img src="../images/icons/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
                         <li>    
                             <ul id="games_dropdown">
-                                    <li><a href="games/LoveandDeepspace.html">Love and Deepspace</a></li>
-                                    <li><a href="games/GuildWars2.html">Guild Wars 2</a></li>
-                                    <li><a href="games/Undertale.html">Undertale</a></li>
-                                    <li><a href="games/ClashRoyale.html">Clash Royale</a></li>
+                                    <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
+                                    <li><a href="GuildWars2.html">Guild Wars 2</a></li>
+                                    <li><a href="Undertale.html">Undertale</a></li>
+                                    <li><a href="ClashRoyale.html">Clash Royale</a></li>
                             </ul>
                              
                         </li> 
-                        <li><img src="../images/menu_icon.png" alt=""><a href="../aboutus.html">ABOUT US</a></li>
+                        <li><img src="../images/icons/menu_icon.png" alt=""><a href="../aboutus.html">ABOUT US</a></li>
 
                     </ul>
 
@@ -111,7 +111,7 @@
 
         </nav>
 
-        <button onclick="topFunction()" id="topButton" title="Go to top">⮝</button>
+        <button onclick="topFunction()" id="topButton" title="Go to top">⤒</button>
 
     </header>
 
@@ -120,13 +120,13 @@
 
     <main class="games">
         
-        <h1>CITATION GUILD WARS 2</h1>
+        <h1 headingoffset='1'>CITATION GUILD WARS 2</h1>
         
         <p>I can outrun a centaur</p>
         
-        <img src="../images/stars.png" alt="étoiles">
+        <img src="../images/icons/stars.png" alt="étoiles">
         
-        <section>
+        <section class="game_description">
             <h2>✦ GUILD WARS 2 ✦</h2>
 
             <p>
@@ -143,7 +143,7 @@
 
         </section>
 
-        <section>
+        <section class="game_features">
 
             <h2>✦ GUILD WARS 2 FEATURES ✦</h2>
 
@@ -151,7 +151,7 @@
 
                 <h3>CAROUSEL</h3>
 
-                <button class="cbtn" id="prev">⮜⬩</button>                
+                <button class="cbtn" id="prev">⤟</button>                
 
                 <ul>
 
@@ -161,7 +161,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/ladscustomization.webp" alt="Lads Customization">
+                            <img src="../images/gw2/fight_gw2.webp" alt="GW2 combat">
                         </picture>
 
                         <p>Choose between eight professions and experience fast-paced combat.</p>
@@ -173,7 +173,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/ladsfight.webp" alt="Lads Fight">
+                            <img src="../images/gw2/mounts_gw2.webp" alt="GW2 mounts">
                         </picture>
 
                         <p>Unlock different mounts that makes traveling a whole new experience.</p>
@@ -185,10 +185,10 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/kittycardsFINAL.webp" alt="Lads minigames">
+                            <img src="../images/gw2/story_gw2.webp" alt="gw2 story">
                         </picture>
                         
-                        <p>Experiment a story packed with emotions and in which your choices have significant consequences.</p>
+                        <p>Experiment a story packed with emotions.</p>
 
                     </li>
 
@@ -198,7 +198,7 @@
                         
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/photoboothFINAL.webp" alt="Lads photobooth">
+                            <img src="../images/gw2/persistent_world_gw2.webp" alt="GW2 persistent world">
                         </picture>
                         
                         <p>Play in a world that evolves even when you are not watching.</p>
@@ -207,7 +207,7 @@
 
                 </ul>
                 
-                <button class="cbtn" id="next">⬩⮞</button>
+                <button class="cbtn" id="next">⤠</button>
 
             </section>
 
@@ -215,22 +215,134 @@
 
         <section>
             <h2>✦ GUILD WARS 2 CHARACTERS ✦</h2>
-        </section>
 
-        <section>
-            <h2>✦ GUILD WARS 2 TRAILERS ✦</h2>
+            <ul class="character_previews">
+
+                <li class="character">
+                    <img src="../images/gw2/asura_preview.webp" alt="asura preview">
+                    <p>AZURA</p>
+                </li>
+
+            <!-- CHARR -->
+
+                <li  class="character">
+                    <img src="../images/gw2/char_preview.webp" alt="charr preview">
+                    <p>CHARR</p>
+                </li>
+
+            <!-- HUMAN -->
+
+
+                <li class="character">
+
+                    <img src="../images/gw2/human_preview.webp" alt="human preview">
+                    <p>HUMAN</p>
+                
+                </li>
+
+            <!-- SYLVARI -->
+
+            
+                <li class="character" id="sylvari">
+
+                    <img src="../images/gw2/sylvari_preview.webp" alt="sylvari preview">
+                    <p>SYLVARI</p>
+
+                </li>
+
+            <!-- NORN -->    
+
+                <li class="character" id="norn">
+
+                    <img src="../images/gw2/norn_preview.webp" alt="norn preview">
+                    <p>NORN</p>
+
+                </li>
+
+            </ul>
+
+        </section>
+x
+       <section class="trailer">
+            
+            <h2>✦ A TRAILER ✦</h2>
+
+            <iframe src="https://www.youtube-nocookie.com/embed/c5L5x7aIEw4?si=6_K2mS3A6n9ey9j9" 
+            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
         </section>
 
         <section>
             <h2>✦ GUILD WARS 2 GALLERY ✦</h2>
+
+            <blockquote class="art-quote">"ART SPEAKS WHEN WORDS ARE UNABLE TO EXPLAIN."</blockquote>
+
+            <div class="gallery-container">
+
+                <div>
+                    <img src="../images/gw2/gallery_item_1.webp" alt="gw2 artwork">
+                   
+                </div>
+                <div>
+                    <img src="../images/gw2/gallery_item_2.webp" alt="gw2 artwork">
+                
+                </div>
+
+        <!-- HIDDEN PICTURES -->
+
+                <div class="seeMore hidden">
+
+                    <div>
+                        <img src="../images/gw2/gallery_item_3.webp" alt="gw2 artwork">
+                       
+                        <img src="../images/gw2/gallery_item_4.webp" alt="gw2 artwork">
+                       
+                    </div>
+                    
+                    <div>
+                        <img src="../images/gw2/gallery_item_5.webp" alt="gw2 artwork">
+                       
+                        <img src="../images/gw2/gallery_item_6.webp" alt="gw2 artwork">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button id="seeMoreBtn">See More</button>
+
         </section>
 
-        <section>
-            <h2>✦ GUILD WARS 2 SOUNDTRACKS ✦</h2>
-        </section>
-
-        <section>
+        <section class="social-media">
+            
             <h2>✦ GUILD WARS 2 SOCIAL MEDIA ✦</h2>
+
+            <p>To stay updated with the latest news about GuildWars2, follow their official social media accounts :</p>
+
+                <section class="social-media-links">
+
+                    <h3>LOGOS</h3>
+
+                    <a href="https://www.instagram.com/guildwars2/" target="_blank">
+                        <img src="../images/icons/instagram.svg" alt="GuildWars2 Instagram" width="56" height="56">
+                    </a>
+                    <a href="https://www.youtube.com/guildwars2" target="_blank">
+                        <img src="../images/icons/youtube.svg" alt="GuildWars2 Youtube" width="56" height="56">
+                    </a>
+                    <a href="https://x.com/guildwars2" target="_blank">
+                        <img src="../images/icons/x.svg" alt="GuildWars2 X" width="56" height="56">
+                    </a>
+                    <a href="https://discord.gg/guildwars2" target="_blank">
+                        <img src="../images/icons/discord.svg" alt="GuildWars2 Discord" width="56" height="56">
+                    </a>
+                    <a href="https://www.guildwars2.com/en/" target="_blank">
+                        <img src="../images/icons/GW2Logo.webp" alt="GuildWars2 official website" width="56" height="56">
+                    </a>
+
+                </section>
+
         </section>
 
     </main>
@@ -239,7 +351,7 @@
 
     <footer>
         <a href="Undertale.html">DISCOVER MORE GAMES</a>
-        <img src="../images/stars.png" alt="separateur">
+        <img src="../images/icons/stars.png" alt="separateur">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
         <p class="questions">
             Any question or review you wish to write to help us improve our website ?<br>
@@ -247,5 +359,6 @@
         </p>
     </footer>
     <script src="../script.js"></script>
+
 </body>
 </html>
