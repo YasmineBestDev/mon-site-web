@@ -862,7 +862,7 @@ the selection will set spacings on the elements in the header*/
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: grid;
     grid-template-columns: repeat(2, 640px);
     justify-items: center;
@@ -873,7 +873,7 @@ the selection will set spacings on the elements in the header*/
     display: none;
 }
 
-#seeMoreBtn {
+#see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: block;
@@ -888,7 +888,7 @@ the selection will set spacings on the elements in the header*/
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -908,6 +908,11 @@ the selection will set spacings on the elements in the header*/
 .social-media-links h3 {
  
     display: none;
+}
+
+.social-media-links a img {
+    max-width: 4vw;
+    max-height: 4vw;
 }
 /* ========== FOOTER ========== */
 
@@ -1875,7 +1880,7 @@ footer img{
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1886,8 +1891,7 @@ footer img{
     display: none;
 }
 
-#seeMoreBtn {
-
+#see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: block;
@@ -1902,7 +1906,7 @@ footer img{
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -1923,6 +1927,13 @@ footer img{
 
 .social-media-links a {
     max-width: 20vw;
+}
+
+.social-media-links a img {
+
+    max-width: 10vw;
+    max-height: 10vw;
+
 }
 
 .social-media-links h3 {
@@ -2856,7 +2867,7 @@ footer img{
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2867,7 +2878,7 @@ footer img{
     display: none;
 }
 
-#seeMoreBtn {
+#see_more_btn {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -2883,7 +2894,7 @@ footer img{
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -2909,6 +2920,10 @@ footer img{
 .social-media-links h3 {
  
     display: none;
+}
+.social-media-links a img {
+    max-width: 10vw;
+    max-height: 10vw;
 }
 
     /* ========== FOOTER ========== */
