@@ -520,12 +520,12 @@ the selection will set spacings on the elements in the header*/
 .question-form .questionfield textarea{
     
     text-align: center;
-    width: 70%;
+    width: 60%;
     height: 60%;
-    max-width: 70%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 2vw;
+    max-width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 5%;
 
 }
 
@@ -1358,6 +1358,7 @@ footer img{
         max-width: 70%;
         padding-left: 15%;
         padding-right: 15%;
+        margin-top: 5%;
         
     }
     .question-form input,
@@ -1438,7 +1439,9 @@ footer img{
         -webkit-text-fill-color: transparent;
     }
     .games p {
-        max-width: 70vw;
+        max-width: 90vw;
+        padding-left: 5vw;
+        padding: 5vw;
         text-align: center;
         font-size: 17px;
         line-height: 1.6;
@@ -2418,6 +2421,7 @@ body,.navbar button {
         max-width: 70%;
         padding-left: 15%;
         padding-right: 15%;
+        margin-top: 5%;
     }
     .question-form input,
     .question-form textarea {
