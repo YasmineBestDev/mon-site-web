@@ -519,12 +519,12 @@ the selection will set spacings on the elements in the header*/
 
 .question-form .questionfield textarea{
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    width: 27vw;
-    height: 15vw;
+    width: 70%;
+    height: 60%;
+    max-width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-top: 2vw;
 
 }
@@ -1351,12 +1351,14 @@ footer img{
         text-align: left;
     }
     .question-form .questionfield textarea{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+
         text-align: center;
         width: 70%;
         height: 60%;
+        max-width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+        
     }
     .question-form input,
     .question-form textarea {
@@ -2410,12 +2412,12 @@ body,.navbar button {
         text-align: left;
     }
     .question-form .questionfield textarea{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
         width: 70%;
         height: 60%;
+        max-width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     .question-form input,
     .question-form textarea {

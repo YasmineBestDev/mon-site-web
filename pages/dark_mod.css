@@ -544,9 +544,6 @@ the selection will set spacings on the elements in the header*/
 }
 .question-form .questionfield textarea{
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 400px;
     height: 300px;
@@ -1491,9 +1488,6 @@ footer img{
 
     .question-form .questionfield textarea{
         
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
         width: 70%;
         height: 60%;
@@ -2185,8 +2179,24 @@ footer img{
         position: relative;
         transition: 0.3s;
     }
-
-    /* Texte commun à toutes les captions */
+/* ========== MENU PAGE ========== */
+/* styling the banners in the menu page */
+    .banner {
+        position: relative;
+        width: 100vw;
+        aspect-ratio: 16 / 9;
+        background-size: cover;
+        background-position: center;
+        transition: transform 1.5s ease;
+        overflow: hidden;
+    }
+    .banner:hover {
+        transform: scale(1.02);
+    }
+    .banner h2{
+        display: none;
+    }
+    /*Text shared between every caption*/
     .caption {
         color: white;
         font-size: 1.5vw;
@@ -2195,20 +2205,18 @@ footer img{
         background-color: transparent;
         position: absolute;
     }
-     
-
     /* Position bottom-left */
     .bottom-left {
         bottom: 10%;
         left: 5%;
         text-align: left;
     }
-
     .bottom-right {
         bottom: 10%;
         right: 5%;
         text-align: right;
     }
+     
 
 
     /* ========== ABOUT WEBSITE PAGE ========== */
@@ -2478,12 +2486,12 @@ footer img{
 
     .question-form .questionfield textarea{
         
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         text-align: center;
         width: 70%;
         height: 60%;
+        max-width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
 
     }
 
