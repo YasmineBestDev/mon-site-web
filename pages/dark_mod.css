@@ -10,22 +10,22 @@
 /*Permet de changer l'image selon le mode*/
 
 .romance img[src*="love.png"] {
-    content: url('images/coeur_dark.png');
+    content: url('images/icons/coeur_dark.png');
 }
 
 .fight img[src*="bataille.png"] {
-    content: url('images/bataille_dark.png');
+    content: url('images/icons/bataille_dark.png');
 }
 
 header button img[src*="menu_icon.png"]{
 
-    content: url('images/dark_menu_icon.png');
+    content: url('images/icons/dark_menu_icon.png');
 
 }
 
 header button img[src*="../menu_icon.png"]{
 
-    content: url('../images/dark_menu_icon.png');
+    content: url('../images/icons/dark_menu_icon.png');
 
 }
 
@@ -1088,18 +1088,6 @@ footer img{
 
     }
 
-    :modal li img[src*="menu_icon.png"]{
-
-        content: url('images/dark_menu_icon.png');
-
-    }
-
-    :modal li img[src*="../menu_icon.png"]{
-
-        content: url('../images/dark_menu_icon.png');
-
-    }
-
     :modal button{
 
         display: flex;
@@ -1346,7 +1334,6 @@ footer img{
         max-width: 100%;
 
     }
-
 
     .fight .img-1{
         width: 25rem;
