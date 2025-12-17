@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
-/*Permet de changer l'image selon le mode*/
+/*Change image based on theme*/
 
 .romance img[src*="love.png"] {
     content: url('images/icons/coeur_dark.png');
@@ -33,8 +33,8 @@ header button img[src*="../menu_icon.png"]{
 
 @media (min-width : 1025px) {
 
-    /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
-
+    
+/* Styling Go to top button */
 #topButton {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -51,6 +51,8 @@ header button img[src*="../menu_icon.png"]{
 #topButton:hover {
   color: #49193f ; 
 }
+
+/* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
 body, .navbar button {
     margin: 0;
@@ -86,6 +88,8 @@ header {
     z-index:1;
     background-color: #000000;
 }
+
+/* Hidding element that are only needed for mobile */
 
 header h1{
 
@@ -231,8 +235,9 @@ the selection will set spacings on the elements in the header*/
 .index{
 
     background-color: #000000;
-
 }
+
+/* styling the banners on the menu page */
 
 .banner {
     position: relative;
@@ -243,18 +248,18 @@ the selection will set spacings on the elements in the header*/
     transition: transform 1.5s ease;
     overflow: hidden;
 }
+.banner:hover {
+    transform: scale(1.02);
+}
 
+/*remmove title */
 .banner h2{
     
     display: none;
     
 }
 
-.banner:hover {
-    transform: scale(1.02);
-}
-
-/* Texte commun à toutes les captions */
+/* Text shared between every captions */
 .caption {
     color: white;
     font-size: 1.5vw;
@@ -263,7 +268,6 @@ the selection will set spacings on the elements in the header*/
     background-color: transparent;
     position: absolute;
 }
- 
 
 /* Position bottom-left */
 .bottom-left {
@@ -272,6 +276,7 @@ the selection will set spacings on the elements in the header*/
     text-align: left;
 }
 
+/* Position bottom-right */
 .bottom-right {
     bottom: 15%;
     right: 10%;
@@ -282,7 +287,6 @@ the selection will set spacings on the elements in the header*/
 /* ========== ABOUT WEBSITE PAGE ========== */
 
 /* creates the frames of 4 images */
-
 .square {
     display: flex;
     justify-items: center;
@@ -293,9 +297,7 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
 }
 
-
 /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
-
 .square-img {
     width: 30rem;  
     height: 20rem; 
@@ -309,7 +311,11 @@ the selection will set spacings on the elements in the header*/
     margin-top: 1.5rem;
     display: block;
 }
+.square h3{
+    display: none;
+}
 
+/* styling the news section */
 .news {
 
   display : flex ;
@@ -317,18 +323,11 @@ the selection will set spacings on the elements in the header*/
   align-items : center ;
 
 }
-
-.square h3{
-    display: none;
-}
-
 .stars {
     max-height: fit-content;
     max-width: fit-content;
 }
-
-
-
+/* styling the about website main section */
 .aboutwebsite{
     align-self: center;
     text-align: center;
@@ -343,13 +342,11 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     color: white;
 }
-
 .aboutwebsite h2{
     margin-top: 5rem;
     margin-bottom: 3.125rem;
 
 }
-
 .aboutwebsite p{
     margin-left: center;
     display: block;
@@ -358,13 +355,11 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: auto;
 
 }
-
 .aboutwebsite section{
     margin-top: 2.5rem;
 }
 
-
-
+/* styling the video of the romance section */
 .romance iframe{
     width: 15rem ;
     height: 27.75rem;
@@ -380,16 +375,14 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     border:none;
 }
-
+/* styling the text and images of the romance section */
 .romance p{
     display: block;
     margin: 2rem auto;
     line-height: 2;
     max-width: 75rem;
     
-}
-
-  
+} 
 .romance img{
     margin: 2rem auto;
     margin-top: 4rem;
@@ -397,14 +390,13 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     
 }
-
 .romance img{
     margin-top: 4rem;
     margin-bottom: 4rem;
     max-width: 100%;
     
 }
-
+/* styling the fight section */
 .fight video{
     width: 50rem;
     height: 25rem; 
@@ -413,7 +405,6 @@ the selection will set spacings on the elements in the header*/
     border-top-left-radius: 1.5rem;
     max-width: 100%;
 }
-
 .fight .img-1{
     width: 50rem;
     height: 25rem; 
@@ -423,22 +414,16 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     border: none;
 }
-
 .fight .img-2{
     width: 1.5rem;
     height: 1.5rem;
     display: block;
     margin: 1.25rem auto;
 }
-
 .fight p{
     margin: 1.25rem auto;
-}
-
-
-  
+} 
 /* ========== ABOUT US PAGE ========== */
-
 
 /* main */
 .aboutussection{
@@ -469,8 +454,8 @@ the selection will set spacings on the elements in the header*/
     text-align: center;
 
 }
-/* presentation */
 
+/* presentation */
 .whoarewe {
 
     display: flex;
@@ -480,16 +465,14 @@ the selection will set spacings on the elements in the header*/
 }
 .whoarewe h2{
 
-    opacity: 0;
+    display: none;
 
 }
-
 .whoarewe h3{
 
-    opacity: 0;
+    display: none;
 
 }
-
 .whoarewe img{
 
     max-width: 20%;
@@ -498,7 +481,7 @@ the selection will set spacings on the elements in the header*/
     min-height: 20%;
 
 }
-
+/* alternating sections for left-right alignment */
 .whoarewe section:nth-child(odd){
 
     display: flex;
@@ -507,7 +490,6 @@ the selection will set spacings on the elements in the header*/
     padding-bottom: 5%;
 
 }
-
 .whoarewe section:nth-child(even){
 
     display: flex;
@@ -516,7 +498,6 @@ the selection will set spacings on the elements in the header*/
     margin-right: 40%;
     padding-bottom: 5%;
 }
-
 .thanku{
 
     display: flex;
@@ -528,7 +509,6 @@ the selection will set spacings on the elements in the header*/
 
 
 /* QUESTION FORM */
-
 
 .question-form {
 
@@ -556,14 +536,12 @@ the selection will set spacings on the elements in the header*/
     align-items: center;
     border-radius: 20px;
 }
-
 .question-form label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #fff;
     text-align: left;
 }
-
 .question-form .questionfield textarea{
     
     display: flex;
@@ -574,7 +552,6 @@ the selection will set spacings on the elements in the header*/
     height: 300px;
 
 }
-
 .question-form input,
 .question-form textarea {
     margin-bottom: 15px;
@@ -586,8 +563,6 @@ the selection will set spacings on the elements in the header*/
     justify-self: center;
     resize: none;
 }
-
-
 .question-form button {
     padding: 10px 20px;
     background-color: #CE87BB;
@@ -597,13 +572,13 @@ the selection will set spacings on the elements in the header*/
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .question-form button:hover {
     background-color: #ffa7e7;
 }
 
 /* ========== GAMES ========== */
 
+/* styling the games main section */
 .games{
     
     background-image: url('images/dark_bg.png');
@@ -618,9 +593,9 @@ the selection will set spacings on the elements in the header*/
 }
 
 .games h1{
-    opacity: 0;
+    display: none;
 }
-
+/*styling the game citation*/
 .games span {
     font-size: 40px;
     background-color: white;
@@ -632,21 +607,21 @@ the selection will set spacings on the elements in the header*/
     text-align: center;
     color: #000000;
 }
-
+/*styling the game title*/
 .games h2{
     margin-top: 50px;
     margin-bottom: 55px;
     font-size: 40px;
     text-align: center;
 }
-
+/*styling the game description*/
 .games p {
     max-width: 50vw;
     text-align: center;
     font-size: 17px;
     line-height: 1.6;
 }
-
+/*styling the game features carousel*/
 .game_features{
 
     display: flex;
@@ -664,13 +639,11 @@ the selection will set spacings on the elements in the header*/
     padding-right: 10%;
 
 }
-
 .carousel h3{
 
     display: none;
 
 }
-
 .carousel ul {
 
     background-color: #873174;
@@ -679,13 +652,11 @@ the selection will set spacings on the elements in the header*/
     list-style: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 .card{
 
     display: none;
 
 }
-
 .card.active{
 
     display: flex;
@@ -693,7 +664,6 @@ the selection will set spacings on the elements in the header*/
     align-items: center;
 
 }
-
 .card h4{
 
     font-weight: 700;
@@ -707,13 +677,11 @@ the selection will set spacings on the elements in the header*/
     max-width: 20rem;
 
 }
-
 .card img{
 
     border-radius: 40px;
 
 }
-
 .cbtn{
 
     border: none;
@@ -722,14 +690,13 @@ the selection will set spacings on the elements in the header*/
     color: white;
     cursor: pointer;
 }
-
 .cbtn:hover{
 
     color: #c451ab;
 
 }
-/* COMMON TO ALL CHARACTERS */
 
+/* styling the character previews section */
 .character_previews{
     
     display: flex;
@@ -738,17 +705,14 @@ the selection will set spacings on the elements in the header*/
     list-style: none;
 
 }
-
 .character{
 
     position : relative ;
 }
-
 #xavier{
 
     position : relative ;
 }   
-
 .character p{
 
     margin: 0;
@@ -764,14 +728,12 @@ the selection will set spacings on the elements in the header*/
     font-weight: 700;
 
 }
-
 .character:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
-
 #xavier p{
 
     margin: 0;
@@ -787,14 +749,12 @@ the selection will set spacings on the elements in the header*/
     font-weight: 700;
 
 }
-
 #xavier:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
-
 #norn p {
 
     margin: 0;
@@ -809,14 +769,12 @@ the selection will set spacings on the elements in the header*/
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
 }
-
 #norn:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
-
 .character img{
 
     width: 250px;   
@@ -839,7 +797,6 @@ the selection will set spacings on the elements in the header*/
     transition: transform 0.3s ease;
     
 }
-
 #norn img{
 
     width: 250px;   
@@ -857,7 +814,6 @@ the selection will set spacings on the elements in the header*/
     filter: brightness(120%);
 
 }
-
 #xavier:hover img {
 
     transform: scale(1.05);
@@ -906,7 +862,7 @@ the selection will set spacings on the elements in the header*/
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: grid;
     grid-template-columns: repeat(2, 640px);
     justify-items: center;
@@ -917,7 +873,7 @@ the selection will set spacings on the elements in the header*/
     display: none;
 }
 
-#seeMoreBtn {
+#see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: block;
@@ -932,7 +888,7 @@ the selection will set spacings on the elements in the header*/
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -952,6 +908,11 @@ the selection will set spacings on the elements in the header*/
 .social-media-links h3 {
  
     display: none;
+}
+
+.social-media-links a img {
+    max-width: 4vw;
+    max-height: 4vw;
 }
 /* ========== FOOTER ========== */
 
@@ -1919,7 +1880,7 @@ footer img{
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1930,8 +1891,7 @@ footer img{
     display: none;
 }
 
-#seeMoreBtn {
-
+#see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: block;
@@ -1946,7 +1906,7 @@ footer img{
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -1967,6 +1927,13 @@ footer img{
 
 .social-media-links a {
     max-width: 20vw;
+}
+
+.social-media-links a img {
+
+    max-width: 10vw;
+    max-height: 10vw;
+
 }
 
 .social-media-links h3 {
@@ -2900,7 +2867,7 @@ footer img{
     margin-top: 2rem;
 }
 
-.seeMore {
+.see_more {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2911,7 +2878,7 @@ footer img{
     display: none;
 }
 
-#seeMoreBtn {
+#see_more_btn {
 
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -2927,7 +2894,7 @@ footer img{
     transition: 0.3s;
 }
 
-#seeMoreBtn:hover {
+#see_more_btn:hover {
     background-color: #df5af7;
 }
 
@@ -2953,6 +2920,10 @@ footer img{
 .social-media-links h3 {
  
     display: none;
+}
+.social-media-links a img {
+    max-width: 10vw;
+    max-height: 10vw;
 }
 
     /* ========== FOOTER ========== */
