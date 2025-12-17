@@ -238,6 +238,7 @@ the selection will set spacings on the elements in the header*/
     text-align: left;
 }
 
+/* Position bottom-right */
 .bottom-right {
     bottom: 15%;
     right: 10%;
@@ -293,7 +294,7 @@ the selection will set spacings on the elements in the header*/
     max-width: fit-content;
 }
 
-
+/* styling the about website main section */
 
 .aboutwebsite{
     align-self: center;
@@ -422,6 +423,7 @@ the selection will set spacings on the elements in the header*/
     text-align: center;
 
 }
+
 /* presentation */
 
 .whoarewe {
