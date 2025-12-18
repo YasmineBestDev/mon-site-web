@@ -234,6 +234,7 @@ the selection will set spacings on the elements in the header*/
     margin-top: 1.5rem;
     margin-top: 1.5rem;
     display: block;
+    box-shadow: 0 4px 10 px rgba(255, 255, 255, 0.5);
 }
 /*styling news section*/
 .news {
@@ -270,7 +271,8 @@ the selection will set spacings on the elements in the header*/
 .aboutwebsite p{
     display: block;
     line-height: 2;
-    max-width: 80rem;
+    max-width: 70rem;
+    margin-top: 3rem;
     margin-bottom: auto;
 }
 .aboutwebsite section{
@@ -306,6 +308,10 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: 4rem;
     max-width: 100%;   
 }
+
+.romance h2{
+    margin-bottom: 2rem;
+}
 .romance img{
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -313,6 +319,11 @@ the selection will set spacings on the elements in the header*/
     
 }
 /* styling the fight section */
+.fight h2{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
 .fight video{
     width: 50rem;
     height: 25rem; 
@@ -338,6 +349,8 @@ the selection will set spacings on the elements in the header*/
 }
 .fight p{
     margin: 1.25rem auto;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
 } 
 /* ========== ABOUT US PAGE ========== */
 /* main */
@@ -606,6 +619,19 @@ p span:last-child {
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
 }
+#caleb p{
+    margin: 0;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    z-index: 1;
+    color:#ffffff;
+    font-family: "Luxurious Roman", serif;
+    font-weight: 700;
+}
 .character:hover p {
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
@@ -624,6 +650,10 @@ p span:last-child {
     font-weight: 700;
 }
 #xavier:hover p {
+    transform: translate(-50%, -50%) scale(1.1);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+#caleb:hover p {
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
@@ -662,6 +692,15 @@ p span:last-child {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;  
 }
+#caleb img{
+    width: 250px;   
+    height: 600px;
+    z-index: 0;  
+    object-fit: cover; 
+    object-position: 60% 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;  
+}
 #norn img{
     width: 250px;   
     height: 600px;
@@ -679,6 +718,11 @@ p span:last-child {
     transform: scale(1.05);
     filter: brightness(120%);
 }
+#caleb:hover img {
+    transform: scale(1.05);
+    filter: brightness(120%);
+}
+
 /* TRAILER SECTION */
 .trailer iframe {
     width: 80vw;
@@ -692,6 +736,7 @@ p span:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap : 4vw;
 }
 .artQuote {
     margin-bottom: 5rem;
