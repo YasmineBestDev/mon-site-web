@@ -124,7 +124,8 @@
 
     <title>GAMERELLA - ABOUT US</title> 
     <link rel="icon" type="image/x-icon" href="images/icons/favicon.png">                           
-    <link  id="theme" rel="stylesheet" href="light_mod.css">   
+    <link  id="theme" rel="stylesheet" href="light_mod.css">
+    <script src="app.min.js" defer></script>
 
 </head>
 
@@ -138,8 +139,8 @@
         
         <ul class="theme_btns">
 
-                <li class="light_button"><button onclick="toggleTheme()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleTheme()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleTheme()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleTheme()" aria-label="Turn on light mode">☀︎</button></li>
 
         </ul>
 
@@ -185,12 +186,12 @@
                     </ul>
                 </li>
                 <li><a href="aboutus.html">ABOUT US</a></li>
-                <li class="light_button"><button onclick="toggleTheme()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleTheme()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleTheme()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleTheme()" aria-label="Turn on light mode">☀︎</button></li>
 
             </ul>
             
-            <button onclick="topFunction()" id="topButton" title="Go to top">⤒</button>
+            <button onclick="topFunction()" id="topButton" title="Go to top" aria-label="Go back to top of the page">⤒</button>
 
         </nav>
     </header>
@@ -220,7 +221,7 @@
                 <section class="lezina">
                    
                     <h3>LEZINA</h3>
-                    <img src="images/pixelart/lezina-pixel-art.webp" alt="pixel art lezina">
+                    <img src="images/pixelart/lezina-pixel-art.webp" alt="pixel art lezina" loading="lazy">
                     <p>
                         Lives in a parallel creative dimension. Says “wait you’ll see” 
                         and then casually drops a masterpiece. We don’t question it anymore.
@@ -231,7 +232,7 @@
                 <section class="ikram">
                     
                     <h3>IKRAM</h3>
-                    <img src="images/pixelart/ikram-pixel-art.webp" alt="pixel art ikram">
+                    <img src="images/pixelart/ikram-pixel-art.webp" alt="pixel art ikram" loading="lazy">
                     <p>
                         Unbothered. Untouched. Unmoved. While the project collapses, 
                         she’s like “it’ll be fine” — and somehow, annoyingly, it is.
@@ -242,7 +243,7 @@
                 <section class="yasmine">
 
                     <h3>YASMINE</h3>
-                    <img src="images/pixelart/yasmine-pixel-art.webp" alt="pixel art yasmine">
+                    <img src="images/pixelart/yasmine-pixel-art.webp" alt="pixel art yasmine" loading="lazy">
                     <p> 
                         Rules with deadlines, authority, and fear. 
                         Decisions are final, questions are optional, everything needs to be perfect. 
@@ -254,7 +255,7 @@
                 <section class="lena">
 
                     <h3>LENA</h3>
-                    <img src="images/pixelart/lena-pixel-art.webp" alt="pixel art lena">
+                    <img src="images/pixelart/lena-pixel-art.webp" alt="pixel art lena" loading="lazy">
                     <p>
                         Always angry because things never work for the dumbest reasons. 
                         Powered by frustration, pure rage and the need for things to WORK.
@@ -305,7 +306,7 @@
 
     <footer class="faboutus">
         <a href="index.html">GO BACK TO MENU</a>
-        <img src="images/icons/stars.png" alt="separateur">
+        <img src="images/icons/stars.png" alt="separateur" loading="lazy">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
     </footer>
    <script src="minified_js.js"></script> 

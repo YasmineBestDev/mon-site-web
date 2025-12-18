@@ -128,7 +128,8 @@
 
     <title>GAMERELLA - GUILD WARS 2</title> 
     <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">                           
-    <link  id="themeG" rel="stylesheet" href="../light_mod.css">   
+    <link  id="themeG" rel="stylesheet" href="../light_mod.css">
+    <script src="app.min.js" defer></script>
 
 </head>
 
@@ -142,8 +143,8 @@
 
          <ul class="theme_btns">
 
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
 
         </ul>
 
@@ -191,14 +192,14 @@
                     </ul>
                 </li>
                 <li><a href="../aboutus.html">ABOUT US</a></li>
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
                 
             </ul>
 
         </nav>
 
-        <button onclick="topFunction()" id="topButton" title="Go to top">⤒</button>
+        <button onclick="topFunction()" id="topButton" title="Go to top" aria-label="Go back to top of the page">⤒</button>
 
     </header>
 
@@ -207,14 +208,14 @@
 
     <main class="games">
         
-        <h1 headingoffset='1'>CITATION LOVE AND DEEPSPACE</h1>
+        <h1 headingoffset='1'>CITATION GUILD WARS 2</h1>
 
         <p> <span>I can </span>
             <span>outrun</span>
             <span>a centaur...</span>  
         </p>
         
-        <img src="../images/icons/stars.png" alt="étoiles">
+        <img src="../images/icons/stars.png" alt="étoiles" loading="lazy">
         
         <section class="game_description">
             <h2>✦ GUILD WARS 2 ✦</h2>
@@ -241,7 +242,7 @@
 
                 <h3>CAROUSEL</h3>
 
-                <button class="cbtn" id="prev">⤟</button>                
+                <button class="cbtn" id="prev" aria-label="See previous image">⤟</button>                
 
                 <ul>
 
@@ -250,7 +251,7 @@
                         <h4>COMBAT</h4>
 
                         <picture>
-                            <img src="../images/gw2/fight_gw2.webp" alt="GW2 combat">
+                            <img src="../images/gw2/fight_gw2.webp" alt="GW2 combat" loading="lazy">
                         </picture>
 
                         <p>Choose between eight professions and experience fast-paced combat.</p>
@@ -261,7 +262,7 @@
                         <h4>MOUNTS</h4>
 
                         <picture>
-                            <img src="../images/gw2/mounts_gw2.webp" alt="GW2 mounts">
+                            <img src="../images/gw2/mounts_gw2.webp" alt="GW2 mounts" loading="lazy">
                         </picture>
 
                         <p>Unlock different mounts that makes traveling a whole new experience.</p>
@@ -272,7 +273,7 @@
                         <h4>STORY</h4>
 
                         <picture>
-                            <img src="../images/gw2/story_gw2.webp" alt="gw2 story">
+                            <img src="../images/gw2/story_gw2.webp" alt="gw2 story" loading="lazy">
                         </picture>
                         
                         <p>Experiment a story packed with emotions.</p>
@@ -284,7 +285,7 @@
                         <h4>PERSISTENT WORLD</h4>
                         
                         <picture>
-                            <img src="../images/gw2/persistent_world_gw2.webp" alt="GW2 persistent world">
+                            <img src="../images/gw2/persistent_world_gw2.webp" alt="GW2 persistent world" loading="lazy">
                         </picture>
                         
                         <p>Play in a world that evolves even when you are not watching.</p>
@@ -293,7 +294,7 @@
 
                 </ul>
                 
-                <button class="cbtn" id="next">⤠</button>
+                <button class="cbtn" id="next" aria-label="See next image">⤠</button>
 
             </section>
 
@@ -306,14 +307,14 @@
             <ul class="character_previews">
 
                 <li class="character">
-                    <img src="../images/gw2/asura_preview.webp" alt="asura preview">
+                    <img src="../images/gw2/asura_preview.webp" alt="asura preview" loading="lazy">
                     <p>AZURA</p>
                 </li>
 
             <!-- CHARR -->
 
                 <li  class="character">
-                    <img src="../images/gw2/char_preview.webp" alt="charr preview">
+                    <img src="../images/gw2/char_preview.webp" alt="charr preview" loading="lazy">
                     <p>CHARR</p>
                 </li>
 
@@ -322,7 +323,7 @@
 
                 <li class="character">
 
-                    <img src="../images/gw2/human_preview.webp" alt="human preview">
+                    <img src="../images/gw2/human_preview.webp" alt="human preview" loading="lazy">
                     <p>HUMAN</p>
                 
                 </li>
@@ -332,7 +333,7 @@
             
                 <li class="character" id="sylvari">
 
-                    <img src="../images/gw2/sylvari_preview.webp" alt="sylvari preview">
+                    <img src="../images/gw2/sylvari_preview.webp" alt="sylvari preview" loading="lazy">
                     <p>SYLVARI</p>
 
                 </li>
@@ -341,7 +342,7 @@
 
                 <li class="character" id="norn">
 
-                    <img src="../images/gw2/norn_preview.webp" alt="norn preview">
+                    <img src="../images/gw2/norn_preview.webp" alt="norn preview" loading="lazy">
                     <p>NORN</p>
 
                 </li>
@@ -369,11 +370,11 @@
             <div class="gallery-container">
 
                 <div>
-                    <img src="../images/gw2/gallery_item_1.webp" alt="gw2 artwork">
+                    <img src="../images/gw2/gallery_item_1.webp" alt="gw2 artwork" loading="lazy">
                     <p>Guild Wars 2 - Grenth</p>
                 </div>
                 <div>
-                    <img src="../images/gw2/gallery_item_2.webp" alt="gw2 artwork">
+                    <img src="../images/gw2/gallery_item_2.webp" alt="gw2 artwork" loading="lazy">
                     <p>Guild Wars 2 - Path Of Fire</p>
                 </div>
 
@@ -382,17 +383,17 @@
                 <div class="see_more hidden">
 
                     <div>
-                        <img src="../images/gw2/gallery_item_3.webp" alt="gw2 artwork">
+                        <img src="../images/gw2/gallery_item_3.webp" alt="gw2 artwork" loading="lazy">
                         <p>Guild Wars 2 - Main cast</p>
-                        <img src="../images/gw2/gallery_item_4.webp" alt="gw2 artwork">
+                        <img src="../images/gw2/gallery_item_4.webp" alt="gw2 artwork" loading="lazy">
                         <p>Guild Wars 2 - Icebrood Saga</p>
                        
                     </div>
                     
                     <div>
-                        <img src="../images/gw2/gallery_item_5.webp" alt="gw2 artwork">
+                        <img src="../images/gw2/gallery_item_5.webp" alt="gw2 artwork" loading="lazy">
                         <p>Guild Wars 2 - Against Zhaitan</p>
-                        <img src="../images/gw2/gallery_item_6.webp" alt="gw2 artwork">
+                        <img src="../images/gw2/gallery_item_6.webp" alt="gw2 artwork" loading="lazy">
                         <p>Guild Wars 2 - Janthir Wilds</p>
 
                     </div>
@@ -416,19 +417,19 @@
                     <h3>LOGOS</h3>
 
                     <a href="https://www.instagram.com/guildwars2/" target="_blank">
-                        <img src="../images/icons/instagram.svg" alt="GuildWars2 Instagram" width="56" height="56">
+                        <img src="../images/icons/instagram.svg" alt="Guild Wars 2 Instagram" loading="lazy">
                     </a>
                     <a href="https://www.youtube.com/guildwars2" target="_blank">
-                        <img src="../images/icons/youtube.svg" alt="GuildWars2 Youtube" width="56" height="56">
+                        <img src="../images/icons/youtube.svg" alt="Guild Wars 2 Youtube" loading="lazy">
                     </a>
                     <a href="https://x.com/guildwars2" target="_blank">
-                        <img src="../images/icons/x.svg" alt="GuildWars2 X" width="56" height="56">
+                        <img src="../images/icons/x.svg" alt="Guild Wars 2 X" loading="lazy">
                     </a>
                     <a href="https://discord.gg/guildwars2" target="_blank">
-                        <img src="../images/icons/discord.svg" alt="GuildWars2 Discord" width="56" height="56">
+                        <img src="../images/icons/discord.svg" alt="Guild Wars 2 Discord" loading="lazy">
                     </a>
                     <a href="https://www.guildwars2.com/en/" target="_blank">
-                        <img src="../images/icons/GW2Logo.webp" alt="GuildWars2 official website" width="56" height="56">
+                        <img src="../images/icons/GW2Logo.webp" alt="Guild Wars 2 official website" loading="lazy">
                     </a>
 
                 </section>
@@ -442,7 +443,7 @@
     <footer>
 
         <a href="LifeisStrange.html">DISCOVER MORE GAMES</a>
-        <img src="../images/icons/stars.png" alt="separateur">
+        <img src="../images/icons/stars.png" alt="separateur" loading="lazy">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
         <p class="questions">
             Any question or review you wish to write to help us improve our website ?<br>
