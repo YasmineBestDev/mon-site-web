@@ -1,11 +1,3 @@
-/* ========== FONT ========== */
-@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
-.julius-sans-one-regular {
-  font-family: "Julius Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /* ========== DESKTOP ========== */
 
@@ -14,9 +6,9 @@
     /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
 
 body, .navbar button {
+    font-family: "Julius Sans One", sans-serif;
     margin: 0;
     padding: 0;
-    font-family: "Julius Sans One";
     font-style: normal;
     font-weight: 400;
     font-size:18px;
@@ -301,7 +293,7 @@ the selection will set spacings on the elements in the header*/
     align-self: center;
     text-align: center;
     align-items: center;
-    background-image: url('images/background.png');
+    background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -413,7 +405,7 @@ the selection will set spacings on the elements in the header*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('images/background.png');
+    background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,7 +563,7 @@ the selection will set spacings on the elements in the header*/
 
 .games{
 
-    background-image: url('images/background.png');
+    background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -585,7 +577,7 @@ the selection will set spacings on the elements in the header*/
     opacity: 0;
 }
 
-.games span {
+.games blockquote.quote {
 
     font-size: 40px;
     background-color: white;
@@ -947,6 +939,38 @@ p span:last-child {
     margin-top: 2rem;
 }
 
+/*styling see more button and hidden images*/
+
+.see_more {
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    justify-items: center;
+    gap: 4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#see_more_btn {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #8a6bd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#see_more_btn:hover {
+    background-color: #a791f7;
+}
+
 /* SOCIAL MEDIA */
 
 .social-media-links{
@@ -1135,6 +1159,7 @@ footer img{
         flex-direction: column;
         align-items: start;
         background-color: #C1ADC8;
+
     }
     #mobile_menu ul {
         list-style-type: none;
@@ -1250,7 +1275,7 @@ footer img{
     /*styling about website main section*/
     .aboutwebsite{
         text-align: center;
-        background-image: url('images/background.png');
+        background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1323,7 +1348,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('images/background.png');
+        background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1447,7 +1472,7 @@ footer img{
     /* ========== GAMES ========== */
     /* styling games main section */
     .games{
-        background-image: url('images/background.png');
+        background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1699,7 +1724,32 @@ footer img{
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
+.see_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.hidden {
+    display: none;
+}
+#see_more_btn{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #8a6bd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#see_more_btn:hover {
+    background-color: #a791f7;
+}
 /* SOCIAL MEDIA */
 .social-media{
     display: flex;
@@ -1983,7 +2033,7 @@ body,.navbar button {
     /* about website page styling */
     .aboutwebsite{
         text-align: center;
-        background-image: url('images/background.png');
+        background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2053,7 +2103,7 @@ body,.navbar button {
 
     /* styling the games page */
     .games{
-    background-image: url('images/background.png');
+    background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2306,7 +2356,33 @@ body,.navbar button {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
+/*styling see more button and hidden images*/
+.see_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+.hidden {
+    display: none;
+}
+#see_more_btn button{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding: 1.5rem 2.5rem;
+    background-color: #8a6bd6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#see_more_btn:hover {
+    background-color: #a791f7;
+}
 /* SOCIAL MEDIA */
 .social-media{
     display: flex;
@@ -2336,7 +2412,7 @@ body,.navbar button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('images/background.png');
+        background-image: url('https://i.postimg.cc/BQqnVtnF/background.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -2486,3 +2562,9 @@ body,.navbar button {
         max-width: fit-content;
     }
 }
+
+/* COMMENTAIRES :
+
+ENLEVER CLASS CHARACTERS
+ENLEVER GALLERY */
+

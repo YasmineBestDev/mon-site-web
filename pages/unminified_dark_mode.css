@@ -7,17 +7,17 @@
 }
 /*Change image based on theme*/
 
-.romance img[src*="love.png"] {
-    content: url('images/icons/coeur_dark.png');
+.romance img[src*="https://i.postimg.cc/15TrHxyp/love.webp"] {
+    content: url('https://i.postimg.cc/wvf6mQDd/coeur-dark.png');
 }
-.fight img[src*="bataille.png"] {
-    content: url('images/icons/bataille_dark.png');
+.fight img[src*="https://i.postimg.cc/fyRV4bfY/bataille.png"] {
+    content: url('https://i.postimg.cc/DyYXT1NH/bataille-dark.png');
 }
-header button img[src*="menu_icon.png"]{
-    content: url('images/icons/dark_menu_icon.png');
+header button img[src*="https://i.postimg.cc/sgYGZbxv/menu-icon.webp"]{
+    content: url('https://i.postimg.cc/WpdD7dzX/dark-menu-icon.webp');
 }
-header button img[src*="../menu_icon.png"]{
-    content: url('../images/icons/dark_menu_icon.png');
+header button img[src*="../https://i.postimg.cc/sgYGZbxv/menu-icon.webp"]{
+    content: url('https://i.postimg.cc/WpdD7dzX/dark-menu-icon.webp');
 }
 /* ========== DESKTOP ========== */
 @media (min-width : 1024px) {
@@ -254,7 +254,7 @@ the selection will set spacings on the elements in the header*/
     align-self: center;
     text-align: center;
     align-items: center;
-    background-image: url('images/dark_bg.png');
+    background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -358,7 +358,7 @@ the selection will set spacings on the elements in the header*/
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('images/dark_bg.png');
+    background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -483,7 +483,7 @@ the selection will set spacings on the elements in the header*/
 
 /* styling the games main section */
 .games{ 
-    background-image: url('images/dark_bg.png');
+    background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -873,7 +873,7 @@ footer img{
     }
     .aboutwebsite{
         text-align: center;
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -941,7 +941,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1060,7 +1060,7 @@ footer img{
     }
     /* ========== GAMES ========== */
     .games{
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1089,8 +1089,8 @@ footer img{
     }
 
     /*changing stars to dark stars*/
-    .games img[scr="../images/stars.png"]{
-        content: url('../images/dark_stars.png');
+    .games img[scr="https://i.postimg.cc/dV6dxzFJ/stars.webp"]{
+        content: url('https://i.postimg.cc/C1zKJ2hs/dark-stars.webp');
     }
     .game_description {
 
@@ -1514,7 +1514,7 @@ footer img{
 
     main {
         text-align: center;
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1526,7 +1526,7 @@ footer img{
 
     .aboutwebsite{
         text-align: center;
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1614,7 +1614,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-image: url('images/dark_bg.png');
+        background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -1777,7 +1777,7 @@ footer img{
 
     .games{
 
-    background-image: url('images/dark_bg.png');
+    background-image: url('https://i.postimg.cc/vT8w3gtb/dark%20bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1810,7 +1810,7 @@ footer img{
 
     .games img[scr="../images/stars.png"]{
 
-        content: url('../images/dark_stars.png');
+        content: url('https://i.postimg.cc/C1zKJ2hs/dark-stars.webp');
 
     }
     .game_description {
