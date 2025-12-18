@@ -494,10 +494,10 @@ the selection will set spacings on the elements in the header*/
     color: white;
 }
 .games h1{
-    opacity: 0;
+    display: none;
 }
 /*styling the game citation*/
-.games span {
+.games blockquote {
     font-size: 40px;
     background-color: white;
     color: #000000;
@@ -507,9 +507,6 @@ the selection will set spacings on the elements in the header*/
     width: fit-content;
     display: block;
     text-align: center;
-}
-p span:last-child {
-    margin-bottom: 2.6rem;
 }
 /*styling the game title*/
 .games h2{
@@ -592,173 +589,6 @@ p span:last-child {
 }
 .cbtn:hover{
     color: #c451ab;
-}
-/* COMMON TO ALL CHARACTERS */
-.character_previews{ 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-}
-.character{
-    position : relative ;
-}
-#xavier{
-    position : relative ;
-}
-.character p{
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-#caleb p{
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-.character:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-#xavier p{
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-#xavier:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-#caleb:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-#norn p {
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-#norn:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-.character img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 50% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-}
-#xavier img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;  
-}
-#caleb img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 60% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;  
-}
-#norn img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;   
-}
-.character:hover img {
-    transform: scale(1.05);
-    filter: brightness(120%);
-}
-#xavier:hover img {
-    transform: scale(1.05);
-    filter: brightness(120%);
-}
-#caleb:hover img {
-    transform: scale(1.05);
-    filter: brightness(120%);
-}
-
-/* TRAILER SECTION */
-.trailer iframe {
-    width: 80vw;
-    height: 45vw;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 5rem;
-}
-/* GALLERY */
-.gallery{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap : 4vw;
-}
-.artQuote {
-    margin-bottom: 5rem;
-    font-size: 1.7rem;
-    color: #814db1;
-}
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 640px);
-    justify-content: center;
-    gap: 0 4em;
-    padding-bottom: 5rem;
-}
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-.gallery-container p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 /* SOCIAL MEDIA */
 .social-media-links{
@@ -1244,7 +1074,7 @@ footer img{
         display: none;
     }
     /*styling game citation*/
-    .games span {
+    .games blockquote {
         font-size: 40px;
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1257,9 +1087,7 @@ footer img{
         text-align: center;
         max-width: 90%;
     }
-    p span:last-child {
-        margin-bottom: 2.6rem;
-    }
+
     /*changing stars to dark stars*/
     .games img[scr="../images/stars.png"]{
         content: url('../images/dark_stars.png');
@@ -1361,138 +1189,6 @@ footer img{
     .cbtn:hover{
         color: #e09cec;
     }
-  /* Styling characters previews */
-.character_previews{ 
-    display: flex;
-    flex-direction: column;
-    align-items : center;
-    list-style : none;
-    align-self: center;
-}
-.character{
-    position : relative ;
-}
-#xavier{
-    position : relative ;
-}   
-.character p{
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-.character:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-#xavier p{
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-#xavier:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-#norn p {
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-#norn:hover p {
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-}
-.character img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 50% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-}
-#xavier img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;  
-}
-#norn img{
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease; 
-}
-.character:hover img {
-    transform: scale(1.05);
-    filter: brightness(120%);
-}
-#xavier:hover img {
-    transform: scale(1.05);
-    filter: brightness(120%);
-}
-/* ART SECTION */
-.artQuote {
-    margin-bottom: 5rem;
-    font-size: 1.7rem;
-    color: #ffffff;
-}
-/*TRAILER SECTION*/
-.trailer iframe {
-    width: 80vw;
-    height: 45vw;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 5rem;
-}
-/* GALLERY */
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4rem;
-    gap: 0 4em;
-}
-.gallery-container img {
-    max-width: 80vw;
-    max-height: 45vw;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-.gallery-container p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 /* SOCIAL MEDIA */
 .social-media{
     display: flex;
@@ -2097,7 +1793,7 @@ footer img{
         opacity: 0;
     }
 
-    .games span {
+    .games blockquote {
 
         font-size: 40px;
         background-color: white;
@@ -2110,12 +1806,6 @@ footer img{
         display: block;
         text-align: center;
         max-width: 90%;
-    }
-
-    p span:last-child {
-
-        margin-bottom: 2.6rem;
-
     }
 
     .games img[scr="../images/stars.png"]{
@@ -2154,8 +1844,6 @@ footer img{
         line-height: 1.6;
         color: #ffffff;
     }
-
-
 
     .game_features{
 
@@ -2251,184 +1939,6 @@ footer img{
 
     }
 
-  /* COMMON TO ALL CHARACTERS */
-
-.character_previews{
-    
-    display: flex;
-    flex-direction: column;
-    align-items : center;
-    list-style : none;
-    align-self: center;
-
-}
-
-.character{
-
-    position : relative ;
-}
-
-#xavier{
-
-    position : relative ;
-}   
-
-.character p{
-
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-
-}
-
-.character:hover p {
-
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-
-}
-
-#xavier p{
-
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-
-}
-
-#xavier:hover p {
-
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-
-}
-
-#norn p {
-
-    margin: 0;
-    font-size: 2.5rem;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    z-index: 1;
-    color:#ffffff;
-    font-family: "Luxurious Roman", serif;
-    font-weight: 700;
-}
-
-#norn:hover p {
-
-    transform: translate(-50%, -50%) scale(1.1);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-
-}
-
-.character img{
-
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 50% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-
-}
-#xavier img{
-
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
-}
-
-#norn img{
-
-    width: 250px;   
-    height: 600px;
-    z-index: 0;  
-    object-fit: cover; 
-    object-position: 65% 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
-}
-.character:hover img {
-
-    transform: scale(1.05);
-    filter: brightness(120%);
-
-}
-
-#xavier:hover img {
-
-    transform: scale(1.05);
-    filter: brightness(120%);
-
-}
-
-/* ART SECTION */
-
-.artQuote {
-    margin-bottom: 5rem;
-    font-size: 1.7rem;
-    color: #ffffff;
-
-}
-
-/*TRAILER SECTION*/
-
-.trailer iframe {
-    width: 80vw;
-    height: 45vw;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 5rem;
-}
-
-/* GALLERY */
-
-.gallery-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 4rem;
-    gap: 0 4em;
-}
-
-.gallery-container img {
-    max-width: 80vw;
-    max-height: 45vw;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-
-.gallery-container p {
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
 /* SOCIAL MEDIA */
 
 .social-media{
