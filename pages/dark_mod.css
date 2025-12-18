@@ -629,31 +629,40 @@ the selection will set spacings on the elements in the header*/
 .games span {
     font-size: 40px;
     background-color: white;
+    color: #000000;
     padding: 10px 15px;     
     margin: 0 auto 15px;    
     line-height: 1.5;
     width: fit-content;
     display: block;
     text-align: center;
-    max-width: 90%;
-    color: #000000;
 }
 
+p span:last-child {
+
+    margin-bottom: 2.6rem;
+
+}
 
 /*styling the game title*/
 .games h2{
-    margin-top: 50px;
-    margin-bottom: 55px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 40px;
     text-align: center;
+    background: linear-gradient(90deg, #8059ec, #823490);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 /*styling the game description*/
 .games p {
-    max-width: 50vw;
+    max-width: 70vw;
     text-align: center;
     font-size: 17px;
     line-height: 1.6;
 }
+
 /*styling the game features carousel*/
 .game_features{
 
@@ -662,6 +671,7 @@ the selection will set spacings on the elements in the header*/
     align-items: center;
 
 }
+
 .carousel{
 
     display: flex;
@@ -672,11 +682,13 @@ the selection will set spacings on the elements in the header*/
     padding-right: 10%;
 
 }
+
 .carousel h3{
 
     display: none;
 
 }
+
 .carousel ul {
 
     background-color: #873174;
@@ -684,12 +696,15 @@ the selection will set spacings on the elements in the header*/
     padding: 5%;
     list-style: none;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding-bottom: 2rem;
 }
+
 .card{
 
     display: none;
 
 }
+
 .card.active{
 
     display: flex;
@@ -697,39 +712,54 @@ the selection will set spacings on the elements in the header*/
     align-items: center;
 
 }
+
 .card h4{
 
     font-weight: 700;
     color:#823490;
-    font-size: 1rem;
+    font-size: 2rem;
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding: 10px 15px;     
     margin: 0rem auto 2.5rem;    
     line-height: 1.5;
-    max-width: 20rem;
 
 }
+
+.card.active p{
+
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    max-width: fit-content;
+}
+
 .card img{
 
+    width: 52rem;
+    height : 27.75rem;
     border-radius: 40px;
 
 }
+
 .cbtn{
 
     border: none;
     font-size: 250%;
     background-color: #ffffff00;
+    margin-right: 2rem;
+    margin-left: 2rem;
     color: white;
     cursor: pointer;
 }
+
 .cbtn:hover{
 
     color: #c451ab;
 
 }
 
-/* styling the character previews section */
+/* COMMON TO ALL CHARACTERS */
+
 .character_previews{
     
     display: flex;
@@ -738,14 +768,17 @@ the selection will set spacings on the elements in the header*/
     list-style: none;
 
 }
+
 .character{
 
     position : relative ;
 }
+
 #xavier{
 
     position : relative ;
-}   
+}
+
 .character p{
 
     margin: 0;
@@ -761,12 +794,14 @@ the selection will set spacings on the elements in the header*/
     font-weight: 700;
 
 }
+
 .character:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
+
 #xavier p{
 
     margin: 0;
@@ -782,12 +817,14 @@ the selection will set spacings on the elements in the header*/
     font-weight: 700;
 
 }
+
 #xavier:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
+
 #norn p {
 
     margin: 0;
@@ -802,12 +839,14 @@ the selection will set spacings on the elements in the header*/
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
 }
+
 #norn:hover p {
 
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
 
 }
+
 .character img{
 
     width: 250px;   
@@ -830,6 +869,7 @@ the selection will set spacings on the elements in the header*/
     transition: transform 0.3s ease;
     
 }
+
 #norn img{
 
     width: 250px;   
@@ -841,12 +881,14 @@ the selection will set spacings on the elements in the header*/
     transition: transform 0.3s ease;
     
 }
+
 .character:hover img {
 
     transform: scale(1.05);
     filter: brightness(120%);
 
 }
+
 #xavier:hover img {
 
     transform: scale(1.05);
@@ -854,15 +896,6 @@ the selection will set spacings on the elements in the header*/
 
 }
 
-
-/* ART SECTION */
-
-.artQuote {
-    margin-bottom: 5rem;
-    font-size: 1.7rem;
-    color: #814db1;
-
-}
 
 /* TRAILER SECTION */
 .trailer iframe {
@@ -876,11 +909,25 @@ the selection will set spacings on the elements in the header*/
 
 /* GALLERY */
 
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artQuote {
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+    color: #814db1;
+
+}
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 640px);
     justify-content: center;
     gap: 0 4em;
+    padding-bottom: 5rem;
 }
 
 .gallery-container img {
@@ -894,6 +941,8 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
+/*styling see more button and hidden images*/
 
 .see_more {
     display: grid;
@@ -938,19 +987,19 @@ the selection will set spacings on the elements in the header*/
     margin-bottom: 4rem;
 }
 
+.social-media-links img {
+    max-width: 4vw;
+    max-height: 4vw;
+}
+
 .social-media-links h3 {
  
     display: none;
 }
 
-.social-media-links a img {
-    max-width: 4vw;
-    max-height: 4vw;
-}
 /* ========== FOOTER ========== */
 
 footer {
-    padding-top: 36px;
     background-color:rgba(0, 0, 0, 0.7);
     text-align: center;
     display: flex;
@@ -970,13 +1019,11 @@ footer a {
     padding-bottom: 1%;
 }
 
-
 footer a:hover {
     color: #873174;
 }
 
 footer p{
-
     padding-top: 1%;
 }
 
@@ -988,16 +1035,12 @@ footer img{
 }
 
 .questions {
-
     padding-bottom: 2%;
 }
 
 .faboutus {
-
     padding-bottom: 5%;
-
 }
-    
 }
 
 
@@ -1005,7 +1048,7 @@ footer img{
 @media (max-width : 450px) {
 
     header {
-    padding: 2vw;
+    padding: 5vw;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     opacity: 0.7;
@@ -1013,13 +1056,11 @@ footer img{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    gap: 2vw;
+    max-width: 100vw;
     padding-right: 10vw;
     background-color: #000000;
     color: white !important;
-    align-self: center;
-    gap: 2vw;
-    max-width: 100vw;
-
     }
 
     header h1 {
@@ -1033,8 +1074,7 @@ footer img{
     header button{
 
         display: contents;
-        padding-right: 20vw;
-        opacity: 100%;
+
 
     }
 
