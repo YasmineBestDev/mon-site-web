@@ -139,20 +139,3 @@ buttons.forEach((button) =>{
 
   });
 });
-
-
-
-// "SEE MORE" BUTTON IN LOVE AND DEEPSPACE PAGE
-
-const seeMoreBtn = document.getElementById('see_more_btn');
-const moreImages = document.querySelector('.see_more');
-
-seeMoreBtn.addEventListener('click', () => {
-    if (moreImages.classList.contains('hidden')) {
-        moreImages.classList.remove('hidden');
-        seeMoreBtn.textContent = "See Less"; // changer le texte
-    } else {
-        moreImages.classList.add('hidden');
-        seeMoreBtn.textContent = "See More";
-    }
-});
