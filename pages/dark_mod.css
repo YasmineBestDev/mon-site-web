@@ -1,42 +1,27 @@
 /* ========== FONT ========== */
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
-
 .julius-sans-one-regular {
   font-family: "Julius Sans One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-
-
 /*Change image based on theme*/
 
 .romance img[src*="love.png"] {
     content: url('images/icons/coeur_dark.png');
 }
-
 .fight img[src*="bataille.png"] {
     content: url('images/icons/bataille_dark.png');
 }
-
 header button img[src*="menu_icon.png"]{
-
     content: url('images/icons/dark_menu_icon.png');
-
 }
-
 header button img[src*="../menu_icon.png"]{
-
     content: url('../images/icons/dark_menu_icon.png');
-
 }
-
 /* ========== DESKTOP ========== */
-
 @media (min-width : 1024px) {
-
 /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
-
 body, .navbar button {
     margin: 0;
     padding: 0;
@@ -45,8 +30,7 @@ body, .navbar button {
     font-weight: 400;
     font-size:18px;
     line-height: normal;
-}
-    
+}   
 /* Styling Go to top button */
 #topButton {
   display: none; /* Hidden by default */
@@ -60,13 +44,10 @@ body, .navbar button {
   color: #873174;
   opacity: 1;
 }
-
 #topButton:hover {
   color: #49193f ; 
 }
-
 /* padding-bottom avoids overlapping with footer, min-height adjusts based on header/footer heights */
-
 main {
     width: 100%;
     padding: 0px;
@@ -78,9 +59,7 @@ main {
     min-height: calc(100vh - 200px);
     overflow: hidden;
 }
-
 /* ========== HEADER ========== */
-
 header {
     padding: 20px;
     position: relative;
@@ -89,98 +68,67 @@ header {
     z-index:1;
     background-color: #000000;
 }
-
 /* Hidding element that are only needed for mobile */
-
 header h1{
-
     display : none ;
-
 }
-
 .theme_btns{
-
-    display: none;
-     
+    display: none;   
 }
-
 #menu_icon{
-
     display: none;
-
 }
-
 /* styling the navigation bar */
-
 .navbar {
     list-style-type: none;
     display: flex;
     align-items: center;
     gap: 65px;
 }
-
 /* removing the underlines of the links in .navbar and setting the text color to black */
-
 .navbar a {
     color: rgb(255, 255, 255);       
     text-decoration: none;
 }
-
-/* styles the links in the class .navbar so they change colors when hovering over them */
-
+/* styles the links in the class .navbar so they change colors when hovering over them */s
 .navbar a:hover{
     color: #873174;
 }
 /* .navbar > li:first-child selects only the li elements that are the direct children of .navbar and are the first child.
 different from navbar li:first-child that selects any li that is the first child of its parent, anywhere inside .navbar
 the selection will set spacings on the elements in the header*/
-
 .navbar > li:first-child {                              
     margin-right: auto;
     margin-left: 30px;
 }
-
 .navbar .dark_button button{
-
     border : none ;
     font-size: 200%;
     color: #873174;
     background-color: #000000 ;
 }
-
 .navbar .dark_button button:hover{
-
     color: #a15f93;
-
 }
-
+/*hiding light button*/
 .navbar .light_button{
-
     display: none;
-
 }
-
-        .dropdown button{
-
-            color: #ffffff;
-
-        }
-
+/*styling the color of the game button*/
+.dropdown button{
+    color: #ffffff;
+}
 /* styling the games button*/
-
 .dropdown button {
     border: none;
     cursor: pointer;
     background: none;
     font-size: 18px;
 }
-
 .dropdown button:hover {
     color: #873174;
 }
-
 /* styling the dropdown frame, adding display: none; so the dropdown will only be visible when hovering over games */
-
 .dropdown ul {
     position: absolute;
     display: none;
@@ -192,13 +140,10 @@ the selection will set spacings on the elements in the header*/
     z-index:1;
     font-size: 17px;
 }
-
 .dropdown:hover ul {
     display: block;
 }
-
 /* styling the elements inside of the dropdown */
-
 .dropdown a {
     padding:8px 12px;
     margin:0px;
@@ -206,37 +151,27 @@ the selection will set spacings on the elements in the header*/
     white-space: nowrap;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
-
 .dropdown a:hover {
     color:#ffffff;
     background-color: #873174;
 }
-
-
 /* adding padding to the first element of the dropdown for more clarity */
-
 .dropdown li:first-child {
   padding-top: 20px;
 }
-
 /* adding a tiny animation that occurs when loading the page */
-
 .navbar li {
     padding: 0 0.5em 0.25em;
     cursor: pointer;
     position: relative;
     transition: 0.3s;
 }
-
 /* ========== MENU PAGE ========== */
-
+/*styling menu page*/
 .index{
-
     background-color: #000000;
 }
-
 /* styling the banners on the menu page */
-
 .banner {
     position: relative;
     width: 100vw;
@@ -246,44 +181,36 @@ the selection will set spacings on the elements in the header*/
     transition: transform 1.5s ease;
     overflow: hidden;
 }
-
 .banner h2{
-    
-    display: none;
-    
+    display: none;  
 }
-
 .banner:hover {
     transform: scale(1.02);
 }
-
 /* Texte commun à toutes les captions */
 .caption {
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
     letter-spacing: 0.05rem;
     text-align: right;
     background-color: transparent;
     position: absolute;
 }
-
 /* Position bottom-left */
 .bottom-left {
     bottom: 15%;
     left: 10%;
     text-align: left;
 }
-
 /* Position bottom-right */
 .bottom-right {
     bottom: 15%;
     right: 10%;
     text-align: right;
 }
-
-
 /* ========== ABOUT WEBSITE PAGE ========== */
-
 /* creates the frames of 4 images */
 .square {
     display: flex;
@@ -294,9 +221,7 @@ the selection will set spacings on the elements in the header*/
     margin: 3.125rem auto;
     max-width: 100%;
 }
-
 /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
-
 .square-img {
     width: 30rem;  
     height: 20rem; 
@@ -310,26 +235,20 @@ the selection will set spacings on the elements in the header*/
     margin-top: 1.5rem;
     display: block;
 }
-
+/*styling news section*/
 .news {
-
   display : flex ;
   flex-direction : column ;
   align-items : center ;
-
 }
-
 .square h3{
     display: none;
 }
-
 .stars {
     max-height: fit-content;
     max-width: fit-content;
 }
-
 /* styling the about website main section */
-
 .aboutwebsite{
     align-self: center;
     text-align: center;
@@ -344,25 +263,19 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     color: white;
 }
-
 .aboutwebsite h2{
     margin-top: 5rem;
     margin-bottom: 3.125rem;
-
 }
-
 .aboutwebsite p{
-            /*margin-left: center;*/
     display: block;
     line-height: 2;
     max-width: 80rem;
     margin-bottom: auto;
 }
-
 .aboutwebsite section{
     margin-top: 2.5rem;
 }
-
 /* styling the video of the romance section */
 .romance iframe{
     width: 15rem ;
@@ -379,7 +292,6 @@ the selection will set spacings on the elements in the header*/
     max-width: 100%;
     border:none;
 }
-
 /* styling the text and images of the romance section */
 .romance p{
     display: block;
@@ -388,32 +300,27 @@ the selection will set spacings on the elements in the header*/
     max-width: 75rem;
     
 } 
-
 .romance img{
     margin: 2rem auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    max-width: 100%;
-    
+    max-width: 100%;   
 }
-
 .romance img{
     margin-top: 4rem;
     margin-bottom: 4rem;
     max-width: 100%;
     
 }
-
 /* styling the fight section */
-/*            .fight video{
-                width: 50rem;
-                height: 25rem; 
-                margin: 1.25rem auto;
-                border-bottom-right-radius: 1.5rem;
-                border-top-left-radius: 1.5rem;
-                max-width: 100%;
-            }*/
-
+.fight video{
+    width: 50rem;
+    height: 25rem; 
+    margin: 1.25rem auto;
+    border-bottom-right-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    max-width: 100%;
+}
 .fight .img-1{
     width: 50rem;
     height: 25rem; 
@@ -432,14 +339,9 @@ the selection will set spacings on the elements in the header*/
 .fight p{
     margin: 1.25rem auto;
 } 
-
-
 /* ========== ABOUT US PAGE ========== */
-
-
 /* main */
 .aboutussection{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,66 +354,41 @@ the selection will set spacings on the elements in the header*/
     padding-top: 3% ;
     color: white;
 }
-
 .aboutussection h1{
-
     justify-self: center;
     font-size: 30px;
-
 }
-
 .aboutussection p{
-
     max-width: 60%;
     text-align: center;
-
 }
-
 /* presentation */
-
 .whoarewe {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5%;
 }
-
 .whoarewe h2{
-
-    /*display: none;*/
-    opacity: 0;
-
+    display: none;
 }
-
 .whoarewe h3{
-
-    /*display: none;*/
-    opacity: 0;
-
+    display: none;
 }
-
 .whoarewe img{
-
     max-width: 27.5%;
     max-height: 27.5%;
     min-width: 27.5%;
     min-height: 27.5%;
-
 }
-
 /* alternating sections for left-right alignment */
 .whoarewe section:nth-child(odd){
-
     display: flex;
     align-items: center;
     margin-left: 45%;
     padding-bottom: 5%;
-
 }
-
 .whoarewe section:nth-child(even){
-
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -520,20 +397,13 @@ the selection will set spacings on the elements in the header*/
 }
 
 .thanku{
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5%;
-
 }
-
-
 /* QUESTION FORM */
-
-
 .question-form {
-
     background: #873174;
     padding: 30px;
     border-radius: 20px;
@@ -544,7 +414,6 @@ the selection will set spacings on the elements in the header*/
     justify-self: center;
     margin-bottom: 15vw;
 }
-
 .question-form h2 {
     margin-bottom: 20px;
     font-weight: 400;
@@ -552,23 +421,19 @@ the selection will set spacings on the elements in the header*/
     border-radius: 10px;
     background-color: #CE87BB;
 }
-
 .question-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
 }
-
 .question-form label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #fff;
     text-align: left;
 }
-
 .question-form .questionfield textarea{
-    
     text-align: center;
     width: 60%;
     height: 60%;
@@ -576,9 +441,7 @@ the selection will set spacings on the elements in the header*/
     padding-left: 20%;
     padding-right: 20%;
     margin-top: 5%;
-
 }
-
 .question-form input,
 .question-form textarea {
     margin-bottom: 2vw;
@@ -590,7 +453,6 @@ the selection will set spacings on the elements in the header*/
     justify-self: center;
     resize: none;
 }
-
 .question-form button {
     padding: 10px 20px;
     background-color: #CE87BB;
@@ -600,7 +462,6 @@ the selection will set spacings on the elements in the header*/
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
 .question-form button:hover {
     background-color: #ffa7e7;
 }
@@ -608,8 +469,7 @@ the selection will set spacings on the elements in the header*/
 /* ========== GAMES ========== */
 
 /* styling the games main section */
-.games{
-    
+.games{ 
     background-image: url('images/dark_bg.png');
     background-size: cover;
     background-position: center;
@@ -620,11 +480,9 @@ the selection will set spacings on the elements in the header*/
     display: flex;
     color: white;
 }
-
 .games h1{
     opacity: 0;
 }
-
 /*styling the game citation*/
 .games span {
     font-size: 40px;
@@ -637,13 +495,9 @@ the selection will set spacings on the elements in the header*/
     display: block;
     text-align: center;
 }
-
 p span:last-child {
-
     margin-bottom: 2.6rem;
-
 }
-
 /*styling the game title*/
 .games h2{
     margin-top: 4rem;
@@ -654,7 +508,6 @@ p span:last-child {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 /*styling the game description*/
 .games p {
     max-width: 70vw;
@@ -662,35 +515,24 @@ p span:last-child {
     font-size: 17px;
     line-height: 1.6;
 }
-
 /*styling the game features carousel*/
 .game_features{
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 .carousel{
-
     display: flex;
     align-items: center;
     position: relative;
     width: fit-content;
     height: fit-content;
     padding-right: 10%;
-
 }
-
 .carousel h3{
-
     display: none;
-
 }
-
 .carousel ul {
-
     background-color: #873174;
     border-radius: 50px;
     padding: 5%;
@@ -698,23 +540,15 @@ p span:last-child {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     padding-bottom: 2rem;
 }
-
 .card{
-
     display: none;
-
 }
-
 .card.active{
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
-
 .card h4{
-
     font-weight: 700;
     color:#823490;
     font-size: 2rem;
@@ -723,26 +557,18 @@ p span:last-child {
     padding: 10px 15px;     
     margin: 0rem auto 2.5rem;    
     line-height: 1.5;
-
 }
-
 .card.active p{
-
     margin-top: 2.5rem;
     font-size: 1.25rem;
     max-width: fit-content;
 }
-
 .card img{
-
     width: 52rem;
     height : 27.75rem;
     border-radius: 40px;
-
 }
-
 .cbtn{
-
     border: none;
     font-size: 250%;
     background-color: #ffffff00;
@@ -751,36 +577,23 @@ p span:last-child {
     color: white;
     cursor: pointer;
 }
-
 .cbtn:hover{
-
     color: #c451ab;
-
 }
-
 /* COMMON TO ALL CHARACTERS */
-
-.character_previews{
-    
+.character_previews{ 
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style: none;
-
 }
-
 .character{
-
     position : relative ;
 }
-
 #xavier{
-
     position : relative ;
 }
-
 .character p{
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -792,18 +605,12 @@ p span:last-child {
     color:#ffffff;
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
-
 }
-
 .character:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 #xavier p{
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -815,18 +622,12 @@ p span:last-child {
     color:#ffffff;
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
-
 }
-
 #xavier:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 #norn p {
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -839,16 +640,11 @@ p span:last-child {
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
 }
-
 #norn:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 .character img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
@@ -856,47 +652,33 @@ p span:last-child {
     object-position: 50% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;
-
 }
 #xavier img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
     object-fit: cover; 
     object-position: 65% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;  
 }
-
 #norn img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
     object-fit: cover; 
     object-position: 65% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;   
 }
-
 .character:hover img {
-
     transform: scale(1.05);
     filter: brightness(120%);
-
 }
-
 #xavier:hover img {
-
     transform: scale(1.05);
     filter: brightness(120%);
-
 }
-
-
 /* TRAILER SECTION */
 .trailer iframe {
     width: 80vw;
@@ -905,23 +687,17 @@ p span:last-child {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 5rem;
 }
-
-
 /* GALLERY */
-
 .gallery{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .artQuote {
     margin-bottom: 5rem;
     font-size: 1.7rem;
     color: #814db1;
-
 }
-
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(2, 640px);
@@ -929,32 +705,26 @@ p span:last-child {
     gap: 0 4em;
     padding-bottom: 5rem;
 }
-
 .gallery-container img {
     width: 100%;
     height: auto;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
-
 .gallery-container p {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 /*styling see more button and hidden images*/
-
 .see_more {
     display: grid;
     grid-template-columns: repeat(2, 640px);
     justify-items: center;
     gap: 4rem;
 }
-
 .hidden {
     display: none;
 }
-
 #see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -969,36 +739,27 @@ p span:last-child {
     cursor: pointer;
     transition: 0.3s;
 }
-
 #see_more_btn:hover {
     background-color: #df5af7;
 }
-
 /* SOCIAL MEDIA */
-
 .social-media-links{
     display: flex;
     justify-content: center;
 }
-
 .social-media-links a {
     margin: 0 2rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
-
 .social-media-links img {
     max-width: 4vw;
     max-height: 4vw;
 }
-
 .social-media-links h3 {
- 
     display: none;
 }
-
 /* ========== FOOTER ========== */
-
 footer {
     background-color:rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -1010,127 +771,90 @@ footer {
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     color: white;
 }
-
-
 footer a {
     color: white;
     text-decoration: none;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 4.5%;
+    padding-bottom: 2%;
 }
-
 footer a:hover {
     color: #873174;
 }
-
 footer p{
     padding-top: 1%;
 }
-
 footer img{
-
     max-height: fit-content;
     max-width: fit-content;
-
 }
-
 .questions {
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
-
 .faboutus {
     padding-bottom: 5%;
 }
 }
-
-
-    /* ========== MOBILE ========== */
+/* ========== MOBILE ========== */
 @media (max-width : 450px) {
 
     header {
-    padding: 5vw;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    opacity: 0.7;
-    z-index:1;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 2vw;
-    max-width: 100vw;
-    padding-right: 10vw;
-    background-color: #000000;
-    color: white !important;
+        padding: 5vw;
+        position: relative;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        opacity: 0.7;
+        z-index:1;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2vw;
+        max-width: 100vw;
+        padding-right: 10vw;
+        background-color: #000000;
+        color: white !important;
     }
-
     header h1 {
-
         display: contents;
         color: white;
         align-self: center;
         opacity: 100%;
     }
-
     header button{
-
         display: contents;
-
-
     }
-
-   
-
     header button img{
-
         min-width: 10vw;
         max-width: 10vw;
-
     }
-
+    /*hiding elements that are relative to desktop mode*/
     header .navbar {
-
         display: none;
-
     }
-
+    /*styling navigation bar*/
     nav{
-
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: 5%;
-
     }
-
+    /*styling theme buttons*/
     .theme_btns{
-
         display: flex;
         flex-direction: row;
-        list-style-type: none;
-         
+        list-style-type: none;   
     }
-
     .theme_btns .dark_button button{
-
         border : none ;
         font-size: 180%;
         color: #873174;
     }
-
     .theme_btns .dark_button button:hover{
-
         color: #a15f93; ;
-
     }
-
     .theme_btns .light_button{
-
         display: none;
-
     }
-
+    /*styling modal menu*/
     :modal {
-
         background: #000000;
         display: flex;
         flex-direction: column;
@@ -1139,62 +863,39 @@ footer img{
         gap: 20%;
         color: white;
         opacity: 100%;
-
     }
-
     :modal a{
-
         text-decoration: none;
         border : 1px solid 873174 ;
-
     }
-
     :modal li {
-
         display: flex;
         flex-direction: row;
         align-items: center;
-
-
     }
-
     :modal li img {
-
         max-width: 15%;
         max-height: 15%;
-
     }
-
     :modal button{
-
         display: flex;
         align-items: center;
         border: none;
         background: none;
     }
-
     :modal button img{
-
         max-width: 20%;
         max-height: 20%;
-
     }
-
     :modal button {
-
         font-family: "Julius Sans One";
         font-style: normal;
         font-weight: 400;
         font-size:18px;
         color: white;
         display: inline;
-        
-
-
     }
-
-    dialog { 
-
+    dialog {
         border : none;
         position: fixed;
         background-color: #000000;
@@ -1202,32 +903,20 @@ footer img{
         left: 0;
         color: #873174;
         opacity: 100%;
-
     }
-
-    
-
     #games_dropdown{
-
         display: none;
-
     }
-
     #games_dropdown:target{
-
         display: flex;
         flex-direction: column;
         align-items: start;
         background-color: #000000;
-
     }
-
     #mobile_menu ul {
-
         list-style-type: disc;
-
     }
-
+    /*styling to top button*/
     #topButton {
        display: none; /* Hidden by default */
         position: fixed; /* Fixed/sticky position */
@@ -1240,13 +929,10 @@ footer img{
         color: #873174;
         opacity: 1;
     }
-
 #topButton:hover {
   color: #49193f ; 
 }
-
     /* styling website body, removing default margin and padding and setting text font : common in ALL pages */
-
     body, .navbar button {
         margin: 0;
         padding: 0;
@@ -1258,9 +944,8 @@ footer img{
         color: white !important;
         background-color: #000000;
     }
-
     /* ========== MENU PAGE ========== */
-
+/*styling menu banner*/
 .banner {
     position: relative;
     width: 100vw;
@@ -1270,46 +955,40 @@ footer img{
     transition: transform 1.5s ease;
     overflow: hidden;
 }
-
 .banner:hover {
     transform: scale(1.02);
 }
-
-
-.banner h2{
-    
+.banner h2{   
     display: none;
-    
 }
-
-/* Texte commun à toutes les captions */
+/* Text shared between all captions */
 .caption {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 3vw;
-    letter-spacing: 0.5%;
+    font-weight: bold;
+    text-shadow: 0 0 10px black;
+    letter-spacing: 0.05em;
     text-align: right;
     background-color: transparent;
     position: absolute;
 }
- 
-
 /* Position bottom-left */
 .bottom-left {
-    bottom: 15%;
-    left: 10%;
+    bottom: 10%;
+    left: 20%;
     text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
 }
-
 .bottom-right {
-    bottom: 15%;
-    right: 10%;
+    bottom: 10%;
+    right: 17%;
     text-align: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
 }
-
 /* ========== ABOUT WEBSITE PAGE ========== */
-
 /* creates the frames of 4 images */
-
     .square {
         display: flex;
         flex-direction: column;
@@ -1318,10 +997,7 @@ footer img{
         margin: 0 auto 3rem;
         max-width: 90%;
     }
-
-
     /* border-top creates a line on top, border-bottom does the same on the bottom, and border-radius curves the edges */
-
     .square-img {
             width: 25rem;
             height: 15rem;
@@ -1334,26 +1010,19 @@ footer img{
             margin-bottom: 2rem;
             max-width: 100%;
         }
-        
+    /*styling news section*/
         .news {
-        
             display: flex;
             flex-direction: column;
             align-items: center;
-        
         }
-
     .square h3{
         display: none;
     }
-
     .stars {
         max-height: fit-content;
         max-width: fit-content;
     }
-
-
-
     .aboutwebsite{
         text-align: center;
         background-image: url('images/dark_bg.png');
@@ -1364,26 +1033,20 @@ footer img{
         filter: brightness(0.9) contrast(1);
         max-width: 100vw;
     }
-
     .aboutwebsite h2{
         margin-top: 5rem;
         margin-bottom: 3.125rem;
-
     }
-
     .aboutwebsite p{
         display: block;
         line-height: 2;
         max-width: 80rem;
         margin-bottom: auto;
-
     }   
-
     .aboutwebsite section{
         padding-top: 2.5em;
     }   
-
-
+    /*styling romance section*/
     .romance iframe {
         width: 30rem;
         height: 33.25rem;
@@ -1394,24 +1057,18 @@ footer img{
         max-width: 90%;
         border:none;
     }
-
     .romance p {
         display: block;
         margin: 2rem auto;
         line-height: 2;
         max-width: 75rem;
-
     }
-
-  
     .romance img {
         margin: 2rem auto;
         margin-top: 4rem;
         margin-bottom: 4rem;
         max-width: 100%;
-
     }
-
     .fight .img-1{
         width: 25rem;
         height: 12.5rem;
@@ -1421,24 +1078,18 @@ footer img{
         max-width: 90%;
         border: none;
     }
-
     .fight .img-2 {
         width: 1.5rem;
         height: 1.5rem;
         display: block;
         margin: 1.25rem auto;
     }
-
     .fight p {
         padding: 1.25rem;
     }
-
     /* ========== ABOUT US PAGE ========== */
-
-
     /* main */
     .aboutussection{
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1450,85 +1101,55 @@ footer img{
         filter: brightness(0.9) contrast(1);
         padding-top: 10%;
         padding-bottom: 20%;
-
-
     }
-
     .aboutussection h1{
-
         justify-self: center;
         font-size: 30px;
-
     }
-
     .aboutussection p{
-
         max-width: 80%;
         text-align: center;
-
     }
     /* presentation */
-
     .whoarewe {
-
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 5%;
     }
     .whoarewe h2{
-
-        opacity: 0;
-
+        display: none;
     }
-
     .whoarewe h3{
-
-        opacity: 0;
-
+        display: none;
     }
-
     .whoarewe img{
-
         max-width: 40%;
         max-height: 40%;
         min-width: 40%;
         min-height: 40%;
-
     }
-
+    /*positioning alternately*/
     .whoarewe section:nth-child(odd){
-
         display: flex;
         align-items: center;
         padding-bottom: 10%;
-
     }
-
     .whoarewe section:nth-child(even){
-
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         padding-left: 15%;
         padding-bottom: 10%;
     }
-
     .thanku{
-
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 10%;
-
     }
-
-
     /* QUESTION FORM */
-
-
     .question-form {
-
         background: #823490;
         padding: 30px;
         border-radius: 20px;
@@ -1537,9 +1158,7 @@ footer img{
         width: 100%;
         text-align: center;
         justify-self: center;
-     
     }
-
     .question-form h2 {
         margin-bottom: 2%;
         font-weight: 400;
@@ -1547,23 +1166,19 @@ footer img{
         border-radius: 10px;
         background-color: #CE87BB;
     }
-
     .question-form form {
         display: flex;
         flex-direction: column;
         align-items: center;
         border-radius: 20px;
     }
-
     .question-form label {
         margin-bottom: 5%;
         font-weight: bold;
         color: #fff;
         text-align: left;
     }
-
-    .question-form .questionfield textarea{
-        
+    .question-form .questionfield textarea{  
         text-align: center;
         width: 70%;
         height: 60%;
@@ -1571,9 +1186,7 @@ footer img{
         padding-left: 15%;
         padding-right: 15%;
         margin-top: 5%;
-
     }
-
     .question-form input,
     .question-form textarea {
         margin-bottom: 15px;
@@ -1585,8 +1198,6 @@ footer img{
         justify-self: center;
         resize: none;
     }
-
-
     .question-form button {
         padding: 10px 20px;
         background-color: #CE87BB;
@@ -1596,33 +1207,26 @@ footer img{
         cursor: pointer;
         transition: background-color 0.3s;
     }
-
     .question-form button:hover {
         background-color: #ffb7ec;
     }
-
     /* ========== GAMES ========== */
-
     .games{
-
-    background-image: url('images/dark_bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    flex-direction: column;
-    align-items: center;
-    display: flex;
-    color: white !important;
-
+        background-image: url('images/dark_bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        color: white !important;
     }
-
     .games h1{
-        opacity: 0;
+        display: none;
     }
-
+    /*styling game citation*/
     .games span {
-
         font-size: 40px;
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -1635,17 +1239,12 @@ footer img{
         text-align: center;
         max-width: 90%;
     }
-
     p span:last-child {
-
         margin-bottom: 2.6rem;
-
     }
-
+    /*changing stars to dark stars*/
     .games img[scr="../images/stars.png"]{
-
         content: url('../images/dark_stars.png');
-
     }
     .game_description {
 
@@ -1670,7 +1269,6 @@ footer img{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
     .games p {
         max-width: 90vw;
         padding-left: 5vw;
@@ -1680,62 +1278,42 @@ footer img{
         line-height: 1.6;
         color: #ffffff;
     }
-
-
-
+    /*styling game_features*/
     .game_features{
-
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
     .carousel{
-
         display: flex;
         align-items: center;
         position: relative;
         width: 80vw;
         padding-right: 18vw;
-
     }
-    
     .carousel h3{
        display: none;
     }
-
     .carousel ul {
-
         background-color: #823490;
         border-radius: 50px;
         padding: 7.5%;
         list-style: none;
         max-width: 60vw;
     }
-
     .card{
-
         display: none;
-
     }
-
     .card.active{
-
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
-
-
     .carousel ul {
-
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         padding-bottom: 2rem;
     }
-
     .card h4{
-
         font-weight: 700;
         color:#823490;
         font-size: 1rem;
@@ -1745,62 +1323,41 @@ footer img{
         margin: 0rem auto 2.5rem;    
         line-height: 1.5;
         max-width: 20rem;
-
     }
-
     .card.active p{
-
         margin-top: 2.5rem;
         font-size: 1.25rem; 
     }
-
     .card img{
-
         border-radius: 40px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         max-width: 60vw;
-
     }
-
     .cbtn{
-
         border: none;
         font-size: 10vw;
         color:#ffffff;
         background-color: #ffffff00;
         cursor: pointer;
     }
-
     .cbtn:hover{
-
         color: #e09cec;
-
     }
-
-  /* COMMON TO ALL CHARACTERS */
-
-.character_previews{
-    
+  /* Styling characters previews */
+.character_previews{ 
     display: flex;
     flex-direction: column;
     align-items : center;
     list-style : none;
     align-self: center;
-
 }
-
 .character{
-
     position : relative ;
 }
-
 #xavier{
-
     position : relative ;
 }   
-
 .character p{
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -1812,18 +1369,12 @@ footer img{
     color:#ffffff;
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
-
 }
-
 .character:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 #xavier p{
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -1835,18 +1386,12 @@ footer img{
     color:#ffffff;
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
-
 }
-
 #xavier:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 #norn p {
-
     margin: 0;
     font-size: 2.5rem;
     position: absolute;
@@ -1859,16 +1404,11 @@ footer img{
     font-family: "Luxurious Roman", serif;
     font-weight: 700;
 }
-
 #norn:hover p {
-
     transform: translate(-50%, -50%) scale(1.1);
     text-shadow: 0 0 10px rgb(255, 255, 255);
-
 }
-
 .character img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
@@ -1876,56 +1416,40 @@ footer img{
     object-position: 50% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease;
-
 }
 #xavier img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
     object-fit: cover; 
     object-position: 65% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease;  
 }
-
 #norn img{
-
     width: 250px;   
     height: 600px;
     z-index: 0;  
     object-fit: cover; 
     object-position: 65% 50%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-    transition: transform 0.3s ease;
-    
+    transition: transform 0.3s ease; 
 }
 .character:hover img {
-
     transform: scale(1.05);
     filter: brightness(120%);
-
 }
-
 #xavier:hover img {
-
     transform: scale(1.05);
     filter: brightness(120%);
-
 }
-
 /* ART SECTION */
-
 .artQuote {
     margin-bottom: 5rem;
     font-size: 1.7rem;
     color: #ffffff;
-
 }
-
 /*TRAILER SECTION*/
-
 .trailer iframe {
     width: 80vw;
     height: 45vw;
@@ -1933,9 +1457,7 @@ footer img{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 5rem;
 }
-
 /* GALLERY */
-
 .gallery-container {
     display: flex;
     flex-direction: column;
@@ -1943,30 +1465,25 @@ footer img{
     margin-bottom: 4rem;
     gap: 0 4em;
 }
-
 .gallery-container img {
     max-width: 80vw;
     max-height: 45vw;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
-
 .gallery-container p {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-
 .see_more {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4rem;
 }
-
 .hidden {
     display: none;
 }
-
 #see_more_btn {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1981,47 +1498,37 @@ footer img{
     cursor: pointer;
     transition: 0.3s;
 }
-
 #see_more_btn:hover {
     background-color: #df5af7;
 }
-
 /* SOCIAL MEDIA */
-
 .social-media{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
 }
-
 .social-media-links{
     display: flex;
     align-items: center;
     align-self: center;
+    gap: 4vw;
 }
-
 .social-media-links a {
     max-width: 20vw;
 }
-
 .social-media-links a img {
-
     max-width: 10vw;
     max-height: 10vw;
-
 }
-
 .social-media-links h3 {
- 
-    display: none;
+     display: none;
 }
-
     /* ========== FOOTER ========== */
-
     footer {
-        padding-top: 36px;
+        padding-top: 0.9rem;
         background-color:rgb(0, 0, 0);
+        font-size: 0.8rem;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -2032,55 +1539,36 @@ footer img{
         width: 100%;
         opacity: 0.7;
     }
-
-
     footer a {
-
         color: rgb(255, 255, 255);
         text-decoration: none;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding-top: 2%;
+        padding-bottom: 3%;
         opacity: 1;
         max-width: 80vw;
     }
-
-
     footer a:hover {
         color: #873174;
     }
-
     footer p{
-
         padding-top: 1%;
         opacity: 1;
         max-width: 80vw;
     }
-
     footer img{
-
         max-height: fit-content;
         max-width: fit-content;
-
     }
-
     .questions {
-
         padding-bottom: 2%;
         opacity: 1;
     }
-
     .faboutus {
-
         padding-bottom: 5%;
         opacity: 1;
-
     }
-
-    
 }
-
 /* ========== TABLET ========== */
-
 @media (min-width : 451px) and  (max-width : 1024px) {
     body,
     .navbar button {
@@ -2092,9 +1580,7 @@ footer img{
         line-height: normal;
         font-size: 15px;
     }
-
     /* styling go to the top of page button */
-
     #topButton {
         display: none;
         position: fixed;
@@ -2107,11 +1593,9 @@ footer img{
         color: #8059ec;
         opacity: 1;
     }
-
     #topButton:hover {
         color: #a791f7;
     }
-
     main {
         width: 100%;
         padding: 0px;
@@ -2121,12 +1605,9 @@ footer img{
         justify-content: center;
         align-items: center;
         min-height: calc(100vh - 200px);
-        overflow: hidden;
-        
+        overflow: hidden;   
     }
-
     /* ========== HEADER ========== */
-
     header {
         padding: 0.02rem;
         position: relative;
@@ -2135,11 +1616,8 @@ footer img{
         z-index:1;
         background-color: #000000;
     }
-
     header h1 {
-
         display: none ;
-
     }
 
     .theme_btns{
@@ -2281,7 +1759,9 @@ footer img{
     /*Text shared between every caption*/
     .caption {
         color: white;
-        font-size: 1.5vw;
+        font-size: 2vw;
+        font-weight: bold;
+        text-shadow: 0 0 10px white;
         letter-spacing: 0.05rem;
         text-align: right;
         background-color: transparent;
@@ -2289,13 +1769,13 @@ footer img{
     }
     /* Position bottom-left */
     .bottom-left {
-        bottom: 10%;
-        left: 5%;
+        bottom: 15%;
+        left: 10%;
         text-align: left;
     }
     .bottom-right {
-        bottom: 10%;
-        right: 5%;
+        bottom: 15%;
+        right: 10%;
         text-align: right;
     }
      

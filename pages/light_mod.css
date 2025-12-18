@@ -67,9 +67,7 @@ header {
 }
 
 header h1{
-
     display : none ;
-
 }
 
 .theme_btns{
@@ -454,16 +452,13 @@ the selection will set spacings on the elements in the header*/
 }
 
 .whoarewe section:nth-child(odd){
-
     display: flex;
     align-items: center;
     margin-left: 45%;
     padding-bottom: 5%;
 
 }
-
 .whoarewe section:nth-child(even){
-
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -2507,5 +2502,4 @@ body,.navbar button {
         max-height: fit-content;
         max-width: fit-content;
     }
-
 }
