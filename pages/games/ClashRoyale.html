@@ -117,15 +117,12 @@
         }
       }
     </script>
-<<<<<<< HEAD
-=======
     
     <!-- END -->
     
->>>>>>> refs/remotes/origin/main
     <title>GAMERELLA - CLASH ROYALE</title> 
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">                           
-    <link  id="themeG" rel="stylesheet" href="light_mod.css">   
+    <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">                           
+    <link  id="themeG" rel="stylesheet" href="../light_mod.css">   
 
 </head>
 
@@ -144,8 +141,8 @@
 
         </ul>
 
-        <h1>GAMERELLA</h1>
-        
+        <h2>GAMERELLA </h2>
+
         <nav>
             
             <button id="menu_icon" type="button"><img src="../images/menu_icon.png" alt=""></button>
@@ -159,10 +156,10 @@
                         <li><img src="../images/menu_icon.png" alt=""><a href="#games_dropdown">GAMES</a></li>
                         <li>    
                             <ul id="games_dropdown">
-                                    <li><a href="games/LoveandDeepspace.html">Love and Deepspace</a></li>
-                                    <li><a href="games/GuildWars2.html">Guild Wars 2</a></li>
-                                    <li><a href="games/LifeisStrange.html">Life is Strange</a></li>
-                                    <li><a href="games/ClashRoyale.html">Clash Royale</a></li>
+                                    <li><a href="LoveandDeepspace.html">Love and Deepspace</a></li>
+                                    <li><a href="GuildWars2.html">Guild Wars 2</a></li>
+                                    <li><a href="LifeisStrange.html">Life is Strange</a></li>
+                                    <li><a href="ClashRoyale.html">Clash Royale</a></li>
                             </ul>
                              
                         </li> 
@@ -247,12 +244,12 @@
 
                     <li class="card active">
                         <h4>MERGE SYSTEM</h4>
-                        <img src="../images/clash_royale/deck.webp"/>
+                        <img src="../images/clash_royale/deck.webp" alt="Clash Royale feature">
                         <p>Merge duplicate troops to create and build your unique team.</p>
                     </li>
                     <li class="card">
                         <h4>REAL-TIME PVP</h4>
-                        <img src="../images/clash_royale/battle_clash.webp"/>
+                        <img src="../images/clash_royale/battaile_clash.webp" alt="Clash Royale feature">
                         <p>Battle real players in real-time PvP matches worldwide.</p>
                     </li>
                 
@@ -264,181 +261,142 @@
 
         </section>
 
-        <section>
+        <section class="characters">
+
             <h2>✦ CHARACTERS ✦</h2>
 
-            <!-- ABOUT ZAYNE -->
+            <!-- ABOUT VALKYRIE -->
+            <ul class="character_previews">
+
+                <li class="character">
+                    <img src="../images/clash_royale/clash_perso_5.webp" alt="Valkyrie preview">
+                    <p>VALKYRIE</p>
+                </li>
+
+            <!-- ABOUT FIRELANCE -->
+
+                <li class="character_previews">
+                    <img src="../images/clash_royale/clash_perso_4.webp" alt="Firelance preview">
+                    <p>FIRELANCE</p>
+                </li>
+
+            <!-- ABOUT QUEEN A. -->
 
 
-            <!-- ABOUT ZAYNE -->
+                <li class="character">
 
-            <dialog class="zaynePopup" id="zaynePopupDialog">
-                    <button class="close-btn" onclick="zayneTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"I've lived in a never-ending winter long enough. If you come closer, then..."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <h3>ZAYNE</h3>
-                    <p class="profession">CARDIAC SURGEON</p>
-                    <p class="profession">CARDIAC SURGEON</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <p class="description">
-                        Zayne can typically be found working at Akso Hospital.
-                        He is known for his cold and strict demeanor as well as his dedication to his work.
-                        He is a highly-awarded Cardiac Surgeon, best known for his research in Congenital Heart Abnormalities in neonates.
-                        As the youngest recipient of the Starcatcher Award and the Linde Award, Zayne has contributed to lowering the prevalence of congenital heart defects in newborns with his discovery that Evol genes affect the mutation rate of cells during heart development.
-                    </p>
+                    <img src="../images/clash_royale/clash_perso_3.webp" alt="Queen archers preview">
+                    <p>QUEEN</p>
+                
+                </li>
 
-            </dialog>
-            <button class="zaynepreview" onclick="zayneTogglePopup()">
-                <img src="../images/zaynechr.webp"/ alt="zayne preview">
-                <p>ZAYNE</p>
-            </button>
+            <!-- ABOUT ARCHERS -->
 
-            <!-- ABOUT XAVIER -->
 
-            <dialog class="xavierPopup" id="xavierPopupDialog">
-                    <button class="close-btn" onclick="xavierTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"My light only shines over you."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <h3>XAVIER</h3>
-                    <p class="profession">DEEPSPACE HUNTER</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <p class="description">
-                        Recently, many citizens have been talking about a mysterious hunter who rescued them from Wanderers. With his combat prowess, he took down very dangerous Wanderers and disappeared in the blink of an eye, as if pursuing something greater.
-                        We reached out to the witnesses. From their accounts, it seems their mysterious savior is Xavier, a Deepspace Hunter.
-                        Xavier is able to fight monsters called Wanderers with the Player. His Evol type is Light, his primary weapon is a sword, and he often performs light-related sword combo attacks with the Player.
-                    </p>
+                <li class="character">
 
-            </dialog>
-            <button class="xavierpreview" onclick="xavierTogglePopup()">
-                <img src="../images/xavierchr.webp" alt="xavier preview">
-                <p>XAVIER</p>
-            </button>
+                    <img src="../images/clash_royale/clash_perso_2.webp" alt="Archers preview">
+                    <p>ARCHERS</p>
 
-            <!-- ABOUT RAFAYEL -->
+                </li>
 
-            <dialog class="rafayelPopup" id="rafayelPopupDialog">
-                    <button class="close-btn" onclick="rafayelTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Do you really think an inferno beneath the waves can't be turbulent ?"</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <h3>RAFAYEL</h3>
-                    <p class="profession">ARTIST</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <p class="description">
-                        As an artist, Rafayel appreciates fine art and beauty.
-                        His art style is like an inferno— passionate and fiery, always leaving a profound impression on people.
-                        Most of his paintings are centered on Lemuria, an ancient civilization conceived in the oceans.
-                        Rafayel is Lemurian, one of the last members of the ancient race, and under specific circumstances has been shown to have scales and a tail.
-                        He lives and paints in Mo Art Studio situated on an island in Whitesand Bay, and hates cats. 
-                    </p>
+            <!-- ABOUT MUSKETEER -->
 
-            </dialog>
-            <button class="rafayelpreview" onclick="rafayelTogglePopup()">
-                <img src="../images/rafayelchr.webp" alt="rafayel preview"/>
-                <p>RAFAYEL</p>
-            </button>
+                <li class="character">
 
-            <!-- ABOUT SYLUS -->
+                    <img src="../images/clash_royale/clash_perso_1.webp" alt="Musketeer preview">
+                    <p>MUSKETEER</p>
 
-            <dialog class="sylusPopup" id="sylusPopupDialog">
-                    <button class="close-btn" onclick="sylusTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Don't you see? This is what your heart truly desires."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <h3>SYLUS</h3>
-                    <p class="profession">ONYCHINUS'S LEADER</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <p class="description">
-                        The leader of Onychinus is said to have built his empire on illegal Evol weapons and Protocore deals.
-                        He's the most influential, dominant figure in the N109 Zone.
-                        Sylus is confident and direct. He rarely perceives anyone as a real threat because he is usually the most powerful person in the room. Even in dangerous situations, he remains calm and self-assured.
-                        Sylus hates being bored and appears to be a bit of a thrill seeker; preferring to use fast motorcycles, jump out of planes, and use explosives to deal with problems on multiple occasions.
-                    </p>
+                </li>
 
-            </dialog>
-            <button class="syluspreview" onclick="sylusTogglePopup()">
-                <img src="../images/syluschr.webp" alt="sylus preview"/>
-                <p>SYLUS</p>
-            </button>
+            </ul>
 
-            <!-- ABOUT CALEB -->
-
-            <dialog class="calebPopup" id="calebPopupDialog">
-                    <button class="close-btn" onclick="calebTogglePopup()">&times;</button>
-                    <blockquote class="quote">
-                        <p>"Gravity starts and ends with you."</p>
-                    </blockquote>
-                    <img class="divider-top" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <h3>CALEB</h3>
-                    <p class="profession">Farspace Fleet's Colonel</p>
-                    <img class="divider-bottom" src="../images/decorative-line-divider-design.png" alt="decorative line"/>
-                    <p class="description">
-                        Player's childhood friend. He works as a fighter pilot for the Deepspace Aviation Administration.
-                        Ever since he went to Aerospace Academy in Skyhaven, he and player don't often see each other.
-                        While he loves teasing the player, he's actually quite a reliable person who the player trusts.
-                        It is revealed he now works for the Farspace Fleet, serving as its Colonel.
-                        He has more secrets than ever before, which causes a rift between him and the player, but he is still determined to do whatever it takes to protect her.
-                    </p>
-
-            </dialog>
-            <button class="calebpreview" onclick="calebTogglePopup()">
-                <img src="../images/calebchr.webp" alt="caleb preview"/>
-                <p>CALEB</p>
-            </button>
         </section>
 
-        <section>
+        <section class="trailer">
             <h2>✦ A TRAILER ✦</h2>
-            <iframe width="960" height="540" src="https://www.youtube.com/embed/ihEvr1BUcSs?si=kFlU4VOt_Z9maaGu" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            <iframe src="https://www.youtube.com/embed/TJryIc0Cwy4?si=bwVeDhE-E8cK2uzZ" 
+            title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
 
-        <section>
+        <section class="gallery">
             <h2>✦ GALLERY ✦</h2>
-            <blockquote class="artQuote">"ART SPEAKS WHEN WORDS ARE UNABLE TO EXPLAIN."</blockquote>
-        </section>
-        <div class="galleryContainer">
 
-                <div class="column1">
-                    <img src="../images/sylusCosmicEncounter.webp" alt="sylus and mc illustration"/>
-                    <p>Sylus - Cosmic Encounter</p>
-                    <img src="../images/rafayelivorynightfall.webp" alt="rafayel illustration"/>
-                    <p>Rafayel - Ivory Nightfall</p>
-                    <img src="../images/xavierseekeroflight.webp" alt="xavier illustration"/>
-                    <p>Xavier - Seeker of Light</p>
+            <blockquote class="art-quote">"ART SPEAKS WHEN WORDS ARE UNABLE TO EXPLAIN."</blockquote>
+
+            <div class="gallery-container">
+
+                <div>
+                    <img src="../images/clash_royale/clash_gallery_3.webp" alt="Clash Royale artwork">
+                    <p>Unique - Battlefield</p>
                 </div>
-                
-                <div class="column2">
-                    <img src="../images/zayneCosmicEncounter.webp" alt="zayne and mc illustration"/>
-                    <p>Zayne - Cosmic Encounter</p>
-                    <img src="../images/zayneApple.webp" alt="zayne illustration"/>
-                    <p>Zayne - Spring remnants</p>
-                    <img src="../images/sylusGun.webp" alt="sylus illustration"/>
-                    <p>Sylus - Razor's Dance</p>
+                <div>
+                    <img src="../images/clash_royale/clash_gallery_2.webp" alt="Clash Royale artwork">
+                    <p>Wonderful- Design</p>
+                </div>
+
+        <!-- HIDDEN PICTURES -->
+
+                <div class="see_more hidden">
+
+                    <div>
+                        <img src="../images/clash_royale/clash_gallery_1.webp" alt="Clash Royale artwork">
+                        <p>A Word - Magic</p>
+                        <img src="../images/clash_royale/clash_gallery_4.webp" alt="Clash Royale artwork">
+                        <p>Real - Teamwork</p>
+                    </div>
+
+                    <div>
+                        <img src="../images/clash_royale/clash_gallery_5.webp" alt="Clash Royale artwork">
+                        <p>Characters - Unique</p>
+                        <img src="../images/clash_royale/clash_gallery_6.webp" alt="Clash Royale artwork">
+                        <p>COMBAT - PvP</p>
+                    </div>
+                    
 
                 </div>
-        </div>
 
-        <section>
-            <h2>✦ SOUNDTRACKS ✦</h2>
-        </section>
-        <section>
-            <h2>✦ SOCIAL MEDIA ✦</h2>
-        </section>
+            </div>
+
+            <button id="see_more_btn">See More</button>
+            </section>
+
+            <section class="social-media">
+
+                <h2>✦ SOCIAL MEDIA ✦</h2>
+                <p>To stay updated with the latest news about Love and Deepspace, follow their official social media accounts :</p>
+
+                <section class="social-media-links">
+
+                    <h3>LOGOS</h3>
+
+                    <a href="https://www.instagram.com/clashroyale/" target="_blank">
+                        <img src="../images/icons/instagram.svg" alt="Clash Royale Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UC_F8DoJf9MZogEOU51TpTbQ" target="_blank">
+                        <img src="../images/icons/youtube.svg" alt="Clash Royale Youtube">
+                    </a>
+                    <a href="https://x.com/ClashRoyale" target="_blank">
+                        <img src="../images/icons/x.svg" alt="Clash Royale X">
+                    </a>
+                    <a href="https://discord.com/invite/clashen" target="_blank">
+                        <img src="../images/icons/discord.svg" alt="Clash Royale Discord">
+                    </a>
+                    <a href="https://supercell.com/en/games/clashroyale/" target="_blank">
+                        <img src="../images/icons/clash_icone.webp" alt="Clash Royale official website">
+                    </a>
+
+                </section>
+
+            </section>
     </main>
 
     <!-- website footer -->
 
     <footer>
-        <a href="GuildWars2.html">DISCOVER MORE GAMES</a>
+        <a href="LoveandDeepspace.html">DISCOVER MORE GAMES</a>
         <img src="../images/icons/stars.png" alt="separateur">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
         <p class="questions">
@@ -446,6 +404,6 @@
             Feel free to leave a review in the about us page.
         </p>
     </footer>
-    <script src="../minified_js.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

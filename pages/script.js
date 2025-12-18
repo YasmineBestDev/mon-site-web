@@ -97,8 +97,8 @@ function topFunction() {
 
 //script for the carouselsvv in games pages
 
-const buttons = document.querySelectorAll(".cbtn"); //gather all buttons with the cbtn class in a list
-const cards =  document.querySelectorAll(".card"); //gather all elements with the card class in a list
+const buttons = document.querySelectorAll(".cbtn"); //gather all buttons with the cbtn class in a Nodelist
+const cards =  document.querySelectorAll(".card"); //gather all elements with the card class in a Nodelist
 
 buttons.forEach((button) =>{
 
@@ -144,8 +144,8 @@ buttons.forEach((button) =>{
 
 // "SEE MORE" BUTTON IN LOVE AND DEEPSPACE PAGE
 
-const seeMoreBtn = document.getElementById('seeMoreBtn');
-const moreImages = document.querySelector('.seeMore');
+const seeMoreBtn = document.getElementById('see_more_btn');
+const moreImages = document.querySelector('.see_more');
 
 seeMoreBtn.addEventListener('click', () => {
     if (moreImages.classList.contains('hidden')) {
