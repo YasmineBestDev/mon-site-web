@@ -122,7 +122,8 @@
 
     <title>GAMERELLA - LOVE AND DEEPSPACE</title> 
     <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">                           
-    <link  id="themeG" rel="stylesheet" href="../light_mod.css">   
+    <link  id="themeG" rel="stylesheet" href="../light_mod.css">
+    <script src="app.min.js" defer></script>
 
 </head>
 
@@ -136,8 +137,8 @@
 
         <ul class="theme_btns">
 
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
 
         </ul>
 
@@ -183,13 +184,13 @@
                     </ul>
                 </li>
                 <li><a href="../aboutus.html">ABOUT US</a></li>
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
 
             </ul>
         </nav>
 
-        <button onclick="topFunction()" id="topButton" title="Go to top">⤒</button>
+        <button onclick="topFunction()" id="topButton" title="Go to top" aria-label="Go back to top of the page">⤒</button>
 
     </header>
 
@@ -206,7 +207,7 @@
             <span>stars...</span>  
         </p>
 
-        <img src="../images/icons/stars.png" alt="étoiles">
+        <img src="../images/icons/stars.png" alt="étoiles" loading="lazy">
 
         <section class="game_description">
 
@@ -251,7 +252,7 @@
 
                 <h3>CAROUSEL</h3>
 
-                <button class="cbtn" id="prev">⤟</button>                
+                <button class="cbtn" id="prev" aria-label="See previous image">⤟</button>                
 
                 <ul>
 
@@ -261,7 +262,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/ladscustomization.webp" alt="Lads Customization">
+                            <img src="../images/lads/ladscustomization.webp" alt="Lads Customization" loading="lazy">
                         </picture>
 
                         <p>Customize your main character with various editable features.</p>
@@ -273,7 +274,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/ladsfight.webp" alt="Lads Fight">
+                            <img src="../images/lads/ladsfight.webp" alt="Lads Fight" loading="lazy">
                         </picture>
 
                         <p>Defeat powerful foes alongside your partner.</p>
@@ -283,7 +284,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/kittycardsFINAL.webp" alt="Lads minigames">
+                            <img src="../images/lads/kittycardsFINAL.webp" alt="Lads minigames" loading="lazy">
                         </picture>
                         
                         <p>Entertain yourself by playing card games with him alongside cute kittens !</p>
@@ -295,7 +296,7 @@
                         
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/photoboothFINAL.webp" alt="Lads photobooth">
+                            <img src="../images/lads/photoboothFINAL.webp" alt="Lads photobooth" loading="lazy">
                         </picture>
                         
                         <p>Every memory deserves a place in your gallery.</p>
@@ -308,7 +309,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/ladspull.webp" alt="Lads pull">
+                            <img src="../images/lads/ladspull.webp" alt="Lads pull" loading="lazy">
                         </picture>
 
                         <p>Pull a card, unlock a story.</p>
@@ -320,7 +321,7 @@
 
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lads/ladstendermoments.webp" alt="Lads tender moments">
+                            <img src="../images/lads/ladstendermoments.webp" alt="Lads tender moments" loading="lazy">
                         </picture>
 
                         <p>When you're running low, you know who to go back to.</p>
@@ -328,7 +329,7 @@
                     </li>
                 </ul>
                 
-                <button class="cbtn" id="next">⤠</button>
+                <button class="cbtn" id="next" aria-label="See next image">⤠</button>
 
             </section>
 
@@ -342,14 +343,14 @@
             <ul class="character_previews">
 
                 <li class="character">
-                    <img src="../images/lads/zaynechr.webp" alt="zayne preview">
+                    <img src="../images/lads/zaynechr.webp" alt="zayne preview" loading="lazy">
                     <p>ZAYNE</p>
                 </li>
 
             <!-- ABOUT XAVIER -->
 
                 <li class="character_previews" id="xavier">
-                    <img src="../images/lads/xavierchr.webp" alt="xavier preview">
+                    <img src="../images/lads/xavierchr.webp" alt="xavier preview" loading="lazy">
                     <p>XAVIER</p>
                 </li>
 
@@ -358,7 +359,7 @@
 
                 <li class="character">
 
-                    <img src="../images/lads/rafayelchr.webp" alt="rafayel preview">
+                    <img src="../images/lads/rafayelchr.webp" alt="rafayel preview" loading="lazy">
                     <p>RAFAYEL</p>
                 
                 </li>
@@ -368,7 +369,7 @@
             
                 <li class="character">
 
-                    <img src="../images/lads/syluschr.webp" alt="sylus preview">
+                    <img src="../images/lads/syluschr.webp" alt="sylus preview" loading="lazy">
                     <p>SYLUS</p>
 
                 </li>
@@ -377,7 +378,7 @@
 
                 <li class="character">
 
-                    <img src="../images/lads/calebchr.webp" alt="caleb preview">
+                    <img src="../images/lads/calebchr.webp" alt="caleb preview" loading="lazy">
                     <p>CALEB</p>
 
                 </li>
@@ -403,11 +404,11 @@
             <div class="gallery-container">
 
                 <div>
-                    <img src="../images/lads/sylusCosmicEncounter.webp" alt="sylus and mc illustration">
+                    <img src="../images/lads/sylusCosmicEncounter.webp" alt="sylus and mc illustration" loading="lazy">
                     <p>Sylus - Cosmic Encounter</p>
                 </div>
                 <div>
-                    <img src="../images/lads/zayneCosmicEncounter.webp" alt="zayne and mc illustration">
+                    <img src="../images/lads/zayneCosmicEncounter.webp" alt="zayne and mc illustration" loading="lazy">
                     <p>Zayne - Cosmic Encounter</p>
                 </div>
 
@@ -416,16 +417,16 @@
                 <div class="see_more hidden">
 
                     <div>
-                        <img src="../images/lads/rafayelivorynightfall.webp" alt="rafayel illustration">
+                        <img src="../images/lads/rafayelivorynightfall.webp" alt="rafayel illustration" loading="lazy">
                         <p>Rafayel - Ivory Nightfall</p>
-                        <img src="../images/lads/xavierseekeroflight.webp" alt="xavier illustration">
+                        <img src="../images/lads/xavierseekeroflight.webp" alt="xavier illustration" loading="lazy">
                         <p>Xavier - Seeker of Light</p>
                     </div>
                     
                     <div>
-                        <img src="../images/lads/zayneApple.webp" alt="zayne illustration">
+                        <img src="../images/lads/zayneApple.webp" alt="zayne illustration" loading="lazy">
                         <p>Zayne - Spring remnants</p>
-                        <img src="../images/lads/sylusGun.webp" alt="sylus illustration">
+                        <img src="../images/lads/sylusGun.webp" alt="sylus illustration" loading="lazy">
                         <p>Sylus - Razor's Dance</p>
                     </div>
 
@@ -446,19 +447,19 @@
                     <h3>LOGOS</h3>
 
                     <a href="https://www.instagram.com/loveanddeepspace/" target="_blank">
-                        <img src="../images/icons/instagram.svg" alt="Love and Deepspace Instagram">
+                        <img src="../images/icons/instagram.svg" alt="Love and Deepspace Instagram" loading="lazy">
                     </a>
                     <a href="https://www.youtube.com/@LoveandDeepspace" target="_blank">
-                        <img src="../images/icons/youtube.svg" alt="Love and Deepspace Youtube">
+                        <img src="../images/icons/youtube.svg" alt="Love and Deepspace Youtube" loading="lazy">
                     </a>
                     <a href="https://x.com/Love_Deepspace" target="_blank">
-                        <img src="../images/icons/x.svg" alt="Love and Deepspace X">
+                        <img src="../images/icons/x.svg" alt="Love and Deepspace X" loading="lazy">
                     </a>
                     <a href="https://discord.gg/loveanddeepspace" target="_blank">
-                        <img src="../images/icons/discord.svg" alt="Love and Deepspace Discord">
+                        <img src="../images/icons/discord.svg" alt="Love and Deepspace Discord" loading="lazy">
                     </a>
                     <a href="https://loveanddeepspace.infoldgames.com/en-EN/home#0" target="_blank">
-                        <img src="../images/icons/love-and-deepspace.avif" alt="Love and Deepspace official website">
+                        <img src="../images/icons/love-and-deepspace.avif" alt="Love and Deepspace official website" loading="lazy">
                     </a>
 
                 </section>
@@ -470,7 +471,7 @@
 
     <footer>
         <a href="GuildWars2.html">DISCOVER MORE GAMES</a>
-        <img src="../images/icons/stars.png" alt="separateur">
+        <img src="../images/icons/stars.png" alt="separateur" loading="lazy">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
         <p class="questions">
             Any question or review you wish to write to help us improve our website ?<br>

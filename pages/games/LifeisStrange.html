@@ -105,7 +105,8 @@
 
     <title>GAMERELLA - LIFE IS STRANGE</title> 
     <link rel="icon" type="image/x-icon" href="../images/icons/favicon.png">                           
-    <link  id="themeG" rel="stylesheet" href="../light_mod.css">   
+    <link  id="themeG" rel="stylesheet" href="../light_mod.css">
+    <script src="app.min.js" defer></script>
 
     
 </head>
@@ -119,8 +120,8 @@
 
          <ul class="theme_btns">
 
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
 
         </ul>
 
@@ -166,14 +167,14 @@
                     </ul>
                 </li>
                 <li><a href="../aboutus.html">ABOUT US</a></li>
-                <li class="light_button"><button onclick="toggleThemeG()">⏾</button></li>
-                <li class="dark_button"><button  onclick="toggleThemeG()">☀︎</button></li>
+                <li class="light_button"><button onclick="toggleThemeG()" aria-label="Turn on dark mode">⏾</button></li>
+                <li class="dark_button"><button  onclick="toggleThemeG()" aria-label="Turn on light mode">☀︎</button></li>
                 
             </ul>
 
         </nav>
 
-        <button onclick="topFunction()" id="topButton" title="Go to top">⤒</button>
+        <button onclick="topFunction()" id="topButton" title="Go to top" aria-label="Go back to top of the page">⤒</button>
 
     </header>
 
@@ -188,7 +189,7 @@
             <span>One moment can last forever.</span>
         </p>
 
-        <img src="../images/icons/stars.png" alt="décoration">
+        <img src="../images/icons/stars.png" alt="décoration" loading="lazy">
 
         <section class="game_description">
 
@@ -227,14 +228,14 @@
 
                 <h3>CAROUSEL</h3>
 
-                <button class="cbtn" id="prev">⤟</button>                
+                <button class="cbtn" id="prev" aria-label="See previous image">⤟</button>                
 
                 <ul>
                     <li class="card active">
                         <h4>TIME REWIND</h4>
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lifeisstrange/lis_time_rewind.webp" alt="LIS Time Rewind">
+                            <img src="../images/lifeisstrange/lis_time_rewind.webp" alt="LIS Time Rewind" loading="lazy">
                         </picture>
                         <p>Use your power to undo choices and explore different outcomes.</p>
                     </li>
@@ -243,7 +244,7 @@
                         <h4>PHOTOGRAPHY</h4>
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lifeisstrange/lis_photography.webp" alt="LIS Photography">
+                            <img src="../images/lifeisstrange/lis_photography.webp" alt="LIS Photography" loading="lazy">
                         </picture>
                         <p>"Everything is a picture waiting to be taken..." - Max's Diary</p>
                     </li>
@@ -252,14 +253,14 @@
                         <h4>CHOICE & CONSEQUENCE</h4>
                         <picture>
                             <source media="(max-width: 450px)" srcset="../images/place_holder.png">
-                            <img src="../images/lifeisstrange/lis_choices.webp" alt="LIS Choices">
+                            <img src="../images/lifeisstrange/lis_choices.webp" alt="LIS Choices" loading="lazy">
                         </picture>
                         <p>One small change affects every life in Arcadia Bay.</p>
                     </li>
                     
                     </ul>
                 
-                <button class="cbtn" id="next">⤠</button>
+                <button class="cbtn" id="next" aria-label="See next image">⤠</button>
 
             </section>
 
@@ -272,27 +273,27 @@
             <ul class="character_previews">
 
                 <li class="character">
-                    <img src="../images/lifeisstrange/max-caulfield.webp" alt="Aperçu personnage 1">
+                    <img src="../images/lifeisstrange/max-caulfield.webp" alt="Max Caulfield" loading="lazy">
                     <p>MAXINE CAULFIELD</p>
                 </li>
 
                 <li class = "character">
-                    <img src="../images/lifeisstrange/chloe-price.webp" alt="Aperçu personnage 2">
+                    <img src="../images/lifeisstrange/chloe-price.webp" alt="Chloe Price" loading="lazy">
                     <p>CHLOE PRICE</p>
                 </li>
 
                 <li class="character">
-                    <img src="../images/lifeisstrange/mark-jefferson.webp" alt="Aperçu personnage 3">
+                    <img src="../images/lifeisstrange/mark-jefferson.webp" alt="Mark Jefferson" loading="lazy">
                     <p>MARK JEFFERSON</p>
                 </li>
 
                 <li class="character">
-                    <img src="../images/lifeisstrange/rachel_amber.webp" alt="Aperçu personnage 4">
+                    <img src="../images/lifeisstrange/rachel_amber.webp" alt="Rachel Amber" loading="lazy">
                     <p>RACHEL AMBER</p>
                 </li>
 
                 <li class="character">
-                    <img src="../images/lifeisstrange/nathan_prescott.webp" alt="Aperçu personnage 5">
+                    <img src="../images/lifeisstrange/nathan_prescott.webp" alt="Nathan Prescott" loading="lazy">
                     <p>NATHAN PRESCOTT</p>
                 </li>
 
@@ -313,29 +314,29 @@
             <div class="gallery-container">
 
                 <div>
-                    <img src="../images/lifeisstrange/lis-max-guitar.webp" alt="LIS Max playing guitar">
+                    <img src="../images/lifeisstrange/lis-max-guitar.webp" alt="Life is strange Max playing guitar" loading="lazy">
                     <p>Concept art of max playing the guitar</p>
                 </div>
                 <div>
-                    <img src="../images/lifeisstrange/lis_lighthouse.webp" alt="LIS Two Whales">
+                    <img src="../images/lifeisstrange/lis_lighthouse.webp" alt="Life is Strange Lighthouse" loading="lazy">
                     <p>The lighthouse</p>
                 </div>
 
                 <div class="see_more hidden">
                     <div>
-                        <img src="../images/lifeisstrange/lis_diary.webp" alt="LIS Diary">
+                        <img src="../images/lifeisstrange/lis_diary.webp" alt="Life is strange Diary" loading="lazy">
                         <p>Max's diary entry</p>
                     </div>
                     <div>
-                        <img src="../images/lifeisstrange/blackwell_academy.webp" alt="LIS Two Whales">
+                        <img src="../images/lifeisstrange/blackwell_academy.webp" alt="Life is strange Blackwell Academy" loading="lazy">
                         <p>Blackwell Academy</p>
                     </div>
                     <div>
-                        <img src="../images/lifeisstrange/lis_two_whales.webp" alt="LIS Two Whales">
+                        <img src="../images/lifeisstrange/lis_two_whales.webp" alt="Life is strange Two Whales" loading="lazy">
                         <p>Max and Chloe at the Two Whales Diner</p>
                     </div>
                     <div>
-                        <img src="../images/lifeisstrange/lis_storm.webp" alt="LIS Diary">
+                        <img src="../images/lifeisstrange/lis_storm.webp" alt="Life is strange Storm" loading="lazy">
                         <p>The storm coming to Arcadia Bay</p>
                     </div>
                 </div>
@@ -348,19 +349,19 @@
             <p>To stay updated with the latest news, follow the official social media accounts :</p>
             <nav class="social-media-links">
                 <a href="https://www.instagram.com/lifeisstrangegame/" target="_blank">
-                    <img src="../images/icons/instagram.svg" alt="Life is Strange Instagram">
+                    <img src="../images/icons/instagram.svg" alt="Life is Strange Instagram" loading="lazy">
                 </a>
                 <a href="https://www.youtube.com/lifeisstrange" target="_blank">
-                    <img src="../images/icons/youtube.svg" alt="Life is Strange Youtube">
+                    <img src="../images/icons/youtube.svg" alt="Life is Strange Youtube" loading="lazy">
                 </a>
                 <a href="https://x.com/LifeIsStrange/" target="_blank">
-                    <img src="../images/icons/x.svg" alt="Life is StrangeX">
+                    <img src="../images/icons/x.svg" alt="Life is Strange X" loading="lazy">
                 </a>
                 <a href="https://discord.com/invite/lifeisstrange" target="_blank">
-                        <img src="../images/icons/discord.svg" alt="Life is Strange Discord">
+                        <img src="../images/icons/discord.svg" alt="Life is Strange Discord" loading="lazy">
                     </a>
                 <a href="https://lifeisstrange.square-enix-games.com/en-us" target="_blank">
-                    <img src="../images/lifeisstrange/lis-icon.webp" alt="Life is Strange official website">
+                    <img src="../images/lifeisstrange/lis-icon.webp" alt="Life is Strange official website" loading="lazy">
                 </a>
             </nav>
         </section>
@@ -370,7 +371,7 @@
 
     <footer>
         <a href="ClashRoyale.html">DISCOVER MORE GAMES</a>
-        <img src="../images/icons/stars.png" alt="separateur">
+        <img src="../images/icons/stars.png" alt="separateur" loading="lazy">
         <p class="copyright">© 2025 GAMERELLA. All Rights reserved.</p>    
         <p class="questions">
             Any question or review you wish to write to help us improve our website ?<br>
