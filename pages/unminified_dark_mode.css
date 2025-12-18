@@ -1072,7 +1072,7 @@ footer img{
     }
 
     /*changing stars to dark stars*/
-    .games img[scr="https://i.postimg.cc/dV6dxzFJ/stars.webp"]{
+    .games img[scr="https://i.postimg.cc/zDCq1hdj/stars.webp"]{
         content: url('https://i.postimg.cc/C1zKJ2hs/dark-stars.webp');
     }
     .game_description {
