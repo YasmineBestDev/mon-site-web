@@ -907,6 +907,7 @@ p span:last-child {
 }
 
 /* GALLERY */
+
 .gallery{
     display: flex;
     flex-direction: column;
@@ -914,8 +915,13 @@ p span:last-child {
     gap : 4vw;
 }
 
-.artQuote {
+.gallery h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.artQuote {
+    
     font-size: 1.7rem;
     color: #814db1;
 
