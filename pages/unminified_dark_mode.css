@@ -332,16 +332,8 @@ the selection will set spacings on the elements in the header*/
     border-top-left-radius: 1.5rem;
     max-width: 100%;
 }
-.fight .img-1{
-    width: 50rem;
-    height: 25rem; 
-    margin: 1.25rem auto;
-    border-bottom-right-radius: 1.5rem;
-    border-top-left-radius: 1.5rem;
-    max-width: 100%;
-    border: none;
-}
-.fight .img-2{
+
+.fight img{
     width: 1.5rem;
     height: 1.5rem;
     display: block;
@@ -917,16 +909,7 @@ footer img{
         margin-bottom: 4rem;
         max-width: 100%;
     }
-    .fight .img-1{
-        width: 25rem;
-        height: 12.5rem;
-        margin: 5% auto;
-        border-bottom-right-radius: 1.5rem;
-        border-top-left-radius: 1.5rem;
-        max-width: 90%;
-        border: none;
-    }
-    .fight .img-2 {
+    .fight img{
         width: 1.5rem;
         height: 1.5rem;
         display: block;
@@ -1583,18 +1566,7 @@ footer img{
 
     }
 
-
-    .fight .img-1{
-        width: 32.25rem;
-        height: 20rem;
-        margin: 5% auto;
-        border-bottom-right-radius: 1.5rem;
-        border-top-left-radius: 1.5rem;
-        max-width: 90%;
-        border: none;
-    }
-
-    .fight .img-2 {
+    .fight img{
         width: 1.5rem;
         height: 1.5rem;
         display: block;
