@@ -221,7 +221,9 @@ the selection will set spacings on the elements in the header*/
 /* Texte commun à toutes les captions */
 .caption {
     color: white;
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
     letter-spacing: 0.05rem;
     text-align: right;
     background-color: transparent;
@@ -953,8 +955,8 @@ footer {
 footer a {
     color: black;
     text-decoration: none;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 3.5%;
+    padding-bottom: 2%;
 }
 
 footer a:hover {
@@ -971,7 +973,7 @@ footer img{
 }
 
 .questions {
-    padding-bottom: 2%;
+    padding-bottom: 3%;
 }
 
 .faboutus {
@@ -1155,24 +1157,28 @@ footer img{
     }
 /* Text shared between all captions */
 .caption {
-    color: white;
-    font-size: 1.5vw;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
     letter-spacing: 0.05rem;
-    text-align: right;
-    background-color: transparent;
     position: absolute;
 }
 /* Position bottom-left */
 .bottom-left {
-    bottom: 15%;
-    left: 10%;
+    bottom: 10%;
+    left: 20%;
     text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
 }
 /* Position bottom-right */
 .bottom-right {
-    bottom: 15%;
-    right: 10%;
+    bottom: 10%;
+    right: 17%;
     text-align: right;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
 }
 /* ========== ABOUT WEBSITE PAGE ========== */
 
@@ -1716,7 +1722,8 @@ footer img{
 }
     /* ========== FOOTER ========== */
     footer {
-        padding-top: 36px;
+        font-size: 0.8rem;
+        padding-top: 0.9rem;
         background-color:rgba(255, 255, 255, 0.7);
         text-align: center;
         display: flex;
@@ -1725,13 +1732,11 @@ footer img{
         z-index:0;
         position: relative;
         box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
-        min
     }
     footer a {
         color: black;
         text-decoration: none;
-        padding-top: 1%;
-        padding-bottom: 1%;
+        padding-top: 2%;
         max-width: 80vw;
     }
     footer a:hover {
@@ -1742,6 +1747,7 @@ footer img{
         max-width: 80vw;
     }
     footer img{
+        padding-top: 0.8rem;
         max-height: fit-content;
         max-width: fit-content;
     }
