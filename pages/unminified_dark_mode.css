@@ -489,12 +489,12 @@ the selection will set spacings on the elements in the header*/
     display: none;
 }
 /*styling the game citation*/
-.games blockquote {
+.games .quote {
     font-size: 40px;
     background-color: white;
     color: #000000;
     padding: 10px 15px;     
-    margin: 0 auto 15px;    
+    margin: 5% auto;    
     line-height: 1.5;
     width: fit-content;
     display: block;
@@ -1057,13 +1057,13 @@ footer img{
         display: none;
     }
     /*styling game citation*/
-    .games blockquote {
+    .games .quote {
         font-size: 40px;
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         color:#823490;
         padding: 10px 15px;     
-        margin: 0 auto 15px;    
+        margin: 5% auto;    
         line-height: 1.5;
         width: fit-content;
         display: block;
@@ -1765,14 +1765,14 @@ footer img{
         opacity: 0;
     }
 
-    .games blockquote {
+    .games .quote {
 
         font-size: 40px;
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         color:#823490;
         padding: 10px 15px;     
-        margin: 0 auto 15px;    
+        margin: 5% auto;    
         line-height: 1.5;
         width: fit-content;
         display: block;
